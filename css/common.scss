@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/*
+=========================================================================
+/* Name: 헬로비전
+/* PART: COMMON STYLE 
+/* Version: 1.0 / day: 2020-11 
+=========================================================================
+*/
+
+.mobile-img {
+  display: none;
+}
+
+@media all and (max-width: 640px) {
+  .pc-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+  }
+}
