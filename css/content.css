@@ -7,3 +7,105 @@
 =========================================================================
 */
 @import url(swiper.css);
+/* 메인 비주얼 */
+.main-visual .control {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+
+.main-visual .control .page-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 38px;
+  padding: 0 30px;
+  border-radius: 19px;
+  background-color: rgba(51, 51, 51, 0.2);
+  margin-right: 10px;
+  z-index: 10; }
+
+.main-visual .control .page-box .swiper-pagination-bullet {
+  display: inline-block;
+  cursor: pointer;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 15px; }
+
+.main-visual .control .page-box .swiper-pagination-bullet:last-child {
+  margin-right: 0; }
+
+.main-visual .control .page-box .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 10px;
+  height: 10px; }
+
+.main-visual .control button {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(51, 51, 51, 0.2);
+  background-image: url(../img/arrow_banner_left.svg);
+  background-repeat: no-repeat;
+  background-size: 7px auto;
+  background-position: center;
+  margin-right: 5px;
+  z-index: 10; }
+
+.main-visual .control button :last-child {
+  margin-right: 0; }
+
+.main-visual .control button.next {
+  transform: rotate(180deg); }
+
+/* 퀵 링크 */
+.quick-link-box {
+  width: 100%;
+  height: 130px;
+  border-bottom: 1px solid #e2e2e2; }
+
+.quick-link-box .content-box {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row; }
+
+.quick-link-box .content-box li {
+  flex: 1; }
+
+.quick-link-box .content-box li a {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 130px;
+  line-height: 130px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000; }
+
+.quick-link-box .content-box li .ic1 {
+  padding-left: 75px;
+  background-image: url(../img/icon_main_hellotv.svg);
+  background-size: 60px auto; }
+
+.quick-link-box .content-box li .ic2 {
+  padding-left: 79px;
+  background-image: url(../img/icon_main_internet.svg);
+  background-size: 60px auto; }
+
+.quick-link-box .content-box li .ic3 {
+  padding-left: 78px;
+  background-image: url(../img/icon_main_mobile.svg);
+  background-size: 61px auto; }
+
+.quick-link-box .content-box li .ic4 {
+  padding-left: 78px;
+  background-image: url(../img/icon_main_rental.svg);
+  background-size: 64px auto; }

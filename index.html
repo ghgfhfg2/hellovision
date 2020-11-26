@@ -44,14 +44,47 @@
       <!-- 컨텐츠 영역 -->
       <div id="container">
         <div class="main-visual">
-            <div class="swiper-container">
+            <div class="swiper-container main-visual-slide">
                 <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="#"><img src="./img/main_banner_01.png" alt=""></a>
+                    </li>
                     <li class="swiper-slide">
                         <a href="#"><img src="./img/main_banner_01.png" alt=""></a>
                     </li>
                 </ul>
             </div>
+            <div class="control">
+                <div class="page-box"></div>
+                <button type="button" class="prev"></button>
+                <button type="button" class="next"></button>
+            </div>
         </div>
+        <script>
+            new Swiper('.main-visual-slide', {
+                loop: true,
+                navigation: {
+                prevEl: '.prev',
+                nextEl: '.next',
+                },
+				pagination: {
+					el:'.page-box',
+					clickable: true,
+				},
+				autoplay: {
+				delay: 5000,
+				},
+				a11y: false,
+			});       
+        </script>
+      </div>
+      <div class="quick-link-box">
+          <ul class="content-box">
+              <li><a href="#" class="ic1">헬로TV</a></li>
+              <li><a href="#" class="ic2">헬로인터넷</a></li>
+              <li><a href="#" class="ic3">모바일결합</a></li>
+              <li><a href="#" class="ic4">렌탈결합</a></li>
+          </ul>
       </div>
       <!-- //컨텐츠 영역 -->
       <!-- 하단 영역 -->

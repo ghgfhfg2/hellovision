@@ -11,6 +11,78 @@
 @import "sass-common.scss";
 @import "swiper.css";
 
+/* 메인 비주얼 */
+.main-visual{
+    .control{
+        position: absolute;width: 100%;bottom: 30px;
+        @include flex(center,$a:center,$d:row);
+        .page-box{
+            @include flex(center,$a:center,$d:row);
+            height: 38px;padding: 0 30px;border-radius: 19px;
+            background-color: rgba(51, 51, 51, 0.2);margin-right: 10px;
+            z-index: 10;
+            .swiper-pagination-bullet{
+                display: inline-block;cursor: pointer;
+                width: 5px;height: 5px;background-color: #fff;
+                border-radius: 50%;margin-right: 15px;
+                &:last-child{margin-right: 0;}
+                &.swiper-pagination-bullet-active{
+                    width: 10px;height: 10px;
+                }
+            }
+        }
+        button{
+            display: inline-block;width: 38px;height: 38px;
+            border-radius: 50%;background-color: rgba(51, 51, 51, 0.2);
+            background-image: url(../img/arrow_banner_left.svg);
+            background-repeat: no-repeat;
+            background-size: 7px auto;
+            background-position: center;
+            margin-right: 5px;
+            z-index: 10;
+            :last-child{margin-right: 0;}
+            &.next{transform: rotate(180deg);}
+        }
 
+    }
+}
 
+/* 퀵 링크 */
+.quick-link-box{
+    width: 100%;height: 130px;border-bottom: 1px solid $bd-color;
+    .content-box{
+        height: 100%;
+        @include flex();        
+        li{            
+            flex: 1;
+            a{
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-position: left center;
+                height: 130px;line-height: 130px;
+                @include font($s:18px,$w:bold,$c:#000)
+            }
+            .ic1{
+                padding-left: 75px;
+                background-image: url(../img/icon_main_hellotv.svg);
+                background-size: 60px auto;
+            }
+            .ic2{
+                padding-left: 79px;
+                background-image: url(../img/icon_main_internet.svg);
+                background-size: 60px auto;
+            }
+            .ic3{
+                padding-left: 78px;
+                background-image: url(../img/icon_main_mobile.svg);
+                background-size: 61px auto;
+            }
+            .ic4{
+                padding-left: 78px;
+                background-image: url(../img/icon_main_rental.svg);
+                background-size: 64px auto;
+            }
+        }
+    }
+}
 
