@@ -1,0 +1,35 @@
+$p-color: #ed174d;  //포인트컬러
+$fon-size: 14px; // 기본 폰트사이즈
+$fon-color:#666;
+
+@mixin flex($j:flex-start,$a:center,$d:row
+) {
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+    flex-direction: $d;
+}
+
+@mixin after($width,$height){
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: $width;
+    height: $height;
+}
+@mixin before($width,$height){
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: $width;
+    height: $height;
+}
+
+@mixin font(
+    $s:$fon-size,
+    $w:normal,
+    $c:$fon-color
+) {
+    font-size: $s;font-weight: $w;color: $c;
+}
+

@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/content.css" />
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/swiper_4.5.0.min.js"></script>
     <script src="./js/common.js"></script>
   </head>
   <body>
     <div id="wrapper">
+      <!--상단영역 -->
       <header id="header">
-        <div class="content_box">
+        <div class="gnb-wrap content-box">
           <a href="#" class="top-logo">
             <img
               src="./img/logo_LGhellovision.png"
@@ -34,8 +40,76 @@
           </div>
         </div>
       </header>
-      <div id="container"></div>
-      <footer id="footer"></footer>
+      <!--//상단영역 -->
+      <!-- 컨텐츠 영역 -->
+      <div id="container">
+        <div class="main-visual">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="#"><img src="./img/main_banner_01.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <!-- //컨텐츠 영역 -->
+      <!-- 하단 영역 -->
+      <footer id="footer">          
+          <div class="content-box">
+            <ul class="footer-link">
+                <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#">홈페이지이용약관</a></li>
+            </ul>  
+            <div class="footer-box">
+                <div class="txt-box">
+                    <div class="left">
+                        <dl>
+                            <dt>사업자명</dt>
+                            <dd>거산텔레콤(주)</dd>
+                        </dl>
+                        <dl>
+                            <dt>사업자등록번호</dt>
+                            <dd>605-81-85031</dd>
+                        </dl>
+                        <dl>
+                            <dt>대표자</dt>
+                            <dd>문상철</dd>
+                        </dl>
+                        <dl>
+                            <dt>개인정보책임자</dt>
+                            <dd>김성훈</dd>
+                        </dl>
+                    </div>
+                    <div class="right">
+                        <dl>
+                            <dt>주소</dt>
+                            <dd>경상남도 김해시 전하로 161번길 10, 601호(홍동)</dd>
+                        </dl>
+                        <dl>
+                            <dt>통신판매번호</dt>
+                            <dd>제 2017-경남김해-0162호</dd>
+                        </dl>
+                        <dl>
+                            <dt>대표번호</dt>
+                            <dd>1666-4465</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="cs-center-box">
+                    <img class="foot-logo" src="./img/logo_LGhellovision.svg" alt="">
+                    <div class="cs-center">
+                        <h3>CS CENTER</h3>
+                        <P>1666-4465</P>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">
+                Copyright © 2020 LG HelloVision All rights reserved.
+            </p>
+          </div>
+      </footer>
+      <!-- //하단 영역 -->
     </div>
   </body>
 </html>
