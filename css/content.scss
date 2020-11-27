@@ -11,6 +11,9 @@
 @import "sass-common.scss";
 @import "swiper.css";
 
+.main-h2{@include h2}
+.main-section{width: 100%;padding:60px 0}
+
 /* 메인 비주얼 */
 .main-visual{
     .control{
@@ -54,7 +57,14 @@
         height: 100%;
         @include flex();        
         li{            
-            flex: 1;
+            flex: 1;position: relative;text-align: center;
+            &::after{
+                @include after(1px,37px);
+                right: 0;
+                top:50%;margin-top: -18px;
+                background-color: #dbdbdb;
+            }    
+            &:last-child::after{display: none;}                    
             a{
                 display: inline-block;
                 background-repeat: no-repeat;
@@ -86,3 +96,78 @@
     }
 }
 
+/* 베스트상품 */
+.best-prod-tab{
+    .tab-list{
+        margin-bottom: 50px;
+        @include flex($j:center);
+        li{
+            @include lastMr0(102px);
+            button{
+                @include font($s:18px,$w:bold)
+                &.on{
+                    color:$p-color;
+                }
+            }            
+        }
+    };
+    .best-prod-wrap{
+        @include flex()
+    }
+    .best-prod-box{
+        width:calc(50% - 20px);height: 280px;border-radius: 20px;
+        padding-left: 60px;background-color: #f3f3f3;
+        @include flex();
+        @include lastMr0(20px);
+        img{margin-right: 50px;}
+        .txt-info{
+            h3{
+                @include font($s:24px,$w:bold,$c:#000);
+                margin-bottom: 15px;
+            }
+            p{font-size: 18px;color: #000;}
+            .info{margin-bottom: 15px;}
+            .price{
+                @include font($s:30px,$w:bold,$c:$p-color)
+            }
+        }
+    }
+}
+.main-btn-box{width:100%;text-align: center;margin-top: 30px;}
+.main-btn-more{
+    width:260px; border-radius: 50px;height:61px;border:1px solid #333;
+    text-align: center;line-height:61px;display:inline-block;background:#fff;
+    &.no-bd{
+        border:none;
+    }
+    span{
+        display: inline-block;padding-right: 32px;position: relative;
+        background: url(../img/arrow_btn.svg) right center no-repeat;
+        @include font($s:18px,$w:bold,$c:#000)
+    }
+}
+
+
+/* 렌탈결합 */
+.max-benefit-rental{background-color: #c3f6d3;
+    .rental-list{
+        @include flex($j:space-between);
+        .rental-box{
+            width: calc(33.3% - 20px);height: 370px;background-color: #fff;border-radius: 20px;
+            padding: 35px 0 30px 0;
+            @include lastMr0(20px);
+            @include flex($j:space-between,$a:center,$d:column);
+            .ic-img{
+                @include flex($j:center);
+                @include font($s:26px,$w:bold,$c:$p-color);                
+                span{
+                    display: inline-block;margin-left: 9px;margin-top: -5px;
+                }
+            }
+            .plus-price{
+                display: inline-block;height: 48px;padding: 0 12px;border:1px solid $p-color;line-height: 48px;
+                @include font($s:22px,$w:bold,$c:$p-color)
+            }
+        }
+    }
+}

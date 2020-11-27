@@ -7,6 +7,20 @@
 =========================================================================
 */
 @import url(swiper.css);
+.com-tab-box .tab-content {
+  display: none; }
+
+.main-h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  line-height: 1;
+  color: #000;
+  text-align: center; }
+
+.main-section {
+  width: 100%;
+  padding: 60px 0; }
+
 /* 메인 비주얼 */
 .main-visual .control {
   position: absolute;
@@ -78,7 +92,23 @@
   flex-direction: row; }
 
 .quick-link-box .content-box li {
-  flex: 1; }
+  flex: 1;
+  position: relative;
+  text-align: center; }
+
+.quick-link-box .content-box li::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: 37px;
+  right: 0;
+  top: 50%;
+  margin-top: -18px;
+  background-color: #dbdbdb; }
+
+.quick-link-box .content-box li:last-child::after {
+  display: none; }
 
 .quick-link-box .content-box li a {
   display: inline-block;
@@ -109,3 +139,143 @@
   padding-left: 78px;
   background-image: url(../img/icon_main_rental.svg);
   background-size: 64px auto; }
+
+/* 베스트상품 */
+.best-prod-tab .tab-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+
+.best-prod-tab .tab-list li {
+  margin-right: 102px; }
+
+.best-prod-tab .tab-list li:last-child {
+  margin-right: 0; }
+
+.best-prod-tab .tab-list li button {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666; }
+
+.best-prod-tab .tab-list li button.on {
+  color: #ed174d; }
+
+.best-prod-tab .best-prod-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row; }
+
+.best-prod-tab .best-prod-box {
+  width: calc(50% - 20px);
+  height: 280px;
+  border-radius: 20px;
+  padding-left: 60px;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 20px; }
+
+.best-prod-tab .best-prod-box:last-child {
+  margin-right: 0; }
+
+.best-prod-tab .best-prod-box img {
+  margin-right: 50px; }
+
+.best-prod-tab .best-prod-box .txt-info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px; }
+
+.best-prod-tab .best-prod-box .txt-info p {
+  font-size: 18px;
+  color: #000; }
+
+.best-prod-tab .best-prod-box .txt-info .info {
+  margin-bottom: 15px; }
+
+.best-prod-tab .best-prod-box .txt-info .price {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ed174d; }
+
+.main-btn-box {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px; }
+
+.main-btn-more {
+  width: 260px;
+  border-radius: 50px;
+  height: 61px;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 61px;
+  display: inline-block;
+  background: #fff; }
+
+.main-btn-more.no-bd {
+  border: none; }
+
+.main-btn-more span {
+  display: inline-block;
+  padding-right: 32px;
+  position: relative;
+  background: url(../img/arrow_btn.svg) right center no-repeat;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000; }
+
+/* 렌탈결합 */
+.max-benefit-rental {
+  background-color: #c3f6d3; }
+
+.max-benefit-rental .rental-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; }
+
+.max-benefit-rental .rental-list .rental-box {
+  width: calc(33.3% - 20px);
+  height: 370px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 35px 0 30px 0;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+
+.max-benefit-rental .rental-list .rental-box:last-child {
+  margin-right: 0; }
+
+.max-benefit-rental .rental-list .rental-box .ic-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 26px;
+  font-weight: bold;
+  color: #ed174d; }
+
+.max-benefit-rental .rental-list .rental-box .ic-img span {
+  display: inline-block;
+  margin-left: 9px;
+  margin-top: -5px; }
+
+.max-benefit-rental .rental-list .rental-box .plus-price {
+  display: inline-block;
+  height: 48px;
+  padding: 0 12px;
+  border: 1px solid #ed174d;
+  line-height: 48px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ed174d; }
