@@ -11,163 +11,262 @@
 @import "sass-common.scss";
 @import "swiper.css";
 
-.main-h2{@include h2}
-.main-section{width: 100%;padding:60px 0}
+.main-h2 {
+  @include h2;
+}
+.main-section {
+  width: 100%;
+  padding: 60px 0;
+}
 
 /* 메인 비주얼 */
-.main-visual{
-    .control{
-        position: absolute;width: 100%;bottom: 30px;
-        @include flex(center,$a:center,$d:row);
-        .page-box{
-            @include flex(center,$a:center,$d:row);
-            height: 38px;padding: 0 30px;border-radius: 19px;
-            background-color: rgba(51, 51, 51, 0.2);margin-right: 10px;
-            z-index: 10;
-            .swiper-pagination-bullet{
-                display: inline-block;cursor: pointer;
-                width: 5px;height: 5px;background-color: #fff;
-                border-radius: 50%;margin-right: 15px;
-                &:last-child{margin-right: 0;}
-                &.swiper-pagination-bullet-active{
-                    width: 10px;height: 10px;
-                }
-            }
+.main-visual {
+  .control {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    @include flex(center, $a: center, $d: row);
+    .page-box {
+      @include flex(center, $a: center, $d: row);
+      height: 38px;
+      padding: 0 30px;
+      border-radius: 19px;
+      background-color: rgba(51, 51, 51, 0.2);
+      margin-right: 10px;
+      z-index: 10;
+      .swiper-pagination-bullet {
+        display: inline-block;
+        cursor: pointer;
+        width: 5px;
+        height: 5px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-right: 15px;
+        &:last-child {
+          margin-right: 0;
         }
-        button{
-            display: inline-block;width: 38px;height: 38px;
-            border-radius: 50%;background-color: rgba(51, 51, 51, 0.2);
-            background-image: url(../img/arrow_banner_left.svg);
-            background-repeat: no-repeat;
-            background-size: 7px auto;
-            background-position: center;
-            margin-right: 5px;
-            z-index: 10;
-            :last-child{margin-right: 0;}
-            &.next{transform: rotate(180deg);}
+        &.swiper-pagination-bullet-active {
+          width: 10px;
+          height: 10px;
         }
-
+      }
     }
+    button {
+      display: inline-block;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background-color: rgba(51, 51, 51, 0.2);
+      background-image: url(../img/arrow_banner_left.svg);
+      background-repeat: no-repeat;
+      background-size: 7px auto;
+      background-position: center;
+      margin-right: 5px;
+      z-index: 10;
+      :last-child {
+        margin-right: 0;
+      }
+      &.next {
+        transform: rotate(180deg);
+      }
+    }
+  }
 }
 
 /* 퀵 링크 */
-.quick-link-box{
-    width: 100%;height: 130px;border-bottom: 1px solid $bd-color;
-    .content-box{
-        height: 100%;
-        @include flex();        
-        li{            
-            flex: 1;position: relative;text-align: center;
-            &::after{
-                @include after(1px,37px);
-                right: 0;
-                top:50%;margin-top: -18px;
-                background-color: #dbdbdb;
-            }    
-            &:last-child::after{display: none;}                    
-            a{
-                display: inline-block;
-                background-repeat: no-repeat;
-                background-position: left center;
-                height: 130px;line-height: 130px;
-                @include font($s:18px,$w:bold,$c:#000)
-            }
-            .ic1{
-                padding-left: 75px;
-                background-image: url(../img/icon_main_hellotv.svg);
-                background-size: 60px auto;
-            }
-            .ic2{
-                padding-left: 79px;
-                background-image: url(../img/icon_main_internet.svg);
-                background-size: 60px auto;
-            }
-            .ic3{
-                padding-left: 78px;
-                background-image: url(../img/icon_main_mobile.svg);
-                background-size: 61px auto;
-            }
-            .ic4{
-                padding-left: 78px;
-                background-image: url(../img/icon_main_rental.svg);
-                background-size: 64px auto;
-            }
-        }
+.quick-link-box {
+  width: 100%;
+  height: 130px;
+  border-bottom: 1px solid $bd-color;
+  .content-box {
+    height: 100%;
+    @include flex();
+    li {
+      flex: 1;
+      position: relative;
+      text-align: center;
+      &::after {
+        @include after(1px, 37px);
+        right: 0;
+        top: 50%;
+        margin-top: -18px;
+        background-color: #dbdbdb;
+      }
+      &:last-child::after {
+        display: none;
+      }
+      a {
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: left center;
+        height: 130px;
+        line-height: 130px;
+        @include font($s: 18px, $w: bold, $c: #000);
+      }
+      .ic1 {
+        padding-left: 75px;
+        background-image: url(../img/icon_main_hellotv.svg);
+        background-size: 60px auto;
+      }
+      .ic2 {
+        padding-left: 79px;
+        background-image: url(../img/icon_main_internet.svg);
+        background-size: 60px auto;
+      }
+      .ic3 {
+        padding-left: 78px;
+        background-image: url(../img/icon_main_mobile.svg);
+        background-size: 61px auto;
+      }
+      .ic4 {
+        padding-left: 78px;
+        background-image: url(../img/icon_main_rental.svg);
+        background-size: 64px auto;
+      }
     }
+  }
 }
 
 /* 베스트상품 */
-.best-prod-tab{
-    .tab-list{
-        margin-bottom: 50px;
-        @include flex($j:center);
-        li{
-            @include lastMr0(102px);
-            button{
-                @include font($s:18px,$w:bold)
-                &.on{
-                    color:$p-color;
-                }
-            }            
+.best-prod-tab {
+  .tab-list {
+    margin-bottom: 50px;
+    @include flex($j: center);
+    li {
+      @include lastMr0(102px);
+      button {
+        @include font($s: 18px, $w: bold) &.on {
+          color: $p-color;
         }
-    };
-    .best-prod-wrap{
-        @include flex()
+      }
     }
-    .best-prod-box{
-        width:calc(50% - 20px);height: 280px;border-radius: 20px;
-        padding-left: 60px;background-color: #f3f3f3;
-        @include flex();
-        @include lastMr0(20px);
-        img{margin-right: 50px;}
-        .txt-info{
-            h3{
-                @include font($s:24px,$w:bold,$c:#000);
-                margin-bottom: 15px;
-            }
-            p{font-size: 18px;color: #000;}
-            .info{margin-bottom: 15px;}
-            .price{
-                @include font($s:30px,$w:bold,$c:$p-color)
-            }
-        }
+  }
+  .best-prod-wrap {
+    @include flex();
+  }
+  .best-prod-box {
+    width: calc(50% - 20px);
+    height: 280px;
+    border-radius: 20px;
+    padding-left: 60px;
+    background-color: #f3f3f3;
+    @include flex();
+    @include lastMr0(20px);
+    img {
+      margin-right: 50px;
     }
+    .txt-info {
+      h3 {
+        @include font($s: 24px, $w: bold, $c: #000);
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 18px;
+        color: #000;
+      }
+      .info {
+        margin-bottom: 15px;
+      }
+      .price {
+        @include font($s: 30px, $w: bold, $c: $p-color);
+      }
+    }
+  }
 }
-.main-btn-box{width:100%;text-align: center;margin-top: 30px;}
-.main-btn-more{
-    width:260px; border-radius: 50px;height:61px;border:1px solid #333;
-    text-align: center;line-height:61px;display:inline-block;background:#fff;
-    &.no-bd{
-        border:none;
-    }
-    span{
-        display: inline-block;padding-right: 32px;position: relative;
-        background: url(../img/arrow_btn.svg) right center no-repeat;
-        @include font($s:18px,$w:bold,$c:#000)
-    }
+.main-btn-box {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
-
+.main-btn-more {
+  width: 260px;
+  border-radius: 50px;
+  height: 61px;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 61px;
+  display: inline-block;
+  background: #fff;
+  &.no-bd {
+    border: none;
+  }
+  span {
+    display: inline-block;
+    padding-right: 32px;
+    position: relative;
+    background: url(../img/arrow_btn.svg) right center no-repeat;
+    @include font($s: 18px, $w: bold, $c: #000);
+  }
+}
 
 /* 렌탈결합 */
-.max-benefit-rental{background-color: #c3f6d3;
-    .rental-list{
-        @include flex($j:space-between);
-        .rental-box{
-            width: calc(33.3% - 20px);height: 370px;background-color: #fff;border-radius: 20px;
-            padding: 35px 0 30px 0;
-            @include lastMr0(20px);
-            @include flex($j:space-between,$a:center,$d:column);
-            .ic-img{
-                @include flex($j:center);
-                @include font($s:26px,$w:bold,$c:$p-color);                
-                span{
-                    display: inline-block;margin-left: 9px;margin-top: -5px;
-                }
-            }
-            .plus-price{
-                display: inline-block;height: 48px;padding: 0 12px;border:1px solid $p-color;line-height: 48px;
-                @include font($s:22px,$w:bold,$c:$p-color)
-            }
+.max-benefit-rental {
+  background-color: #c3f6d3;
+  .rental-list {
+    @include flex($j: space-between);
+    .rental-box {
+      width: calc(33.3% - 20px);
+      height: 370px;
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 35px 0 30px 0;
+      @include lastMr0(20px);
+      @include flex($j: space-between, $a: center, $d: column);
+      .ic-img {
+        @include flex($j: center);
+        @include font($s: 26px, $w: bold, $c: $p-color);
+        span {
+          display: inline-block;
+          margin-left: 9px;
+          margin-top: -5px;
         }
+      }
+      .plus-price {
+        display: inline-block;
+        height: 48px;
+        padding: 0 12px;
+        border: 1px solid $p-color;
+        line-height: 48px;
+        @include font($s: 22px, $w: bold, $c: $p-color);
+      }
     }
+  }
+}
+
+/* 가입절차 */
+.main-join-step {
+  @include flex($j: space-between);
+  .step-box {
+    width: calc(20% - 30px);
+    height: 250px;
+    background-color: #f8f9fb;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+    padding: 25px 0;
+    @include flex($j: space-between, $d: column);
+    @include lastMr0(20px);
+    .num {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ed174d;
+      color: #fff;
+      line-height: 40px;
+      text-align: center;
+      @include font($s: 19px, $w: bold, $c: #fff);
+    }
+    img {
+      width: 75px;
+    }
+    img.step4 {
+      width: 76px;
+    }
+    img.step5 {
+      width: 74px;
+    }
+    .tit {
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
 }
