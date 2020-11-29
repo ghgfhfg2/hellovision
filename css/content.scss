@@ -266,7 +266,62 @@
     }
     .tit {
       font-size: 16px;
-      font-weight: normal;
+      font-weight: 600;
+    }
+  }
+}
+
+/* 제휴카드 혜택 */
+.card-benefit-section {
+  background-color: #f8f9fb;
+}
+.card-benefit-wrap {
+  @include flex($j: space-between);
+  padding: 44px 45px;
+  .card-box {
+    @include flex();
+    width: calc(50% - 20px);
+    height: 300px;
+    border-radius: 20px;
+    background-color: #fff;
+    img {
+      margin-right: 40px;
+    }
+    .txt-box {
+      h3 {
+        @include font($s: 18px, $w: bold, $c: #333);
+        margin-bottom: 4px;
+      }
+      p {
+        @include font($s: 15px, $w: 600, $c: $p-color);
+        margin-bottom: 15px;
+      }
+      li {
+        font-size: 15px;
+        color: #333;
+        padding: 10px 25px;
+        border-radius: 21px;
+        background-color: #f2f2f2;
+        margin-bottom: 6px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        @include flex($j: space-between, $a: center);
+        .price {
+          position: relative;
+        }
+        .line {
+          display: inline-block;
+          position: relative;
+          width: 39px;
+          height: 1px;
+          background-color: #333;
+          margin: 0 10px;
+        }
+        .save {
+          font-weight: bold;
+        }
+      }
     }
   }
 }

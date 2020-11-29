@@ -24,7 +24,6 @@ function comTab(el, dp) {
   var target = document.querySelector(el);
   var tab = target.querySelectorAll(".tab-list button");
   var con = target.querySelectorAll(".tab-content");
-  console.log(tab[0].dataset.tab);
   for (var i = 0; i < tab.length; i++) {
     tab[i].addEventListener("click", function () {
       for (var j = 0; j < con.length; j++) {

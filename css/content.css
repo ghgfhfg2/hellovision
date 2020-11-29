@@ -326,4 +326,69 @@
 
 .main-join-step .step-box .tit {
   font-size: 16px;
-  font-weight: normal; }
+  font-weight: 600; }
+
+/* 제휴카드 혜택 */
+.card-benefit-section {
+  background-color: #f8f9fb; }
+
+.card-benefit-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 44px 45px; }
+
+.card-benefit-wrap .card-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: calc(50% - 20px);
+  height: 300px;
+  border-radius: 20px;
+  background-color: #fff; }
+
+.card-benefit-wrap .card-box img {
+  margin-right: 40px; }
+
+.card-benefit-wrap .card-box .txt-box h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px; }
+
+.card-benefit-wrap .card-box .txt-box p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ed174d;
+  margin-bottom: 15px; }
+
+.card-benefit-wrap .card-box .txt-box li {
+  font-size: 15px;
+  color: #333;
+  padding: 10px 25px;
+  border-radius: 21px;
+  background-color: #f2f2f2;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; }
+
+.card-benefit-wrap .card-box .txt-box li:last-child {
+  margin-bottom: 0; }
+
+.card-benefit-wrap .card-box .txt-box li .price {
+  position: relative; }
+
+.card-benefit-wrap .card-box .txt-box li .line {
+  display: inline-block;
+  position: relative;
+  width: 39px;
+  height: 1px;
+  background-color: #333;
+  margin: 0 10px; }
+
+.card-benefit-wrap .card-box .txt-box li .save {
+  font-weight: bold; }
