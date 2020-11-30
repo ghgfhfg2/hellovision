@@ -10,13 +10,13 @@
   display: none; }
 
 /* 인풋 */
-.mobile-img {
+.mobile-img, .mo-el {
   display: none; }
 
 @media all and (max-width: 640px) {
-  .pc-img {
+  .pc-img, .pc-el {
     display: none; }
-  .mobile-img {
+  .mobile-img, .mo-el {
     display: block; } }
 
 .fon-p-color {

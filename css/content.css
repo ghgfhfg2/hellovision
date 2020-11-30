@@ -602,6 +602,8 @@
     margin-bottom: 30px; }
   .main-visual .control {
     bottom: 20px; }
+  .main-visual img {
+    width: 100%; }
   .quick-link-box {
     height: auto; }
   .quick-link-box .content-box {
@@ -645,4 +647,18 @@
   .best-prod-tab .best-prod-wrap .best-prod-box .txt-info .info {
     margin-bottom: 8px; }
   .best-prod-tab .best-prod-wrap .best-prod-box .txt-info .price {
-    font-size: 12px; } }
+    font-size: 22px; }
+  .max-benefit-rental h2.main-h2 {
+    line-height: 1.3; }
+  .max-benefit-rental .rental-list {
+    flex-direction: column; }
+  .max-benefit-rental .rental-list .rental-box {
+    width: 100%;
+    height: auto;
+    padding: 25px 0;
+    margin-right: 0;
+    margin-bottom: 20px; }
+  .max-benefit-rental .rental-list .rental-box:last-child {
+    margin-bottom: 0; }
+  .max-benefit-rental .rental-list .rental-box img {
+    margin: 15px 0; } }

@@ -12,7 +12,7 @@
 @import "swiper.css";
 
 .main-h2 {
-  @include h2;
+  @include h2();
 }
 .main-section {
   width: 100%;
@@ -456,6 +456,7 @@
   .main-h2{font-size: 26px;margin-bottom: 30px;}
   .main-visual{
     .control{bottom: 20px;}
+    img{width: 100%;}
   } 
   .quick-link-box{
     height: auto;
@@ -502,10 +503,26 @@
           }
           p{font-size: 12px;}
           .info{margin-bottom: 8px;}
-          .price{font-size: 12px;}
+          .price{font-size: 22px;}
         } 
       }
     }
   }
+
+  .max-benefit-rental{
+    h2.main-h2{line-height: 1.3;}
+    .rental-list{
+      flex-direction: column;      
+      .rental-box{
+        width: 100%;height: auto;padding: 25px 0;margin-right: 0;
+        @include lastMb0(20px);
+        img{          
+          margin: 15px 0;
+        }
+      }
+    } 
+  }
+
+
 }
 
