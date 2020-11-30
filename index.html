@@ -2,7 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi" name="viewport">
     <title>Document</title>
     <link rel="stylesheet" href="./css/basic.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -82,24 +82,23 @@
                 <button type="button" class="prev"></button>
                 <button type="button" class="next"></button>
             </div>
-        </div>
-        <script>
-            new Swiper('.main-visual-slide', {
-                loop: true,
-                navigation: {
-                prevEl: '.prev',
-                nextEl: '.next',
-                },
-				pagination: {
-					el:'.page-box',
-					clickable: true,
-				},
-				autoplay: {
-				delay: 5000,
-				},
-				a11y: false,
-			});       
-        </script>
+            <script>
+                new Swiper('.main-visual-slide', {
+                    loop: true,
+                    navigation: {
+                    prevEl: '.prev',
+                    nextEl: '.next',
+                    },
+                    pagination: {
+                        el:'.page-box',
+                        clickable: true,
+                    },
+                    autoplay: {
+                    delay: 5000,
+                    },
+                    a11y: false,
+                });       
+            </script>
       </div>
       <!-- 퀵 링크 -->
       <div class="quick-link-box">
