@@ -19,14 +19,16 @@
       <!--상단영역 -->
       <header id="header">
         <div class="gnb-wrap content-box">
-          <a href="#" class="top-logo">
-            <img
-              src="./img/logo_LGhellovision.png"
-              alt="LG HelloVision"
-              class="pc-img"
-            />
-            <img src="./img/logo_LGhellovision2x.png" class="mobile-img" />
-          </a>
+          <div class="logo-box">
+            <a href="#" class="top-logo">
+                <img
+                src="./img/logo_LGhellovision.png"
+                alt="LG HelloVision"
+                class="pc-img"
+                />
+                <img src="./img/logo_LGhellovision2x.png" class="mobile-img" />
+            </a>
+          </div>
           <div id="gnb-box">
             <ul class="gnb">
               <li><a href="#">TV</a></li>
@@ -41,16 +43,37 @@
         </div>
       </header>
       <!--//상단영역 -->
+      <!-- 오른쪽 고정배너 -->
+      <div class="right-fix-banner">
+          <ul>
+              <li>
+                  <a href="#" class="ic1">
+                      <span>가입문의<br><span class="fon-p-color">1666-4465</span></span>
+                  </a>
+              </li>
+              <li><a href="#" class="ic2"><span>카카오톡<br>바로상담</span></a></li>
+              <li><a href="#" class="ic3"><span>네이버톡톡<br>바로상담</span></a></li>
+              <li><a href="#" class="ic4"><span>설치가능<br>지역정보</span></a></li>
+          </ul>
+          <button type="button" class="btn-top"><span>TOP</span></button>
+      </div>
+      <!-- 오른쪽 고정배너 -->
       <!-- 컨텐츠 영역 -->
       <div id="container">
         <div class="main-visual">
             <div class="swiper-container main-visual-slide">
                 <ul class="swiper-wrapper">
-                    <li class="swiper-slide">
+                    <!-- <li class="swiper-slide">
                         <a href="#"><img src="./img/main_banner_01.png" alt=""></a>
                     </li>
                     <li class="swiper-slide">
                         <a href="#"><img src="./img/main_banner_01.png" alt=""></a>
+                    </li> -->
+                    <li class="swiper-slide">
+                        <a href="#"><img src="./img/main_banner_m_01.png" alt=""></a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#"><img src="./img/main_banner_m_01.png" alt=""></a>
                     </li>
                 </ul>
             </div>
@@ -369,6 +392,55 @@
                 </div>
             </div>            
           </div>
+          <!-- 상담신청 -->
+          <div class="foot-consulting">
+              <div class="content-box consulting-box">
+                  <div class="call">
+                      <h3>상담이 필요하세요?</h3>
+                      <p>1666-4465</p>
+                  </div>
+                  <div class="input-box">
+                      <input type="text" placeholder="이름">
+                      <input type="text" placeholder="연락처"">
+                      <input type="text" placeholder="상담가능시간">
+                      <input type="submit" value="상담신청">
+                  </div>
+                  <div class="agree-box">
+                      <input type="checkbox" id="agree-check">
+                      <label for="agree-check"></label>
+                      <div class="view-box">
+                          <span>개인정보 활용동의</span><br>
+                          <button type="button" onclick="toggle('#agreeLayer')">[내용보기]</button>
+                          <div class="agree-info-layer" id="agreeLayer" style="display: none;">
+                              <button type="button" onclick="hide('#agreeLayer')"></button>
+                              <h4>개인정보 활용동의</h4>
+                              <table class="tbl-basic no-bd td-left">
+                                  <caption></caption>
+                                  <colgroup>
+                                    <col style="width:50%">  
+                                    <col>
+                                  </colgroup>
+                                  <tbody>
+                                      <tr>
+                                          <th scope="row">개인정보의 수집 및 이용목적</th>
+                                          <td>렌탈 온라인 신청, 접수</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">수집하는 개인정보 항목</th>
+                                        <td>성명, 연락처(휴대폰 번호)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">개인정보 보유 및 이용기간</th>
+                                        <td>개인정보 수집 및 이용목적이 달성된 후에는 예외없이 해당 정보를 파기합니다.</td>
+                                    </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- //상담신청 -->
       </footer>
       <!-- //하단 영역 -->
     </div>

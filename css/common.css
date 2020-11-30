@@ -6,6 +6,10 @@
 /* Version: 1.0 / day: 2020-11 
 =========================================================================
 */
+.com-tab-box .tab-content {
+  display: none; }
+
+/* 인풋 */
 .mobile-img {
   display: none; }
 
@@ -14,3 +18,164 @@
     display: none; }
   .mobile-img {
     display: block; } }
+
+.fon-p-color {
+  color: #ed174d !important; }
+
+/* 기본 테이블 */
+.th-left tbody th {
+  text-align: left; }
+
+.td-left tbody td {
+  text-align: left; }
+
+.td-center tbody td,
+.th-center tbody th {
+  text-align: center; }
+
+.td-left2 tbody th + td, .td-left2 tbody tr td:first-child {
+  text-align: left; }
+
+/* th 다음에 오는 td만 왼쪽정렬 */
+.td-left2 tbody td[rowspan] + td {
+  text-align: left; }
+
+.td-left3 tbody tr td:first-child + td {
+  text-align: left; }
+
+.td-right tbody td, .td-right tfoot td {
+  text-align: right; }
+
+.tbl-basic th, .tbl-basic td {
+  border: 0; }
+
+.tbl-basic {
+  width: 100%;
+  border-spacing: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #d5d5d5;
+  border-collapse: collapse; }
+
+.tbl-basic tr {
+  text-align: center; }
+
+.tbl-basic thead th {
+  padding: 10px 0;
+  color: #333;
+  line-height: 18px;
+  background: #d5d5d5;
+  border-bottom: 1px solid #a5a5a5;
+  border-left: 1px solid #a5a5a5; }
+
+.tbl-basic thead th:first-child {
+  border-left: 0; }
+
+.tbl-basic thead tr th.fnone {
+  border-left: 0 !important; }
+
+.tbl-basic thead th[colspan] {
+  border-bottom: 1px solid #a5a5a5; }
+
+/* th가 두줄이상으로 합쳐질때 border-bottom 값 */
+.tbl-basic thead th[rowspan] {
+  border-right: 1px solid #a5a5a5; }
+
+/* th가 두줄이상으로 합쳐질때 border-right 값 */
+.tbl-basic thead th[rowspan]:last-child {
+  border-right: 0; }
+
+.tbl-basic thead th.none {
+  border-bottom: 1px solid #a5a5a5; }
+
+/* th가 한줄일때 class추가 */
+.tbl-basic tbody th {
+  padding: 10px;
+  font-weight: bold;
+  background: #fafafa;
+  border-left: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5; }
+
+.tbl-basic tbody th:first-child {
+  border-left: 0; }
+
+.tbl-basic tbody th[rowspan] {
+  border-right: 1px solid #d5d5d5; }
+
+.tbl-basic tbody tr:first-child th, .tbl-basic tbody tr:first-child td {
+  border-top: 1px solid #d5d5d5; }
+
+.tbl-basic tbody td {
+  padding: 10px;
+  background: #fff;
+  border-left: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5; }
+
+.tbl-basic tbody td:first-child {
+  border-left: 0; }
+
+.tbl-basic tbody td[rowspan] {
+  border-right: 1px solid #d5d5d5; }
+
+.tbl-basic tbody td[rowspan]:last-child {
+  border-right: 0; }
+
+.tbl-basic tbody td + th {
+  border-left: 1px solid #d5d5d5; }
+
+.tbl-basic tfoot th {
+  padding: 10px 5px;
+  background: #fafafa;
+  border-right: 1px solid #d5d5d5; }
+
+.tbl-basic tfoot td {
+  padding: 10px 5px;
+  border-left: 1px solid #d5d5d5; }
+
+.tbl-basic tfoot td[colspan] {
+  border-left: 0; }
+
+.tbl-basic tbody th.line, .tbl-basic tbody td.line, .tbl-basic tbody tr.line td, .tbl-basic tbody tr.line th {
+  border-bottom: 1px dashed #d5d5d5; }
+
+.tbl-basic thead tr th.h-line, .tbl-basic tbody th.h-line {
+  border-left: 1px solid #d5d5d5; }
+
+.tbl-basic tr.bg th, .tbl-basic tr.bg td, .tbl-basic th.bg, .tbl-basic td.bg {
+  background: #f6f6f6 !important; }
+
+.thead-bg thead th {
+  background: #fafafa; }
+
+.tbl-basic.no-bd tbody td, .tbl-basic.no-bd tbody th, .tbl-basic.no-bd thead td, .tbl-basic.no-bd thead th {
+  border-left: none;
+  border-right: none; }
+
+/* 인풋 커스텀 */
+input[type=text], input[type=number] {
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+  border: 1px solid #d5d5d5;
+  border-width: 1px;
+  background-color: #fff; }
+
+input[type=text]::placeholder, input[type=number]::placeholder {
+  color: #999; }
+
+input[type=checkbox] {
+  position: absolute;
+  height: 0;
+  width: 0; }
+
+input[type=checkbox] + label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d5d5d5;
+  border-width: 2px;
+  background-color: #fff; }
+
+input[type=checkbox]:checked + label {
+  background: #ed174d url(../img/icon_check_on.svg) center no-repeat;
+  background-size: 80% auto; }
