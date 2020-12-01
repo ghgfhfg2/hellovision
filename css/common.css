@@ -11,16 +11,123 @@
 
 /* 인풋 */
 .mobile-img, .mo-el {
-  display: none; }
+  display: none !important; }
 
 @media all and (max-width: 640px) {
   .pc-img, .pc-el {
-    display: none; }
+    display: none !important; }
   .mobile-img, .mo-el {
-    display: block; } }
+    display: block !important; } }
 
 .fon-p-color {
   color: #ed174d !important; }
+
+h2.sub-h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 90px;
+  margin-bottom: 80px;
+  text-align: center; }
+
+h3.big-h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 25px; }
+
+.li-style1 li {
+  padding-left: 11px;
+  position: relative;
+  margin-bottom: 7px; }
+
+.li-style1 li:last-child {
+  margin-bottom: 0; }
+
+.li-style1 li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 0;
+  top: 9px;
+  background-color: #d5d5d5; }
+
+p.line-30 {
+  margin: 7px 0; }
+
+/* 레이업팝업 */
+.com-layer-style1 {
+  position: absolute;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  z-index: 50;
+  background-color: #fff;
+  border: solid 2px #d5d5d5;
+  padding: 20px 40px 15px 15px; }
+
+.com-layer-style1 .btn-close {
+  position: absolute;
+  display: inline-block;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon_popup_close.svg) center no-repeat; }
+
+/* 탭스타일 */
+.tab-style-1 .tab-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 50px; }
+
+.tab-style-1 .tab-list li {
+  width: 260px;
+  margin-right: 10px; }
+
+.tab-style-1 .tab-list li:last-child {
+  margin-right: 0; }
+
+.tab-style-1 .tab-list li button {
+  font-size: 22px;
+  font-weight: bold;
+  color: #666;
+  padding-bottom: 45px;
+  position: relative;
+  width: 100%; }
+
+.tab-style-1 .tab-list li button.on {
+  color: #ed174d; }
+
+.tab-style-1 .tab-list li button::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 12px;
+  left: 0;
+  bottom: 14px;
+  border-radius: 7px;
+  background-color: #d5d5d5; }
+
+.tab-style-1 .tab-list li button.on::before {
+  background-color: #ed174d; }
+
+.tab-style-1 .tab-list li button.on::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  bottom: 0;
+  margin-left: -12px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid #ed174d; }
 
 /* 기본 테이블 */
 .th-left tbody th {
@@ -179,3 +286,15 @@ input[type=checkbox] + label {
 input[type=checkbox]:checked + label {
   background: #ed174d url(../img/icon_check_on.svg) center no-repeat;
   background-size: 80% auto; }
+
+@media all and (max-width: 640px) {
+  h2.sub-h2 {
+    margin: 35px 0; }
+  h3.big-h3 {
+    font-size: 24px;
+    margin-bottom: 30px; }
+  .tab-style-1 .tab-list {
+    margin-bottom: 45px; }
+  .tab-style-1 .tab-list li button {
+    font-size: 16px;
+    padding-bottom: 32px; } }

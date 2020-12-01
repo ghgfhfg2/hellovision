@@ -26,6 +26,12 @@ body,
   margin: 0 auto;
   position: relative; }
 
+.sub-content-box {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 100px; }
+
 /* 상단영역 */
 #header {
   height: 100px;
@@ -37,6 +43,41 @@ body,
   justify-content: space-between;
   align-items: center;
   flex-direction: row; }
+
+.gnb-wrap .btn-total-menu {
+  display: inline-block;
+  width: 24px;
+  height: 22px;
+  position: relative; }
+
+.gnb-wrap .btn-total-menu .line {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.gnb-wrap .btn-total-menu .line::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 11px;
+  background-color: #333; }
+
+.gnb-wrap .btn-total-menu .line::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 22px;
+  background-color: #333; }
 
 .gnb {
   display: flex;
@@ -50,6 +91,134 @@ body,
 .gnb li a {
   font-size: 18px;
   font-weight: bold; }
+
+/* 모바일 전체메뉴 */
+.total-menu-box {
+  position: fixed;
+  width: calc(100% - 80px);
+  height: 100vh;
+  right: -100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  transition: all 0.2s; }
+
+.total-menu-box.on {
+  right: 0; }
+
+.total-menu-box .top-box {
+  width: 100%;
+  height: 70px;
+  background-color: #ed174d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 20px; }
+
+.total-menu-box .top-box .ic-home {
+  display: inline-block;
+  padding-left: 34px;
+  height: 24px;
+  line-height: 24px;
+  background: url(../img/icon_m_home.svg) left center no-repeat;
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff; }
+
+.total-menu-box .top-box .btn-close {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative; }
+
+.total-menu-box .top-box .btn-close::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  left: 0;
+  top: 9px; }
+
+.total-menu-box .top-box .btn-close::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  left: 0;
+  top: 9px; }
+
+.total-menu-box .mo-lnb {
+  overflow: auto;
+  height: calc(100% - 70px); }
+
+.total-menu-box .mo-lnb .depth-1 > li > a {
+  display: block;
+  width: 100%;
+  padding: 0 30px;
+  height: 60px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000; }
+
+.total-menu-box .mo-lnb .depth-1 > li > a.on {
+  font-weight: bold;
+  color: #ed174d; }
+
+.total-menu-box .mo-lnb .depth-1 > li > a.on.has-sub::after {
+  background-image: url(../img/icon_m_arrow_menu01.svg); }
+
+.total-menu-box .mo-lnb .depth-1 > li > a.on + .depth-2 {
+  display: block; }
+
+.total-menu-box .mo-lnb .depth-1 > li > a.has-sub::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 15px;
+  height: 8px;
+  right: 30px;
+  top: 50%;
+  margin-top: -4px;
+  background: url(../img/icon_m_arrow_menu03.svg) center no-repeat; }
+
+.total-menu-box .mo-lnb .depth-1 .depth-2 {
+  background-color: #f8f9fb;
+  display: none; }
+
+.total-menu-box .mo-lnb .depth-1 .depth-2 > li > a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  padding: 0 39px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row; }
+
+.total-menu-box .mo-lnb .depth-1 .depth-2 > li > a::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 8px;
+  height: 15px;
+  right: 39px;
+  top: 50%;
+  margin-top: -7px;
+  background: url(../img/icon_m_arrow_menu02.svg) center no-repeat; }
 
 /* 하단영역 */
 #footer {
@@ -156,7 +325,7 @@ body,
     overflow: hidden; }
   #header {
     height: auto; }
-  .content-box {
+  .content-box, .sub-content-box {
     width: 100%;
     padding: 0 20px; }
   .gnb-wrap {

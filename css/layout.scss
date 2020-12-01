@@ -26,6 +26,12 @@ body,
   margin: 0 auto;
   position: relative;
 }
+.sub-content-box{
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 100px;
+}
 
 /* 상단영역 */
 #header {
@@ -35,6 +41,22 @@ body,
 .gnb-wrap {
   height: 100%;
   @include flex(space-between, center, row);
+  .btn-total-menu{
+    display: inline-block;width: 24px;height: 22px;position: relative;   
+    .line{
+      display: inline-block;
+      width: 100%;height: 2px;background-color: #333;
+      position: absolute;left: 0;top: 0;
+      &::before{
+        @include before(100%,2px);
+          left: 0;top:11px;background-color: #333;      
+      }
+      &::after{
+        @include after(100%,2px);
+          left: 0;top:22px;background-color: #333;  
+      }
+    }
+  }
 }
 .gnb {
   @include flex();
@@ -46,6 +68,83 @@ body,
     }
   }
 }
+
+/* 모바일 전체메뉴 */
+.total-menu-box{
+  position: fixed;width: calc(100% - 80px);height: 100vh;
+  right: -100%;top: 0;
+  background-color: #fff;z-index: 100;
+  transition: all 0.2s;
+  &.on{
+    right: 0;
+  }
+  .top-box{
+    width: 100%;height: 70px;background-color: #ed174d;
+    @include flex($j:space-between);padding: 0 20px;
+    .ic-home{
+      display: inline-block;padding-left: 34px;
+      height: 24px;line-height: 24px;
+      background: url(../img/icon_m_home.svg) left center no-repeat;
+      @include font($s:16px,$c:#fff);
+    }
+    .btn-close{
+      display: inline-block;width: 20px;height: 20px;position: relative;
+      &::before{
+        @include before(100%,2px);
+        background-color: #fff;transform: rotate(45deg);
+        left: 0;top: 9px;
+      }
+      &::after{
+        @include after(100%,2px);
+        background-color: #fff;transform: rotate(-45deg);
+        left: 0;top: 9px;
+      }
+    }
+  }
+
+  .mo-lnb{
+    overflow: auto;
+    height: calc(100% - 70px);
+    .depth-1{
+      >li>a{
+        display: block;width: 100%;
+        padding:0 30px;height: 60px;position: relative;
+        @include flex();
+        @include font($s:16px,$c:#000);
+        &.on{
+          font-weight: bold;color: $p-color;
+          &.has-sub::after{
+            background-image: url(../img/icon_m_arrow_menu01.svg);
+          }
+          + .depth-2{
+            display: block;
+          }
+        }        
+        &.has-sub::after{
+          @include after(15px,8px);
+          right: 30px;top:50%;margin-top: -4px;
+          background: url(../img/icon_m_arrow_menu03.svg) center no-repeat;
+        }
+      }
+      .depth-2{
+        background-color: #f8f9fb;
+        display: none;       
+        >li>a{
+          display: block;height: 50px;line-height: 50px;
+          width: 100%;
+          padding:0 39px;position: relative;
+          @include flex();
+          &::after{
+            @include after(8px,15px);
+            right: 39px;top:50%;margin-top: -7px;
+            background: url(../img/icon_m_arrow_menu02.svg) center no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 /* 하단영역 */
 #footer {
@@ -130,7 +229,7 @@ body,
   #header {
     height: auto;
   }
-  .content-box {
+  .content-box,.sub-content-box {
     width: 100%;
     padding: 0 20px;
   }
@@ -140,7 +239,8 @@ body,
     .logo-box {
       width: 100%;
       height: 60px;
-      @include flex($j: space-between) .top-logo {
+      @include flex($j: space-between);
+       .top-logo {
         .mobile-img {
           width: 141px;
         }

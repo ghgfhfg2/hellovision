@@ -18,6 +18,14 @@ function toggle(el, dp) {
     target.style.display = "none";
   }
 }
+function addOn(el){
+  var target = document.querySelector(el);
+  target.classList.add('on');
+}
+function removeOn(el){
+  var target = document.querySelector(el);
+  target.classList.remove('on');
+}
 
 /* tab */
 function comTab(el, dp) {

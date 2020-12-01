@@ -31,6 +31,9 @@
               />
               <img src="./img/logo_LGhellovision2x.png" class="mobile-img" />
             </a>
+            <button type="button" class="btn-total-menu mo-el" onclick="addOn('.total-menu-box')">
+                <span class="line"></span>
+            </button>
           </div>
           <div id="gnb-box">
             <ul class="gnb">
@@ -44,7 +47,48 @@
             </ul>
           </div>
         </div>
+        <div class="total-menu-box">
+            <div class="top-box">
+                <a href="#" class="ic-home">HOME</a>
+                <button type="button" class="btn-close" onclick="removeOn('.total-menu-box')"></button>
+            </div>
+            <div class="mo-lnb">
+                <ul class="depth-1">
+                    <li>
+                        <a href="#" class="has-sub">TV</a>
+                        <ul class="depth-2">
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-sub">TV</a>
+                        <ul class="depth-2">
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                            <li>
+                                <a href="#">TV상품</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
       </header>
+      <script>
+          var lnbDepth1 = document.querySelectorAll('.total-menu-box .depth-1 .has-sub');
+          for(var i=0; i<lnbDepth1.length; i++){
+              lnbDepth1[i].addEventListener('click', function(){
+                this.classList.toggle('on');
+                 console.log(this);
+              })
+          }
+      </script>
       <!--//상단영역 -->
       <!-- 오른쪽 고정배너 -->
       <div class="right-fix-banner">

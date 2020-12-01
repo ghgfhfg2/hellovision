@@ -28,7 +28,7 @@
 body {
   text-align: left;
   font-size: 14px;
-  color: #555;
+  color: #666;
   line-height: 1.6;
   font-family: "NotoSans", sans-serif;
   font-weight: 400;
@@ -164,7 +164,7 @@ a,
 
 a {
   text-decoration: none;
-  color: #555;
+  color: #666;
   color: inherit; }
 
 hr {
