@@ -31,8 +31,12 @@
               />
               <img src="./img/logo_LGhellovision2x.png" class="mobile-img" />
             </a>
-            <button type="button" class="btn-total-menu mo-el" onclick="addOn('.total-menu-box')">
-                <span class="line"></span>
+            <button
+              type="button"
+              class="btn-total-menu mo-el"
+              onclick="addOn('.total-menu-box')"
+            >
+              <span class="line"></span>
             </button>
           </div>
           <div id="gnb-box">
@@ -48,45 +52,51 @@
           </div>
         </div>
         <div class="total-menu-box">
-            <div class="top-box">
-                <a href="#" class="ic-home">HOME</a>
-                <button type="button" class="btn-close" onclick="removeOn('.total-menu-box')"></button>
-            </div>
-            <div class="mo-lnb">
-                <ul class="depth-1">
-                    <li>
-                        <a href="#" class="has-sub">TV</a>
-                        <ul class="depth-2">
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="has-sub">TV</a>
-                        <ul class="depth-2">
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                        </ul>
-                    </li>
+          <div class="top-box">
+            <a href="#" class="ic-home">HOME</a>
+            <button
+              type="button"
+              class="btn-close"
+              onclick="removeOn('.total-menu-box')"
+            ></button>
+          </div>
+          <div class="mo-lnb">
+            <ul class="depth-1">
+              <li>
+                <a href="#" class="has-sub">TV</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
                 </ul>
-            </div>
+              </li>
+              <li>
+                <a href="#" class="has-sub">TV</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
       <script>
-          var lnbDepth1 = document.querySelectorAll('.total-menu-box .depth-1 .has-sub');
-          for(var i=0; i<lnbDepth1.length; i++){
-              lnbDepth1[i].addEventListener('click', function(){
-                this.classList.toggle('on');
-              })
-          }
+        var lnbDepth1 = document.querySelectorAll(
+          ".total-menu-box .depth-1 .has-sub"
+        );
+        for (var i = 0; i < lnbDepth1.length; i++) {
+          lnbDepth1[i].addEventListener("click", function () {
+            this.classList.toggle("on");
+          });
+        }
       </script>
       <!--//상단영역 -->
       <!-- 오른쪽 고정배너 -->
@@ -120,200 +130,359 @@
       <!-- 오른쪽 고정배너 -->
       <!-- 컨텐츠 영역 -->
       <div id="container">
-          <div class="sub-visual-box s-1-1">
-              <span>헬로비전 TV</span>
-          </div>
-        <div class="sub-content-box">
-            <div class="tab-style-1">
-                <ul class="tab-list">
-                    <li>
-                        <button type="button" class="on">TV상품</button>
-                    </li>
-                    <li>
-                        <button type="button">채널편성표</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="s1-1-box">
-                <dl class="tit">
-                    <dt>이코노미HD</dt>
-                    <dd>100개 채널</dd>
-                </dl>
-                <dl class="benefit">
-                    <dt>혜택</dt>
-                    <dd class="info">- 2대 신청시 <b>월 14,300원</b></dd>
-                    <dd>
-                        <img src="./img/icon_kidsnara.svg" alt="아이들나라">
-                    </dd>
-                </dl>
-                <dl class="price">
-                    <dt>3년약정<br>
-                        <span>월 11,000원</span></dt>
-                    <dd>
-                        <button class="btn-price-view" onclick="show('#layer1')">요금상세보기</button>
-                        <div class="com-layer-style1 price-view-layer" id="layer1">
-                            <button type="button" class="btn-close" onclick="hide('#layer1')"></button>
-                            <table class="tbl-basic">
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">설치비</th>
-                                        <td>22,000원</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">기본료</th>
-                                        <td>5,500원</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">장비료</th>
-                                        <td>5,500원</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </dd>
-                </dl>
-                <button type="button" class="btn-counsulting">상담신청</button>
-            </div>
-            <div class="s1-1-box">
-                <dl class="tit">
-                    <dt>베이직UHD</dt>
-                    <dd>180개 채널</dd>
-                </dl>
-                <dl class="benefit">
-                    <dt>혜택</dt>
-                    <dd class="info">- 2대 신청시 <b>월 20,900원</b></dd>
-                    <dd>
-                        <img src="./img/icon_kidsnara.svg" alt="아이들나라">
-                        <img src="./img/icon_youtube.svg" alt="유튜브">
-                        <img src="./img/icon_netfix.svg" alt="넷플릭스">
-                    </dd>
-                </dl>
-                <dl class="price">
-                    <dt>3년약정<br>
-                        <span>월 15,400원</span></dt>
-                    <dd>
-                        <button class="btn-price-view" onclick="show('#layer2')">요금상세보기</button>
-                        <div class="com-layer-style1 price-view-layer" id="layer2">
-                            <button type="button" class="btn-close" onclick="hide('#layer2')"></button>
-                            <table class="tbl-basic">
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">설치비</th>
-                                        <td>22,000원</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">기본료</th>
-                                        <td>5,500원</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">장비료</th>
-                                        <td>5,500원</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </dd>
-                </dl>
-                <button type="button" class="btn-counsulting">상담신청</button>
-            </div>
-            <div class="s1-1-box mb60">
-                <dl class="tit">
-                    <dt>프리미엄UHD</dt>
-                    <dd>100개 채널</dd>
-                </dl>
-                <dl class="benefit">
-                    <dt>혜택</dt>
-                    <dd class="info">- 2대 신청시 <b>월 24,200원</b></dd>
-                    <dd>
-                        <img src="./img/icon_kidsnara.svg" alt="아이들나라">
-                        <img src="./img/icon_youtube.svg" alt="유튜브">
-                        <img src="./img/icon_netfix.svg" alt="넷플릭스">
-                    </dd>
-                </dl>
-                <dl class="price">
-                    <dt>3년약정<br>
-                        <span>월 17,600원</span></dt>
-                    <dd>
-                        <button class="btn-price-view" onclick="show('#layer3')">요금상세보기</button>
-                        <div class="com-layer-style1 price-view-layer" id="layer3">
-                            <button type="button" class="btn-close" onclick="hide('#layer3')"></button>
-                            <table class="tbl-basic">
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">설치비</th>
-                                        <td>22,000원</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">기본료</th>
-                                        <td>5,500원</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">장비료</th>
-                                        <td>5,500원</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </dd>
-                </dl>
-                <button type="button" class="btn-counsulting">상담신청</button>
-            </div>
-            <ul class="li-style1">
-                <li>위 요금은 부가세가 포함된 최종 납부금액 입니다.</li>
-                <li>상품 가입 시 자동이체 결제가 필수입니다.</li>
-                <li>1년이내 해지시 설치비 부과, 약정내 해지시 할인반환금이 청구됩니다.</li>
-            </ul>
-            <div class="mt30 mb60">
-                <p class="line-30">< 방송 추가 요금 ></p>
-                <p class="line-30">기존 가입자 방송 추가 또는 신규 동시 가입</p>
-                <p class="line-30">1) HD방송 : 이코노미 5,500원 / 베이직 7,700원 / 프리미엄 8,800원</p>
-                <p class="line-30">2) UHD_SMT : 베이직 9,900원 / 프리미엄 11,000원</p>
-                <p class="line-30">약정기간내 해지시 사용기간에 따른 위약금이 청구 됩니다. (단, 이전설치불가 지역으로 이전시 할인반환금 면제 - 증빙서류 제출시)</p>
-            </div>
-
-            <div class="s1-1-kids">
-                <div class="tit-box">
-                    <div class="img-box">
-                        <img src="./img/img_sub_kids.png" alt="">
-                    </div>
-                    <div class="txt-box">
-                        <h3 class="s1-1-h3">U+ 아이들나라</h3>
-                        <p>
-                            U+ 아이들나라는 각 분야 전문가와 함께<br>
-                            영유아의 성장에 도움이 되도록 만든 아이를 위한 서비스 입니다.<br>
-                            이미 LG U+에서 120만 엄마 아빠가 검증한 No.1 키즈 서비스를
-                            이제 헬로tv 에서도 무료로 만나보세요. 
-                        </p>
-                    </div>
-                </div>
-                <div class="tv-list-box">
-                    <div class="tv-list">
-                        <img src="./img/img_kids_01.png" alt="">
-                        <h4>책 읽어주는 TV</h4>
-                        <p>LG U+ 자체제작 콘텐츠로 동화 연구가가 읽어주는<br>
-                            유명 아동 문학 수상작과 베스트셀러 600여편</p>
-                    </div>
-                    <div class="tv-list">
-                        <img src="./img/img_kids_02.png" alt="">
-                        <h4>웅진북클럽 TV <span>※ UHD전용</span></h4>
-                        <p>40만 이상의 부모가 선택한 웅진북클럽의 우수도서를<br>
-                            국내 최초로 TV 독점 제공</p>
-                    </div>
-                    <div class="tv-list">
-                        <img src="./img/img_kids_03.png" alt="">
-                        <h4>생생 체험학습</h4>
-                        <p>아이의 상상력을 키워주는 다양한 자연학습 영상으로<br>
-                            집에서도 공룡ㆍ동물ㆍ곤충 친구 만나기</p>
-                    </div>
-                    <div class="tv-list">
-                        <img src="./img/img_kids_04.png" alt="">
-                        <h4>영어유치원</h4>
-                        <p>‘YBM JET - Kids’ 기반의 레벨 테스트로<br>
-                            우리아이의 영어수준을 확인하고 수준별 콘텐츠 추천</p>
-                    </div>
-                </div>
-            </div>
+        <div class="sub-visual-box s-1-1">
+          <span>헬로비전 TV</span>
         </div>
+        <div class="sub-content-box">
+          <div class="tab-style-1">
+            <ul class="tab-list">
+              <li>
+                <button type="button" class="on">TV상품</button>
+              </li>
+              <li>
+                <button type="button">채널편성표</button>
+              </li>
+            </ul>
+          </div>
+          <div class="s1-1-box">
+            <dl class="tit">
+              <dt>이코노미HD</dt>
+              <dd>100개 채널</dd>
+            </dl>
+            <dl class="benefit">
+              <dt>혜택</dt>
+              <dd class="info">- 2대 신청시 <b>월 14,300원</b></dd>
+              <dd>
+                <img src="./img/icon_kidsnara.svg" alt="아이들나라" />
+              </dd>
+            </dl>
+            <dl class="price">
+              <dt>
+                3년약정<br />
+                <span>월 11,000원</span>
+              </dt>
+              <dd>
+                <button class="btn-price-view" onclick="show('#layer1')">
+                  요금상세보기
+                </button>
+                <div class="com-layer-style1 price-view-layer" id="layer1">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    onclick="hide('#layer1')"
+                  ></button>
+                  <table class="tbl-basic">
+                    <tbody>
+                      <tr>
+                        <th scope="row">설치비</th>
+                        <td>22,000원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">기본료</th>
+                        <td>5,500원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">장비료</th>
+                        <td>5,500원</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </dd>
+            </dl>
+            <button type="button" class="btn-counsulting">상담신청</button>
+          </div>
+          <div class="s1-1-box">
+            <dl class="tit">
+              <dt>베이직UHD</dt>
+              <dd>180개 채널</dd>
+            </dl>
+            <dl class="benefit">
+              <dt>혜택</dt>
+              <dd class="info">- 2대 신청시 <b>월 20,900원</b></dd>
+              <dd>
+                <img src="./img/icon_kidsnara.svg" alt="아이들나라" />
+                <img src="./img/icon_youtube.svg" alt="유튜브" />
+                <img src="./img/icon_netfix.svg" alt="넷플릭스" />
+              </dd>
+            </dl>
+            <dl class="price">
+              <dt>
+                3년약정<br />
+                <span>월 15,400원</span>
+              </dt>
+              <dd>
+                <button class="btn-price-view" onclick="show('#layer2')">
+                  요금상세보기
+                </button>
+                <div class="com-layer-style1 price-view-layer" id="layer2">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    onclick="hide('#layer2')"
+                  ></button>
+                  <table class="tbl-basic">
+                    <tbody>
+                      <tr>
+                        <th scope="row">설치비</th>
+                        <td>22,000원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">기본료</th>
+                        <td>5,500원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">장비료</th>
+                        <td>5,500원</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </dd>
+            </dl>
+            <button type="button" class="btn-counsulting">상담신청</button>
+          </div>
+          <div class="s1-1-box mb60">
+            <dl class="tit">
+              <dt>프리미엄UHD</dt>
+              <dd>100개 채널</dd>
+            </dl>
+            <dl class="benefit">
+              <dt>혜택</dt>
+              <dd class="info">- 2대 신청시 <b>월 24,200원</b></dd>
+              <dd>
+                <img src="./img/icon_kidsnara.svg" alt="아이들나라" />
+                <img src="./img/icon_youtube.svg" alt="유튜브" />
+                <img src="./img/icon_netfix.svg" alt="넷플릭스" />
+              </dd>
+            </dl>
+            <dl class="price">
+              <dt>
+                3년약정<br />
+                <span>월 17,600원</span>
+              </dt>
+              <dd>
+                <button class="btn-price-view" onclick="show('#layer3')">
+                  요금상세보기
+                </button>
+                <div class="com-layer-style1 price-view-layer" id="layer3">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    onclick="hide('#layer3')"
+                  ></button>
+                  <table class="tbl-basic">
+                    <tbody>
+                      <tr>
+                        <th scope="row">설치비</th>
+                        <td>22,000원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">기본료</th>
+                        <td>5,500원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">장비료</th>
+                        <td>5,500원</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </dd>
+            </dl>
+            <button type="button" class="btn-counsulting">상담신청</button>
+          </div>
+          <ul class="li-style1">
+            <li>위 요금은 부가세가 포함된 최종 납부금액 입니다.</li>
+            <li>상품 가입 시 자동이체 결제가 필수입니다.</li>
+            <li>
+              1년이내 해지시 설치비 부과, 약정내 해지시 할인반환금이 청구됩니다.
+            </li>
+          </ul>
+          <div class="mt30 mb60">
+            <p class="line-30">< 방송 추가 요금 ></p>
+            <p class="line-30">기존 가입자 방송 추가 또는 신규 동시 가입</p>
+            <p class="line-30">
+              1) HD방송 : 이코노미 5,500원 / 베이직 7,700원 / 프리미엄 8,800원
+            </p>
+            <p class="line-30">
+              2) UHD_SMT : 베이직 9,900원 / 프리미엄 11,000원
+            </p>
+            <p class="line-30">
+              약정기간내 해지시 사용기간에 따른 위약금이 청구 됩니다. (단,
+              이전설치불가 지역으로 이전시 할인반환금 면제 - 증빙서류 제출시)
+            </p>
+          </div>
+
+          <div class="s1-1-kids">
+            <div class="tit-box">
+              <div class="img-box">
+                <img src="./img/img_sub_kids.png" alt="" />
+              </div>
+              <div class="txt-box">
+                <h3 class="s1-1-h3">U+ 아이들나라</h3>
+                <p>
+                  U+ 아이들나라는 각 분야 전문가와 함께<br />
+                  영유아의 성장에 도움이 되도록 만든 아이를 위한 서비스
+                  입니다.<br />
+                  이미 LG U+에서 120만 엄마 아빠가 검증한 No.1 키즈 서비스를
+                  이제 헬로tv 에서도 무료로 만나보세요.
+                </p>
+              </div>
+            </div>
+            <div class="tv-list-box">
+              <div class="tv-list">
+                <img src="./img/img_kids_01.png" alt="" />
+                <h4>책 읽어주는 TV</h4>
+                <p>
+                  LG U+ 자체제작 콘텐츠로 동화 연구가가 읽어주는<br />
+                  유명 아동 문학 수상작과 베스트셀러 600여편
+                </p>
+              </div>
+              <div class="tv-list">
+                <img src="./img/img_kids_02.png" alt="" />
+                <h4>웅진북클럽 TV <span>※ UHD전용</span></h4>
+                <p>
+                  40만 이상의 부모가 선택한 웅진북클럽의 우수도서를<br />
+                  국내 최초로 TV 독점 제공
+                </p>
+              </div>
+              <div class="tv-list">
+                <img src="./img/img_kids_03.png" alt="" />
+                <h4>생생 체험학습</h4>
+                <p>
+                  아이의 상상력을 키워주는 다양한 자연학습 영상으로<br />
+                  집에서도 공룡ㆍ동물ㆍ곤충 친구 만나기
+                </p>
+              </div>
+              <div class="tv-list">
+                <img src="./img/img_kids_04.png" alt="" />
+                <h4>영어유치원</h4>
+                <p>
+                  ‘YBM JET - Kids’ 기반의 레벨 테스트로<br />
+                  우리아이의 영어수준을 확인하고 수준별 콘텐츠 추천
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="s1-1-netflix">
+            <img src="./img/img_sub_netfilx.png" alt="" />
+            <div class="txt-box">
+              <h3 class="s1-1-h3">넷플릭스</h3>
+              <p>
+                넷플릭스는 1억 8,300만 명이 시청하는<br />
+                세계적인 엔터테인먼트 스트리밍 서비스입니다.<br />
+                헬로tv에서 넷플릭스가 제공하는 TV 시리즈, 다큐멘터리, 장편영화
+                등<br />
+                다양한 장르의 콘텐츠를 편리하고 생생하게 즐겨보세요.
+              </p>
+            </div>
+            <ul class="s1-1-info">
+              <li>
+                리모컨 전용 버튼만 누르면<br />
+                넷플릭스 화면으로 바로 접속
+              </li>
+              <li>
+                구글 어시스턴트 음성 검색으로<br />
+                보고 싶은 콘텐츠를 쉽게
+              </li>
+              <li>
+                초고화질 넷플릭스 오리지널 콘텐츠를<br />
+                TV로 생생하게
+              </li>
+            </ul>
+          </div>
+          <div class="s1-1-youtube">
+            <img src="./img/img_sub_youtube.png" alt="" />
+            <div class="txt-box">
+              <h3 class="s1-1-h3">유튜브</h3>
+              <p>
+                휴대폰으로 보던 유튜브 영상을 이제 헬로tv로 즐겨보세요<br />
+                큰 화면으로 답답함 없이 시원하게 볼 수 있고<br />
+                간편하게 접속할 수 있어 편리하게 이용할 수 있어요.
+              </p>
+            </div>
+            <ul class="s1-1-info">
+              <li>
+                휴대폰이나 PC에서 보던 유튜브 영상을<br />
+                큰 TV 화면에서 선명하게 감상
+              </li>
+              <li>
+                복잡하게 검색하지 않고<br />
+                리모컨 채널 버튼을 이용해 쉽고 편리하게 시청
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section class="main-section card-benefit-section sub">
+          <div class="content-box">
+            <h2 class="main-h2">제휴카드 혜택</h2>
+            <div class="card-benefit-wrap">
+              <div class="card-box">
+                <img src="./img/benefit_card_1.png" alt="" />
+                <div class="txt-box">
+                  <h3>LG헬로비전 현대카드M Edition2</h3>
+                  <p>월 최대 <span class="fon-p-color">2만원</span> 청구할인</p>
+                  <table class="tbl-style1">
+                    <colgroup>
+                      <col style="width: 155px" />
+                      <col style="width: 111px" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">전월실적</th>
+                        <th scope="col" class="p-color-bg">할인금액</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">30만원 ~ 70만원 미만</th>
+                        <td class="fon-p-color">17,000원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">70만원 이상</th>
+                        <td class="fon-p-color">20,000원</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="card-box">
+                <img src="./img/benefit_card_2.png" alt="" />
+                <div class="txt-box">
+                  <h3>LG헬로비전 롯데카드</h3>
+                  <p>월 최대 <span class="fon-p-color">2만원</span> 할인</p>
+                  <table class="tbl-style1">
+                    <colgroup>
+                      <col style="width: 155px" />
+                      <col style="width: 111px" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">전월실적</th>
+                        <th scope="col" class="p-color-bg">할인금액</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">30만원 이상</th>
+                        <td class="fon-p-color">11,000원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">70만원 이상</th>
+                        <td class="fon-p-color">15,000원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">100만원 이상</th>
+                        <td class="fon-p-color">20,000원</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <!-- //컨텐츠 영역 -->
       <!-- 하단 영역 -->

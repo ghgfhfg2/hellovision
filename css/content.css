@@ -419,6 +419,14 @@
 .card-benefit-section {
   background-color: #f8f9fb; }
 
+.card-benefit-section.sub h3 {
+  font-size: 18px !important; }
+
+.card-benefit-section.sub p {
+  font-weight: bold !important;
+  color: #000 !important;
+  font-size: 24px !important; }
+
 .card-benefit-wrap {
   display: flex;
   justify-content: space-between;
@@ -877,7 +885,7 @@
   margin-right: 20px;
   margin-bottom: 20px; }
 
-.s1-1-kids .tv-list-box .tv-list:nth-child(2n+2) {
+.s1-1-kids .tv-list-box .tv-list:nth-child(2n + 2) {
   margin-right: 0; }
 
 .s1-1-kids .tv-list-box .tv-list h4 {
@@ -892,6 +900,71 @@
 
 .s1-1-kids .tv-list-box .tv-list p {
   font-size: 16px; }
+
+.s1-1-netflix {
+  padding-bottom: 40px;
+  background-color: #000; }
+
+.s1-1-netflix h3 {
+  color: #fff;
+  text-align: center;
+  margin: 50px 0 30px 0; }
+
+.s1-1-netflix p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.s1-1-info {
+  border-radius: 11px;
+  background-color: #fff;
+  width: calc(100% - 80px);
+  margin: 0 auto;
+  height: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+
+.s1-1-info li {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  padding-top: 65px;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #666; }
+
+.s1-1-info li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 26px;
+  height: 5px;
+  background-color: #ed174d;
+  left: 50%;
+  margin-left: -13px;
+  top: 40px; }
+
+.s1-1-youtube {
+  padding-bottom: 40px;
+  background-color: #c3c1bf; }
+
+.s1-1-youtube h3 {
+  color: #000;
+  text-align: center;
+  margin: 20px 0 30px; }
+
+.s1-1-youtube p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px; }
 
 .sub-privacy {
   font-size: 16px;

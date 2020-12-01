@@ -10,13 +10,16 @@
   display: none; }
 
 /* 인풋 */
-.mobile-img, .mo-el {
+.mobile-img,
+.mo-el {
   display: none !important; }
 
 @media all and (max-width: 640px) {
-  .pc-img, .pc-el {
+  .pc-img,
+  .pc-el {
     display: none !important; }
-  .mobile-img, .mo-el {
+  .mobile-img,
+  .mo-el {
     display: block !important; } }
 
 .fon-p-color {
@@ -140,7 +143,8 @@ p.line-30 {
 .th-center tbody th {
   text-align: center; }
 
-.td-left2 tbody th + td, .td-left2 tbody tr td:first-child {
+.td-left2 tbody th + td,
+.td-left2 tbody tr td:first-child {
   text-align: left; }
 
 /* th 다음에 오는 td만 왼쪽정렬 */
@@ -150,10 +154,12 @@ p.line-30 {
 .td-left3 tbody tr td:first-child + td {
   text-align: left; }
 
-.td-right tbody td, .td-right tfoot td {
+.td-right tbody td,
+.td-right tfoot td {
   text-align: right; }
 
-.tbl-basic th, .tbl-basic td {
+.tbl-basic th,
+.tbl-basic td {
   border: 0; }
 
 .tbl-basic {
@@ -209,7 +215,8 @@ p.line-30 {
 .tbl-basic tbody th[rowspan] {
   border-right: 1px solid #d5d5d5; }
 
-.tbl-basic tbody tr:first-child th, .tbl-basic tbody tr:first-child td {
+.tbl-basic tbody tr:first-child th,
+.tbl-basic tbody tr:first-child td {
   border-top: 1px solid #d5d5d5; }
 
 .tbl-basic tbody td {
@@ -242,24 +249,58 @@ p.line-30 {
 .tbl-basic tfoot td[colspan] {
   border-left: 0; }
 
-.tbl-basic tbody th.line, .tbl-basic tbody td.line, .tbl-basic tbody tr.line td, .tbl-basic tbody tr.line th {
+.tbl-basic tbody th.line,
+.tbl-basic tbody td.line,
+.tbl-basic tbody tr.line td,
+.tbl-basic tbody tr.line th {
   border-bottom: 1px dashed #d5d5d5; }
 
-.tbl-basic thead tr th.h-line, .tbl-basic tbody th.h-line {
+.tbl-basic thead tr th.h-line,
+.tbl-basic tbody th.h-line {
   border-left: 1px solid #d5d5d5; }
 
-.tbl-basic tr.bg th, .tbl-basic tr.bg td, .tbl-basic th.bg, .tbl-basic td.bg {
+.tbl-basic tr.bg th,
+.tbl-basic tr.bg td,
+.tbl-basic th.bg,
+.tbl-basic td.bg {
   background: #f6f6f6 !important; }
 
 .thead-bg thead th {
   background: #fafafa; }
 
-.tbl-basic.no-bd tbody td, .tbl-basic.no-bd tbody th, .tbl-basic.no-bd thead td, .tbl-basic.no-bd thead th {
+.tbl-basic.no-bd tbody td,
+.tbl-basic.no-bd tbody th,
+.tbl-basic.no-bd thead td,
+.tbl-basic.no-bd thead th {
   border-left: none;
   border-right: none; }
 
+.tbl-style1 td,
+.tbl-style1 th {
+  border: 0;
+  height: 30px;
+  text-align: center; }
+
+.tbl-style1 th {
+  background-color: #f2f2f2; }
+
+.tbl-style1 thead th {
+  color: #333; }
+
+.tbl-style1 thead .p-color-bg {
+  background-color: #ed174d;
+  color: #fff;
+  font-weight: bold; }
+
+.tbl-style1 tbody th {
+  font-weight: normal; }
+
+.tbl-style1 tbody th,
+.tbl-style1 tbody td {
+  border-bottom: 1px solid #e2e2e2; }
+
 /* 인풋 커스텀 */
-input[type=text], input[type=number] {
+input[type="text"], input[type="number"] {
   height: 50px;
   padding: 0 20px;
   border-radius: 5px;
@@ -267,15 +308,15 @@ input[type=text], input[type=number] {
   border-width: 1px;
   background-color: #fff; }
 
-input[type=text]::placeholder, input[type=number]::placeholder {
+input[type="text"]::placeholder, input[type="number"]::placeholder {
   color: #999; }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   position: absolute;
   height: 0;
   width: 0; }
 
-input[type=checkbox] + label {
+input[type="checkbox"] + label {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -283,7 +324,7 @@ input[type=checkbox] + label {
   border-width: 2px;
   background-color: #fff; }
 
-input[type=checkbox]:checked + label {
+input[type="checkbox"]:checked + label {
   background: #ed174d url(../img/icon_check_on.svg) center no-repeat;
   background-size: 80% auto; }
 
