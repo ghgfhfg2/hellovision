@@ -18,7 +18,8 @@
   .pc-img,
   .pc-el {
     display: none !important; }
-  .mobile-img,
+  .mobile-img {
+    display: inline-block !important; }
   .mo-el {
     display: block !important; } }
 
@@ -131,6 +132,13 @@ p.line-30 {
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   border-top: 14px solid #ed174d; }
+
+/* 버튼 */
+.btn-basic {
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  padding: 7px 20px;
+  color: #666; }
 
 /* 기본 테이블 */
 .th-left tbody th {

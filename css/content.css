@@ -984,6 +984,58 @@
   font-weight: normal;
   color: #999; }
 
+/* 편성표 */
+.s-1-1-1-box .tit-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; }
+
+.s-1-1-1-box .tit-box h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000; }
+
+.s-1-1-1-box .tit-box .sche-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row; }
+
+.s-1-1-1-box .tit-box .sche-icon li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 20px; }
+
+.s-1-1-1-box .tit-box .sche-icon li:last-child {
+  margin-right: 0; }
+
+.s-1-1-1-box .tit-box .sche-icon li img {
+  display: inline-block;
+  margin-right: 4px; }
+
+.s-1-1-1-box .tit-box .sche-icon li span {
+  font-size: 17px;
+  font-weight: bold;
+  color: #000; }
+
+.s-1-1-1-box .img-box {
+  padding: 17px 0 75px 0;
+  border: 5px solid #ffe4e4;
+  border-width: 5px 0;
+  margin: 30px 0; }
+
+.s-1-1-1-box .flex-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row; }
+
+.s-1-1-1-box .flex-box ul {
+  margin-right: 20px; }
+
 @media all and (max-width: 640px) {
   .sub-visual-box {
     margin-bottom: 35px; }
@@ -1064,4 +1116,41 @@
     flex-direction: column; }
   .card-benefit-section.sub .card-benefit-wrap .card-box {
     padding: 30px 25px;
+    margin-bottom: 20px; }
+  /* 편성표 */
+  .s-1-1-1-box .tit-box {
+    flex-direction: column; }
+  .s-1-1-1-box .tit-box h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #ffe4e4; }
+  .s-1-1-1-box .tit-box .sche-icon {
+    flex-wrap: wrap; }
+  .s-1-1-1-box .tit-box .sche-icon li span {
+    font-size: 12px; }
+  .s-1-1-1-box .tit-box .sche-icon li {
+    margin-bottom: 10px; }
+  .s-1-1-1-box .tit-box .sche-icon .ic1 {
+    width: 30px; }
+  .s-1-1-1-box .tit-box .sche-icon .ic2 {
+    width: 56px; }
+  .s-1-1-1-box .tit-box .sche-icon .ic3 {
+    width: 81px; }
+  .s-1-1-1-box .tit-box .sche-icon .ic4 {
+    width: 108px; }
+  .s-1-1-1-box .img-box {
+    border-top: 0;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 0; }
+  .s-1-1-1-box .flex-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 60px; }
+  .s-1-1-1-box .flex-box ul {
+    margin-right: 0;
     margin-bottom: 20px; } }
