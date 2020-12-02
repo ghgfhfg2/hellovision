@@ -419,6 +419,9 @@
 .card-benefit-section {
   background-color: #f8f9fb; }
 
+.card-benefit-section.sub {
+  background-color: #f2f2f2; }
+
 .card-benefit-section.sub h3 {
   font-size: 18px !important; }
 
@@ -842,6 +845,13 @@
   right: 0;
   display: none; }
 
+.s1-1-box.last {
+  margin-bottom: 60px; }
+
+.s1-1-box-txt {
+  margin-top: 30px;
+  margin-bottom: 60px; }
+
 .s1-1-h3 {
   margin-bottom: 25px;
   font-size: 34px;
@@ -851,6 +861,9 @@
 .s1-1-kids {
   background-color: #f5e8f2;
   padding: 36px 30px 53px; }
+
+.s1-1-kids .img-box {
+  padding-left: 20px; }
 
 .s1-1-kids .tit-box {
   display: flex;
@@ -970,3 +983,85 @@
   font-size: 16px;
   font-weight: normal;
   color: #999; }
+
+@media all and (max-width: 640px) {
+  .sub-visual-box {
+    margin-bottom: 35px; }
+  .sub-visual-box span {
+    font-size: 36px; }
+  .s1-1-box {
+    flex-direction: column;
+    padding: 20px 20px 25px 20px;
+    margin-bottom: 20px; }
+  .s1-1-box .tit {
+    text-align: center;
+    margin-bottom: 30px; }
+  .s1-1-box .benefit {
+    margin-bottom: 15px; }
+  .s1-1-box .price dt span {
+    display: inline-block;
+    margin: 0 0 0 5px; }
+  .s1-1-box .price dt br {
+    display: none; }
+  .s1-1-box .price dd {
+    margin: 10px 0 20px 0; }
+  .s1-1-box .btn-counsulting {
+    height: 54px;
+    width: 100%; }
+  .s1-1-box.last {
+    margin-bottom: 30px; }
+  .s1-1-box-txt {
+    margin-top: 20px;
+    margin-bottom: 40px; }
+  .s1-1-kids {
+    margin: 0 -20px;
+    padding: 20px; }
+  .s1-1-kids .tit-box {
+    flex-direction: column; }
+  .s1-1-kids .tit-box .img-box {
+    width: 100%;
+    padding: 0; }
+  .s1-1-kids .tit-box .txt-box p {
+    font-size: 14px;
+    text-align: center; }
+  .s1-1-kids .tv-list-box {
+    flex-direction: column; }
+  .s1-1-kids .tv-list-box .tv-list {
+    margin-right: 0;
+    width: 100%;
+    padding: 20px;
+    height: auto; }
+  .s1-1-kids .tv-list-box .tv-list h4 {
+    margin-bottom: 5px; }
+  .s1-1-kids .tv-list-box .tv-list p {
+    font-size: 14px; }
+  .s1-1-h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px; }
+  .s1-1-info {
+    flex-direction: column;
+    height: auto;
+    padding: 0 10px 40px 10px; }
+  .s1-1-info li {
+    padding-top: 50px; }
+  .s1-1-info li::before {
+    top: 30px; }
+  .s1-1-netflix {
+    margin: 0 -20px; }
+  .s1-1-netflix h3 {
+    margin: 30px 0 20px 0; }
+  .s1-1-netflix p {
+    font-size: 14px; }
+  .s1-1-youtube {
+    margin: 0 -20px; }
+  .s1-1-youtube img {
+    max-width: 170%;
+    margin-left: -35%; }
+  .s1-1-youtube h3 {
+    margin: 0 0 20px 0; }
+  .card-benefit-section.sub .card-benefit-wrap {
+    flex-direction: column; }
+  .card-benefit-section.sub .card-benefit-wrap .card-box {
+    padding: 30px 25px;
+    margin-bottom: 20px; } }
