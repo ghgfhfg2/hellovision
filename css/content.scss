@@ -677,6 +677,53 @@
 ====================================
 */
 
+/* 서브 공통 */
+.sub-box-ul {
+  border-radius: 11px;
+  background-color: #fff;
+  width: calc(100% - 80px);
+  margin: 0 auto;
+  height: 165px;
+  @include flex($j: center);
+  li {
+    flex: 1;
+    position: relative;
+    height: 100%;
+    text-align: center;
+    padding-top: 65px;
+    line-height: 28px;
+    @include font($s: 16px, $c: #666);
+    &::before {
+      @include before(26px, 5px);
+      background-color: $p-color;
+      left: 50%;
+      margin-left: -13px;
+      top: 40px;
+    }
+  }
+
+}
+.sub-box-h3 {
+  margin-bottom: 25px;
+  @include font($s: 34px, $w: bold, $c: #000);
+}
+.sub-box-p{
+  @include font($s:16px,$c:#000);
+}
+.com-input-box{
+  margin:30px 0;
+  dl{
+    margin-bottom: 20px;
+    @include flex($a:flex-start);
+    dt{
+      line-height: 50px;
+      width:144px;
+      font-size: 16px;
+    }
+  }
+}
+
+
 .sub-visual-box {
   width: 100%;
   height: 300px;
@@ -685,9 +732,12 @@
   background-size: cover;
   margin-bottom: 60px;
   @include flex($j: center);
+  @include font($s: 40px, $w: bold, $c: #fff);
   &.s-1-1 {
     background-image: url(../img/bg_sub_01tv.png);
-    @include font($s: 40px, $w: bold, $c: #fff);
+  }
+  &.s-2 {
+    background-image: url(../img/bg_sub_02internet.png);
   }
 }
 
@@ -735,7 +785,7 @@
       color: #000;
     }
     .info {
-      margin-bottom: 5px;
+      margin-bottom: 5px;color: #000;
     }
   }
   .price {
@@ -776,10 +826,7 @@
 .s1-1-box-txt{
   margin-top: 30px;margin-bottom: 60px;
 }
-.s1-1-h3 {
-  margin-bottom: 25px;
-  @include font($s: 34px, $w: bold, $c: #000);
-}
+
 .s1-1-kids {
   background-color: #f5e8f2;
   padding: 36px 30px 53px;
@@ -842,30 +889,7 @@
     margin-bottom: 30px;
   }
 }
-.s1-1-info {
-  border-radius: 11px;
-  background-color: #fff;
-  width: calc(100% - 80px);
-  margin: 0 auto;
-  height: 165px;
-  @include flex($j: center);
-  li {
-    flex: 1;
-    position: relative;
-    height: 100%;
-    text-align: center;
-    padding-top: 65px;
-    line-height: 28px;
-    @include font($s: 16px, $c: #666);
-    &::before {
-      @include before(26px, 5px);
-      background-color: $p-color;
-      left: 50%;
-      margin-left: -13px;
-      top: 40px;
-    }
-  }
-}
+
 .s1-1-youtube {
   padding-bottom: 40px;
   background-color: #c3c1bf;
@@ -912,10 +936,59 @@
     ul{margin-right: 20px;}
   }
 }
+/* 헬로인터넷 */
+.s-2-box{
+  .s1-1-box{
+    .tit{
+      width: 150px;
+      flex-shrink: 0;
+    }
+    .benefit{
+      width: 193px;
+    }
+  }
+  .s2-con-box{
+    text-align: center;
+    background-color: #eaedf3;
+    padding-bottom: 60px;
+    .sub-box-h3{
+      br{display: none;}
+    }
+    @include mobile(){
+      margin: 0 -20px;
+      padding-bottom: 40px;
+      .sub-box-h3{
+        br{display: block;}
+      }
+    }
+  }
+  .sub-box-ul{
+    margin: 50px auto;
+    @include mobile(){
+      margin: 30px auto;
+    } 
+  }
+}
 
 
 
 @media all and (max-width: 640px) {
+  /* 서브공통 */
+  .sub-box-ul{
+      flex-direction: column;height: auto;
+      padding:0 10px 40px 10px;
+      li{
+        padding-top: 50px;
+        &::before{
+          top:30px
+        }
+      }
+    }
+    .sub-box-h3{font-size: 30px;text-align: center;margin-bottom: 20px;}   
+    .sub-box-p{
+      font-size: 14px;
+    } 
+      
   .sub-visual-box{
     margin-bottom: 35px;
     span{
@@ -969,17 +1042,8 @@
       }
     }
   }
-  .s1-1-h3{font-size: 30px;text-align: center;margin-bottom: 20px;}
-  .s1-1-info{
-    flex-direction: column;height: auto;
-    padding:0 10px 40px 10px;
-    li{
-      padding-top: 50px;
-      &::before{
-        top:30px
-      }
-    }
-  }
+ 
+
   .s1-1-netflix{
     margin:0 -20px;
     h3{margin:30px 0 20px 0}
