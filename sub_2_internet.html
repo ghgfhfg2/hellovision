@@ -31,8 +31,12 @@
               />
               <img src="./img/logo_LGhellovision2x.png" class="mobile-img" />
             </a>
-            <button type="button" class="btn-total-menu mo-el" onclick="addOn('.total-menu-box')">
-                <span class="line"></span>
+            <button
+              type="button"
+              class="btn-total-menu mo-el"
+              onclick="addOn('.total-menu-box')"
+            >
+              <span class="line"></span>
             </button>
           </div>
           <div id="gnb-box">
@@ -48,45 +52,51 @@
           </div>
         </div>
         <div class="total-menu-box">
-            <div class="top-box">
-                <a href="#" class="ic-home">HOME</a>
-                <button type="button" class="btn-close" onclick="removeOn('.total-menu-box')"></button>
-            </div>
-            <div class="mo-lnb">
-                <ul class="depth-1">
-                    <li>
-                        <a href="#" class="has-sub">TV</a>
-                        <ul class="depth-2">
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="has-sub">TV</a>
-                        <ul class="depth-2">
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                        </ul>
-                    </li>
+          <div class="top-box">
+            <a href="#" class="ic-home">HOME</a>
+            <button
+              type="button"
+              class="btn-close"
+              onclick="removeOn('.total-menu-box')"
+            ></button>
+          </div>
+          <div class="mo-lnb">
+            <ul class="depth-1">
+              <li>
+                <a href="#" class="has-sub">TV</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
                 </ul>
-            </div>
+              </li>
+              <li>
+                <a href="#" class="has-sub">TV</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
       <script>
-          var lnbDepth1 = document.querySelectorAll('.total-menu-box .depth-1 .has-sub');
-          for(var i=0; i<lnbDepth1.length; i++){
-              lnbDepth1[i].addEventListener('click', function(){
-                this.classList.toggle('on');
-              })
-          }
+        var lnbDepth1 = document.querySelectorAll(
+          ".total-menu-box .depth-1 .has-sub"
+        );
+        for (var i = 0; i < lnbDepth1.length; i++) {
+          lnbDepth1[i].addEventListener("click", function () {
+            this.classList.toggle("on");
+          });
+        }
       </script>
       <!--//상단영역 -->
       <!-- 오른쪽 고정배너 -->
@@ -121,269 +131,316 @@
       <!-- 컨텐츠 영역 -->
       <div id="container">
         <div class="sub-visual-box s-2">
-            <span>헬로인터넷</span>
+          <span>헬로인터넷</span>
         </div>
         <div class="sub-content-box s-2-box">
-            <h3 class="big-h3">기가 인터넷</h3>
-            <div class="s1-1-box">
-                <dl class="tit">
-                    <dt>플래티넘기가</dt>
-                    <dd>1G</dd>
-                </dl>
-                <dl class="benefit">
-                    <dt>혜택</dt>
-                    <dd class="info">
-                        - 기가와이파이 무료<br>
-                        - <u><strong>최대 사은품 보장</strong></u>
-                    </dd>
-                </dl>                
-                <dl class="price">
-                    <dt>
-                        3년약정<br>
-                        <span>월 30,800원</span>
-                    </dt>
-                </dl>
-                <dl class="price">
-                    <dt>
-                    결합시<br>
-                    <span class="fon-p-color">월 24,640원</span>
-                    </dt>
-                    <dd>
-                    <button class="btn-price-view" onclick="show('#layer1')">
-                        요금상세보기
-                    </button>
-                    <div class="com-layer-style1 price-view-layer" id="layer1">
-                        <button type="button" class="btn-close" onclick="hide('#layer1')"></button>
-                        <table class="tbl-basic">
-                        <tbody>
-                            <tr>
-                            <th scope="row">설치비</th>
-                            <td>22,000원</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">기본료</th>
-                            <td>5,500원</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">장비료</th>
-                            <td>5,500원</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                    </div>
-                    </dd>
-                </dl>
-                <button type="button" class="btn-counsulting">상담신청</button>
-            </div>
-            <div class="s1-1-box">
-                <dl class="tit">
-                    <dt>기가라이트</dt>
-                    <dd>500M</dd>
-                </dl>
-                <dl class="benefit">
-                    <dt>혜택</dt>
-                    <dd class="info">
-                        - 기가와이파이 무료<br>
-                        - <u><strong>최대 사은품 보장</strong></u>
-                    </dd>
-                </dl>                
-                <dl class="price">
-                    <dt>
-                        3년약정<br>
-                        <span>월 29,260원</span>
-                    </dt>
-                </dl>
-                <dl class="price">
-                    <dt>
-                    결합시<br>
-                    <span class="fon-p-color">월 23,410원</span>
-                    </dt>
-                    <dd>
-                    <button class="btn-price-view" onclick="show('#layer1')">
-                        요금상세보기
-                    </button>
-                    <div class="com-layer-style1 price-view-layer" id="layer1">
-                        <button type="button" class="btn-close" onclick="hide('#layer1')"></button>
-                        <table class="tbl-basic">
-                        <tbody>
-                            <tr>
-                            <th scope="row">설치비</th>
-                            <td>22,000원</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">기본료</th>
-                            <td>5,500원</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">장비료</th>
-                            <td>5,500원</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                    </div>
-                    </dd>
-                </dl>
-                <button type="button" class="btn-counsulting">상담신청</button>
-            </div>
-            <h3 class="big-h3">초고속 인터넷</h3>
-            <div class="s1-1-box">
-                <dl class="tit">
-                    <dt>광랜</dt>
-                    <dd>160M</dd>
-                </dl>
-                <dl class="benefit">
-                    <dt>혜택</dt>
-                    <dd class="info">
-                        - 와이파이 무료<br>
-                        - <u><strong>최대 사은품 보장</strong></u>
-                    </dd>
-                </dl>                
-                <dl class="price">
-                    <dt>
-                        3년약정<br>
-                        <span>월 25,410원</span>
-                    </dt>
-                </dl>
-                <dl class="price">
-                    <dt>
-                    결합시<br>
-                    <span class="fon-p-color">월 20,330원</span>
-                    </dt>
-                    <dd>
-                    <button class="btn-price-view" onclick="show('#layer1')">
-                        요금상세보기
-                    </button>
-                    <div class="com-layer-style1 price-view-layer" id="layer1">
-                        <button type="button" class="btn-close" onclick="hide('#layer1')"></button>
-                        <table class="tbl-basic">
-                        <tbody>
-                            <tr>
-                            <th scope="row">설치비</th>
-                            <td>22,000원</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">기본료</th>
-                            <td>5,500원</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">장비료</th>
-                            <td>5,500원</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                    </div>
-                    </dd>
-                </dl>
-                <button type="button" class="btn-counsulting">상담신청</button>
-            </div>
-            <div class="s1-1-box">
-                <dl class="tit">
-                    <dt>광랜라이트</dt>
-                    <dd>100M</dd>
-                </dl>
-                <dl class="benefit">
-                    <dt>혜택</dt>
-                    <dd class="info">
-                        - 와이파이 무료<br>
-                        - <u><strong>최대 사은품 보장</strong></u>
-                    </dd>
-                </dl>                
-                <dl class="price">
-                    <dt>
-                        3년약정<br>
-                        <span>월 20,790원</span>
-                    </dt>
-                </dl>
-                <dl class="price">
-                    <dt>
-                    결합시<br>
-                    <span class="fon-p-color">월 16,630원</span>
-                    </dt>
-                    <dd>
-                    <button class="btn-price-view" onclick="show('#layer1')">
-                        요금상세보기
-                    </button>
-                    <div class="com-layer-style1 price-view-layer" id="layer1">
-                        <button type="button" class="btn-close" onclick="hide('#layer1')"></button>
-                        <table class="tbl-basic">
-                        <tbody>
-                            <tr>
-                            <th scope="row">설치비</th>
-                            <td>22,000원</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">기본료</th>
-                            <td>5,500원</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">장비료</th>
-                            <td>5,500원</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                    </div>
-                    </dd>
-                </dl>
-                <button type="button" class="btn-counsulting">상담신청</button>
-            </div>
-            <ul class="li-style1 margin">
-                <li>위 요금은 부가세가 포함된 최종 납부금액 입니다.</li>
-                <li>상품 가입 시 자동이체 결제가 필수입니다.</li>
-                <li>약정기간내 해지시 사용기간에 따른 위약금이 청구됩니다.(1년이내 해지시 사은품+설치비 환수)</li>
-                <li>이전설치 불가지역으로 이전시 위약금 면제(증빙서류 제출시). 단, 1년 이내에 받으셨던 사은품+설치비는 회수됩니다.</li>
-            </ul>
-            <div class="s2-con-box">
-                <img src="./img/img_sub_internet.png" class="mb40 pc-img" alt="">
-                <img src="./img/m_img_sub_internet.png" class="mobile-img" alt="">
-                <h3 class="sub-box-h3 txt_center">빠른속도, <br>합리적인 가격</h3>
-                <p class="sub-box-p txt_center">
-                    고품질 LG 유플러스 망을 사용하는 헬로비전 인터넷입니다.<br>
-                    타 통신사 대비 27% 저렴한 가격으로<br>
-                    초고속 인터넷을 체험하세요!
-                </p>
-                <ul class="sub-box-ul">
-                    <li>격차 없는 양방향 인터넷으로 업로드, 다운로드를 빠르게!<br>
-                        Full 1Gbps 속도로 120분 영화 한 편을 15초 만에 다운로드!</li>
-                    <li>속도는 동일하게, 가격은 최대 32만원 절약!<br>
-                        저렴한 가격에 누리는 고품질 인터넷!</li>
-                </ul>
-                <div class="txt_center">
-                    <a href="#" class="btn-basic big arrow"><span>가입가능지역 확인하기</span></a>
+          <h3 class="big-h3">기가 인터넷</h3>
+          <div class="s1-1-box">
+            <dl class="tit">
+              <dt>플래티넘기가</dt>
+              <dd>1G</dd>
+            </dl>
+            <dl class="benefit">
+              <dt>혜택</dt>
+              <dd class="info">
+                - 기가와이파이 무료<br />
+                - <u><strong>최대 사은품 보장</strong></u>
+              </dd>
+            </dl>
+            <dl class="price">
+              <dt>
+                3년약정<br />
+                <span>월 30,800원</span>
+              </dt>
+            </dl>
+            <dl class="price">
+              <dt>
+                결합시<br />
+                <span class="fon-p-color">월 24,640원</span>
+              </dt>
+              <dd>
+                <button class="btn-price-view" onclick="show('#layer1')">
+                  요금상세보기
+                </button>
+                <div class="com-layer-style1 price-view-layer" id="layer1">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    onclick="hide('#layer1')"
+                  ></button>
+                  <table class="tbl-basic">
+                    <tbody>
+                      <tr>
+                        <th scope="row">설치비</th>
+                        <td>22,000원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">기본료</th>
+                        <td>5,500원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">장비료</th>
+                        <td>5,500원</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
+              </dd>
+            </dl>
+            <button type="button" class="btn-counsulting">상담신청</button>
+          </div>
+          <div class="s1-1-box">
+            <dl class="tit">
+              <dt>기가라이트</dt>
+              <dd>500M</dd>
+            </dl>
+            <dl class="benefit">
+              <dt>혜택</dt>
+              <dd class="info">
+                - 기가와이파이 무료<br />
+                - <u><strong>최대 사은품 보장</strong></u>
+              </dd>
+            </dl>
+            <dl class="price">
+              <dt>
+                3년약정<br />
+                <span>월 29,260원</span>
+              </dt>
+            </dl>
+            <dl class="price">
+              <dt>
+                결합시<br />
+                <span class="fon-p-color">월 23,410원</span>
+              </dt>
+              <dd>
+                <button class="btn-price-view" onclick="show('#layer1')">
+                  요금상세보기
+                </button>
+                <div class="com-layer-style1 price-view-layer" id="layer1">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    onclick="hide('#layer1')"
+                  ></button>
+                  <table class="tbl-basic">
+                    <tbody>
+                      <tr>
+                        <th scope="row">설치비</th>
+                        <td>22,000원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">기본료</th>
+                        <td>5,500원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">장비료</th>
+                        <td>5,500원</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </dd>
+            </dl>
+            <button type="button" class="btn-counsulting">상담신청</button>
+          </div>
+          <h3 class="big-h3">초고속 인터넷</h3>
+          <div class="s1-1-box">
+            <dl class="tit">
+              <dt>광랜</dt>
+              <dd>160M</dd>
+            </dl>
+            <dl class="benefit">
+              <dt>혜택</dt>
+              <dd class="info">
+                - 와이파이 무료<br />
+                - <u><strong>최대 사은품 보장</strong></u>
+              </dd>
+            </dl>
+            <dl class="price">
+              <dt>
+                3년약정<br />
+                <span>월 25,410원</span>
+              </dt>
+            </dl>
+            <dl class="price">
+              <dt>
+                결합시<br />
+                <span class="fon-p-color">월 20,330원</span>
+              </dt>
+              <dd>
+                <button class="btn-price-view" onclick="show('#layer1')">
+                  요금상세보기
+                </button>
+                <div class="com-layer-style1 price-view-layer" id="layer1">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    onclick="hide('#layer1')"
+                  ></button>
+                  <table class="tbl-basic">
+                    <tbody>
+                      <tr>
+                        <th scope="row">설치비</th>
+                        <td>22,000원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">기본료</th>
+                        <td>5,500원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">장비료</th>
+                        <td>5,500원</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </dd>
+            </dl>
+            <button type="button" class="btn-counsulting">상담신청</button>
+          </div>
+          <div class="s1-1-box">
+            <dl class="tit">
+              <dt>광랜라이트</dt>
+              <dd>100M</dd>
+            </dl>
+            <dl class="benefit">
+              <dt>혜택</dt>
+              <dd class="info">
+                - 와이파이 무료<br />
+                - <u><strong>최대 사은품 보장</strong></u>
+              </dd>
+            </dl>
+            <dl class="price">
+              <dt>
+                3년약정<br />
+                <span>월 20,790원</span>
+              </dt>
+            </dl>
+            <dl class="price">
+              <dt>
+                결합시<br />
+                <span class="fon-p-color">월 16,630원</span>
+              </dt>
+              <dd>
+                <button class="btn-price-view" onclick="show('#layer1')">
+                  요금상세보기
+                </button>
+                <div class="com-layer-style1 price-view-layer" id="layer1">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    onclick="hide('#layer1')"
+                  ></button>
+                  <table class="tbl-basic">
+                    <tbody>
+                      <tr>
+                        <th scope="row">설치비</th>
+                        <td>22,000원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">기본료</th>
+                        <td>5,500원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">장비료</th>
+                        <td>5,500원</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </dd>
+            </dl>
+            <button type="button" class="btn-counsulting">상담신청</button>
+          </div>
+          <ul class="li-style1 margin">
+            <li>위 요금은 부가세가 포함된 최종 납부금액 입니다.</li>
+            <li>상품 가입 시 자동이체 결제가 필수입니다.</li>
+            <li>
+              약정기간내 해지시 사용기간에 따른 위약금이 청구됩니다.(1년이내
+              해지시 사은품+설치비 환수)
+            </li>
+            <li>
+              이전설치 불가지역으로 이전시 위약금 면제(증빙서류 제출시). 단, 1년
+              이내에 받으셨던 사은품+설치비는 회수됩니다.
+            </li>
+          </ul>
+          <div class="s2-con-box">
+            <img src="./img/img_sub_internet.png" class="mb40 pc-img" alt="" />
+            <img src="./img/m_img_sub_internet.png" class="mobile-img" alt="" />
+            <h3 class="sub-box-h3 txt_center">빠른속도, <br />합리적인 가격</h3>
+            <p class="sub-box-p txt_center">
+              고품질 LG 유플러스 망을 사용하는 헬로비전 인터넷입니다.<br />
+              타 통신사 대비 27% 저렴한 가격으로<br />
+              초고속 인터넷을 체험하세요!
+            </p>
+            <ul class="sub-box-ul">
+              <li>
+                격차 없는 양방향 인터넷으로 업로드, 다운로드를 빠르게!<br />
+                Full 1Gbps 속도로 120분 영화 한 편을 15초 만에 다운로드!
+              </li>
+              <li>
+                속도는 동일하게, 가격은 최대 32만원 절약!<br />
+                저렴한 가격에 누리는 고품질 인터넷!
+              </li>
+            </ul>
+            <div class="txt_center">
+              <a href="#" class="btn-basic big arrow"
+                ><span>가입가능지역 확인하기</span></a
+              >
             </div>
+          </div>
         </div>
         <div class="apply-layer-pop">
-            <button type="button" class="btn-close"></button>
-            <div class="tit-box">
-                <h2>상담신청</h2>
-                <p>고객님의 정보를 남겨 주시면 상담원이 신속하게 연락드리겠습니다.</p>
-            </div>
-            <table class="tbl-basic tbl-style2">
-                <tbody>
-                    <th scope="row">선택상품</th>
-                    <td><span class="big fon-p-color">프리미엄UHD</span></td>
-                </tbody>
-            </table>
-            <div class="com-input-box">
-                <dl>
-                    <dt class="fon-p-color">이름</dt>
-                    <dd><input type="text"></dd>
-                </dl>
-                <dl>
-                    <dt class="fon-p-color">휴대폰번호</dt>
-                    <dd><input type="text"></dd>
-                </dl>
-                <dl>
-                    <dt class="fon-p-color">상담희망시간</dt>
-                    <dd>
-                        <div class="custom-select">
-                            <select name="time" id="time">
-                                <option value="즉시 상담 요청">즉시 상담 요청</option>
-                            </select>
-                        </div>
-                    </dd>
-                </dl>
-            </div>
+          <button type="button" class="btn-close"></button>
+          <div class="tit-box">
+            <h2>상담신청</h2>
+            <p>
+              고객님의 정보를 남겨 주시면 상담원이 신속하게 연락드리겠습니다.
+            </p>
+          </div>
+          <table class="tbl-basic tbl-style2">
+            <tbody>
+              <th scope="row">선택상품</th>
+              <td><span class="big fon-p-color">프리미엄UHD</span></td>
+            </tbody>
+          </table>
+          <div class="com-input-box">
+            <dl>
+              <dt class="fon-p-color">이름</dt>
+              <dd><input type="text" /></dd>
+            </dl>
+            <dl>
+              <dt class="fon-p-color">휴대폰번호</dt>
+              <dd><input type="text" /></dd>
+            </dl>
+            <dl>
+              <dt class="fon-p-color">상담희망시간</dt>
+              <dd>
+                <div class="custom-select">
+                  <select name="time" id="time">
+                    <option value="즉시 상담 요청">즉시 상담 요청</option>
+                  </select>
+                </div>
+              </dd>
+            </dl>
+            <dl class="col">
+              <dt>
+                요청메모(<span class="counter">0</span>/<span class="limit"
+                  >200</span
+                >)
+              </dt>
+              <dd>
+                <textarea
+                  onkeyup="textCounter(this,'.counter','.limit')"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="궁금하신 부분을 간단히 적어주세요. 상담시 참고하여 안내해 드리겠습니다."
+                ></textarea>
+              </dd>
+            </dl>
+          </div>
         </div>
       </div>
       <!-- //컨텐츠 영역 -->

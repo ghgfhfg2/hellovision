@@ -779,6 +779,7 @@
 
 .com-input-box dl {
   margin-bottom: 20px;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -787,7 +788,67 @@
 .com-input-box dl dt {
   line-height: 50px;
   width: 144px;
+  flex-shrink: 0;
   font-size: 16px; }
+
+.com-input-box dl.col {
+  flex-direction: column; }
+
+.com-input-box dd {
+  width: 100%; }
+
+/* 상담신청 레이어 팝업 */
+.apply-layer-pop {
+  width: 720px;
+  height: auto;
+  max-height: 90vh;
+  padding: 84px 40px 50px 40px;
+  position: fixed;
+  z-index: 500;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff; }
+
+.apply-layer-pop .btn-close {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background: url(../img/icon_popup_close.svg) center no-repeat; }
+
+.apply-layer-pop .tit-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+  margin-bottom: 30px; }
+
+.apply-layer-pop .tit-box h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000; }
+
+/* 레이업팝업 */
+.com-layer-style1 {
+  position: absolute;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  z-index: 50;
+  background-color: #fff;
+  border: solid 2px #d5d5d5;
+  padding: 20px 40px 15px 15px; }
+
+.com-layer-style1 .btn-close {
+  position: absolute;
+  display: inline-block;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon_popup_close.svg) center no-repeat; }
 
 .sub-visual-box {
   width: 100%;

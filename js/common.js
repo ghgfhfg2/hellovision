@@ -18,13 +18,13 @@ function toggle(el, dp) {
     target.style.display = "none";
   }
 }
-function addOn(el){
+function addOn(el) {
   var target = document.querySelector(el);
-  target.classList.add('on');
+  target.classList.add("on");
 }
-function removeOn(el){
+function removeOn(el) {
   var target = document.querySelector(el);
-  target.classList.remove('on');
+  target.classList.remove("on");
 }
 
 /* tab */
@@ -45,5 +45,18 @@ function comTab(el, dp) {
         ? (active.style.display = "block")
         : (active.style.display = dp);
     });
+  }
+}
+
+/* text counter */
+function textCounter(e, t, l) {
+  var length = e.value.length;
+  var el = document.querySelector(t);
+  var limit = document.querySelector(l).innerText;
+  el.innerHTML = length;
+  if (length > limit) {
+    e.value = e.value.substring(0, limit);
+    el.innerHTML = limit;
+    return;
   }
 }

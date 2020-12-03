@@ -66,25 +66,6 @@ h3.big-h3 {
 p.line-30 {
   margin: 7px 0; }
 
-/* 레이업팝업 */
-.com-layer-style1 {
-  position: absolute;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  border-radius: 10px;
-  z-index: 50;
-  background-color: #fff;
-  border: solid 2px #d5d5d5;
-  padding: 20px 40px 15px 15px; }
-
-.com-layer-style1 .btn-close {
-  position: absolute;
-  display: inline-block;
-  right: 10px;
-  top: 10px;
-  width: 20px;
-  height: 20px;
-  background: url(../img/icon_popup_close.svg) center no-repeat; }
-
 /* 탭스타일 */
 .tab-style-1 .tab-list {
   display: flex;
@@ -343,7 +324,8 @@ p.line-30 {
   border-left: none;
   border-right: none; }
 
-.tbl-basic.tbl-style2 td, .tbl-basic.tbl-style2 th {
+.tbl-basic.tbl-style2 td,
+.tbl-basic.tbl-style2 th {
   padding: 20px 30px; }
 
 .tbl-basic.tbl-style2 td .big {
@@ -356,39 +338,6 @@ p.line-30 {
 
 .tbl-basic.tbl-style2 th {
   background-color: #f8f9fb; }
-
-/* 상담신청 레이어 팝업 */
-.apply-layer-pop {
-  width: 720px;
-  height: auto;
-  max-height: 90vh;
-  padding: 84px 40px 50px 40px;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff; }
-
-.apply-layer-pop .btn-close {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  right: 30px;
-  top: 30px;
-  background: url(../img/icon_popup_close.svg) center no-repeat; }
-
-.apply-layer-pop .tit-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-direction: row;
-  margin-bottom: 30px; }
-
-.apply-layer-pop .tit-box h2 {
-  font-size: 30px;
-  font-weight: bold;
-  color: #000; }
 
 /* 인풋 커스텀 */
 input[type="text"], input[type="number"] {
@@ -420,9 +369,11 @@ input[type="checkbox"]:checked + label {
   background-size: 80% auto; }
 
 .custom-select {
+  width: 320px;
   position: relative; }
 
 .custom-select select {
+  width: 100%;
   height: 50px;
   padding: 0 20px;
   border-radius: 5px;
@@ -449,6 +400,18 @@ input[type="checkbox"]:checked + label {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-top: 8px solid #333; }
+
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  height: 120px;
+  padding: 20px 30px;
+  resize: none;
+  border: 1px solid #d5d5d5; }
+
+textarea::placeholder {
+  font-size: 16px;
+  color: #999; }
 
 @media all and (max-width: 640px) {
   h2.sub-h2 {
