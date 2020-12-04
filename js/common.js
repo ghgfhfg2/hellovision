@@ -60,3 +60,17 @@ function textCounter(e, t, l) {
     return;
   }
 }
+
+/* 맨위로 */
+function moveScroll(top,duration){ 
+  $('html, body').animate( { scrollTop : top }, duration, 'easeInOutExpo' ); return false; 
+};
+
+/* 레이어 팝업 닫기 */
+function layerClose(e){
+  var el = document.querySelector(e);
+  var comLayerBg = document.querySelector('.com-layer-bg');
+  el.style.display = "none";
+  comLayerBg.style.display = "none";
+  document.body.classList.remove('fix');
+}

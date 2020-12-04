@@ -17,7 +17,7 @@
     <script src="./js/swiper_4.5.0.min.js"></script>
     <script src="./js/common.js"></script>
   </head>
-  <body>
+  <body class="fix">
     <div id="wrapper">
       <!--상단영역 -->
       <header id="header">
@@ -88,6 +88,7 @@
           </div>
         </div>
       </header>
+      <div class="com-layer-bg"></div>
       <script>
         var lnbDepth1 = document.querySelectorAll(
           ".total-menu-box .depth-1 .has-sub"
@@ -125,7 +126,7 @@
             >
           </li>
         </ul>
-        <button type="button" class="btn-top"><span>TOP</span></button>
+        <button type="button" class="btn-top" onclick="moveScroll(0,300)"><span>TOP</span></button>
       </div>
       <!-- 오른쪽 고정배너 -->
       <!-- 컨텐츠 영역 -->
@@ -390,8 +391,8 @@
             </div>
           </div>
         </div>
-        <div class="apply-layer-pop">
-          <button type="button" class="btn-close"></button>
+        <div class="apply-layer-pop" id="applyPop">
+          <button type="button" class="btn-close" onclick="layerClose('#applyPop')"></button>
           <div class="tit-box">
             <h2>상담신청</h2>
             <p>
@@ -440,6 +441,25 @@
                 ></textarea>
               </dd>
             </dl>
+            <div class="agree-box">
+              <div class="agree-tit">
+                <h3>개인정보 활용동의 안내</h3>
+                <div class="check-box">
+                  <input type="checkbox" id="agree">
+                  <label for="agree"></label>
+                  <span>개인정보수집 이용에 동의합니다.</span>
+                </div>
+              </div>
+              <div class="txt-box">
+                - 개인정보의 수집 및 이용목적 : 렌탈 온라인 신청, 접수<br>
+- 수집하는 개인정보 항목 : 성명, 연락처(휴대폰번호)<br>
+- 개인정보 보유 및 이용기간 : 개인정보 수집 및 이용목적이 달성된 후에는 예외없이 해당 정보를 파기합니다.
+              </div>
+            </div>
+            <div class="com-btn-box">
+              <button type="button" class="btn-basic big2" onclick="layerClose('#applyPop')">취소</button>
+              <button type="button" class="btn-basic p-color big2">상담신청</button>
+            </div>
           </div>
         </div>
       </div>
