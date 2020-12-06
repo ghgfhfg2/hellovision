@@ -62,15 +62,23 @@ function textCounter(e, t, l) {
 }
 
 /* 맨위로 */
-function moveScroll(top,duration){ 
-  $('html, body').animate( { scrollTop : top }, duration, 'easeInOutExpo' ); return false; 
-};
+function moveScroll(top, duration) {
+  $("html, body").animate({ scrollTop: top }, duration, "easeInOutExpo");
+  return false;
+}
 
 /* 레이어 팝업 닫기 */
-function layerClose(e){
+function layerClose(e) {
   var el = document.querySelector(e);
-  var comLayerBg = document.querySelector('.com-layer-bg');
+  var comLayerBg = document.querySelector(".com-layer-bg");
   el.style.display = "none";
   comLayerBg.style.display = "none";
-  document.body.classList.remove('fix');
+  document.body.classList.remove("fix");
+}
+
+/* 상세 썸네일 */
+function thumbImg(e, target) {
+  var el = document.querySelector(target);
+  var src = e.getAttribute("src");
+  el.setAttribute("src", src);
 }

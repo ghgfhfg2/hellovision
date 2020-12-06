@@ -814,14 +814,20 @@
   align-items: center;
   flex-direction: row; }
 
-.com-btn-box button, .com-btn-box a, .com-btn-box input {
+.com-btn-box button,
+.com-btn-box a,
+.com-btn-box input {
   margin-right: 10px; }
 
-.com-btn-box button:last-child, .com-btn-box a:last-child, .com-btn-box input:last-child {
+.com-btn-box button:last-child,
+.com-btn-box a:last-child,
+.com-btn-box input:last-child {
   margin-right: 0; }
 
 @media (max-width: 640px) {
-  .com-btn-box button, .com-btn-box a, .com-btn-box input {
+  .com-btn-box button,
+  .com-btn-box a,
+  .com-btn-box input {
     min-width: 0 !important;
     width: 100%; } }
 
@@ -1312,6 +1318,7 @@
 .s3-1-1-box .s1-1-box .btn-counsulting {
   width: 100%; }
 
+/* 상품리스트 */
 .prod-list-box {
   margin-bottom: 100px;
   display: flex;
@@ -1344,7 +1351,11 @@
   position: relative;
   background-color: #f2f2f2;
   border-radius: 15px;
-  margin-bottom: 18px; }
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
 
 @media (max-width: 640px) {
   .prod-list-box li .img-box {
@@ -1401,6 +1412,135 @@
   font-size: 18px;
   font-weight: bold;
   color: #ed174d; }
+
+/* 상세페이지 */
+.detaile-top-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row; }
+
+.detaile-top-info .img-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 12px; }
+
+.detaile-top-info .img-box .view-img {
+  width: 420px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+
+.detaile-top-info .img-box .thumb-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row; }
+
+.detaile-top-info .img-box .thumb-img li {
+  width: 78px;
+  height: 78px;
+  border: 1px solid #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 8px; }
+
+.detaile-top-info .img-box .thumb-img li:last-child {
+  margin-right: 0; }
+
+.detaile-top-info .img-box .thumb-img li img {
+  cursor: pointer; }
+
+.detaile-top-info .img-box .share-box {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row; }
+
+.detaile-top-info .img-box .share-box button {
+  margin-right: 10px; }
+
+.detaile-top-info .img-box .share-box button:last-child {
+  margin-right: 0; }
+
+.detaile-top-info .txt-info-box {
+  width: 500px; }
+
+.detaile-top-info .txt-info-box .tit-box {
+  width: 100%;
+  padding: 27px 0;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #d5d5d5;
+  margin-bottom: 30px; }
+
+.detaile-top-info .txt-info-box .tit-box h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px; }
+
+.detaile-top-info .txt-info-box .tit-box p {
+  font-size: 16px; }
+
+.detaile-top-info .txt-info-box dl {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-size: 16px; }
+
+.detaile-top-info .txt-info-box dl.row-dl {
+  margin-bottom: 10px; }
+
+.detaile-top-info .txt-info-box dl.row-dl dt {
+  width: 125px; }
+
+.detaile-top-info .txt-info-box dl.row-dl dd {
+  color: #333; }
+
+.detaile-top-info .txt-info-box dl.row-dl:last-child {
+  margin-bottom: 0; }
+
+.detaile-top-info .txt-info-box dl.col-dl {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.detaile-top-info .txt-info-box dl.col-dl dt {
+  margin-bottom: 10px; }
+
+.detaile-top-info .txt-info-box dl.col-dl dd {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row; }
+
+.detaile-top-info .txt-info-box dl.col-dl dd .custom-radio + label {
+  flex: 1;
+  margin-right: 6px; }
+
+.detaile-top-info .txt-info-box dl.col-dl dd .custom-radio + label:last-child {
+  margin-right: 0; }
+
+.detaile-top-info .txt-info-box .bg-txt {
+  margin: 20px 0;
+  font-size: 15p;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  background: #f2f2f2; }
 
 @media all and (max-width: 640px) {
   /* 서브공통 */

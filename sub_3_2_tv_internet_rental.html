@@ -31,8 +31,12 @@
               />
               <img src="./img/logo_LGhellovision2x.png" class="mobile-img" />
             </a>
-            <button type="button" class="btn-total-menu mo-el" onclick="addOn('.total-menu-box')">
-                <span class="line"></span>
+            <button
+              type="button"
+              class="btn-total-menu mo-el"
+              onclick="addOn('.total-menu-box')"
+            >
+              <span class="line"></span>
             </button>
           </div>
           <div id="gnb-box">
@@ -48,45 +52,51 @@
           </div>
         </div>
         <div class="total-menu-box">
-            <div class="top-box">
-                <a href="#" class="ic-home">HOME</a>
-                <button type="button" class="btn-close" onclick="removeOn('.total-menu-box')"></button>
-            </div>
-            <div class="mo-lnb">
-                <ul class="depth-1">
-                    <li>
-                        <a href="#" class="has-sub">TV</a>
-                        <ul class="depth-2">
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="has-sub">TV</a>
-                        <ul class="depth-2">
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                        </ul>
-                    </li>
+          <div class="top-box">
+            <a href="#" class="ic-home">HOME</a>
+            <button
+              type="button"
+              class="btn-close"
+              onclick="removeOn('.total-menu-box')"
+            ></button>
+          </div>
+          <div class="mo-lnb">
+            <ul class="depth-1">
+              <li>
+                <a href="#" class="has-sub">TV</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
                 </ul>
-            </div>
+              </li>
+              <li>
+                <a href="#" class="has-sub">TV</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
       <script>
-          var lnbDepth1 = document.querySelectorAll('.total-menu-box .depth-1 .has-sub');
-          for(var i=0; i<lnbDepth1.length; i++){
-              lnbDepth1[i].addEventListener('click', function(){
-                this.classList.toggle('on');
-              })
-          }
+        var lnbDepth1 = document.querySelectorAll(
+          ".total-menu-box .depth-1 .has-sub"
+        );
+        for (var i = 0; i < lnbDepth1.length; i++) {
+          lnbDepth1[i].addEventListener("click", function () {
+            this.classList.toggle("on");
+          });
+        }
       </script>
       <!--//상단영역 -->
       <!-- 오른쪽 고정배너 -->
@@ -121,96 +131,96 @@
       <!-- 컨텐츠 영역 -->
       <div id="container">
         <div class="sub-visual-box s-3-1">
-            <span>결합상품</span>
+          <span>결합상품</span>
         </div>
         <div class="sub-content-box">
-            <div class="com-tab-box tab-style-1">
-                <ul class="tab-list">
-                <li>
-                    <button type="button">TV + 인터넷</button>
-                </li>
-                <li>
-                    <button type="button" class="on">TV + 인터넷 + 렌탈</button>
-                </li>
-                </ul>
-            </div>
-            <img src="./img/img_banner_plusrental.png" class="pc-img" alt="">
-            <div class="txt_center" style="margin: 0 -20px;">
-                <img src="./img/m_img_banner_plusrental.png" class="mobile-img" alt="">
-            </div>
-                
-            <div class="tab-style-2">
-                <ul class="tab-list">
-                    <li><a href="#" class="on">냉장고</a></li>
-                    <li><a href="#">김치냉장고</a></li>
-                    <li><a href="#">TV</a></li>
-                    <li><a href="#">안마의자</a></li>
-                    <li><a href="#">세탁기</a></li>
-                    <li><a href="#">건조기</a></li>
-                </ul>
-            </div>
-
-            <ul class="prod-list-box">
-                <li class="prod-list">
-                    <a href="#">
-                    <div class="img-box">   
-                        <span class="best">베스트</span>                     
-                    </div>
-                    <div class="txt-box">
-                        <span class="subject">LG 세미빌트인 냉장고 636L</span>
-                        <span class="prod-code">S631S32</span>
-                        <dl class="price">
-                            <dt>5년약정기준</dt>
-                            <dd>월 89,000원</dd>
-                        </dl>
-                        <dl class="benefit">
-                            <dt>추가혜택</dt>
-                            <dd>사은품 100만원</dd>
-                        </dl>
-                    </div>
-                    </a>
-                </li>
-                <li class="prod-list">
-                    <a href="#">
-                    <div class="img-box">   
-                    </div>
-                    <div class="txt-box">
-                        <span class="subject">LG 세미빌트인 냉장고 636L</span>
-                        <span class="prod-code">S631S32</span>
-                        <dl class="price">
-                            <dt>5년약정기준</dt>
-                            <dd>월 89,000원</dd>
-                        </dl>
-                        <dl class="benefit">
-                            <dt>추가혜택</dt>
-                            <dd>사은품 100만원</dd>
-                        </dl>
-                    </div>
-                    </a>
-                </li>
-                <li class="prod-list">
-                    <a href="#">
-                    <div class="img-box">   
-                    </div>
-                    <div class="txt-box">
-                        <span class="subject">LG 세미빌트인 냉장고 636L</span>
-                        <span class="prod-code">S631S32</span>
-                        <dl class="price">
-                            <dt>5년약정기준</dt>
-                            <dd>월 89,000원</dd>
-                        </dl>
-                        <dl class="benefit">
-                            <dt>추가혜택</dt>
-                            <dd>사은품 100만원</dd>
-                        </dl>
-                    </div>
-                    </a>
-                </li>
+          <div class="com-tab-box tab-style-1">
+            <ul class="tab-list">
+              <li>
+                <button type="button">TV + 인터넷</button>
+              </li>
+              <li>
+                <button type="button" class="on">TV + 인터넷 + 렌탈</button>
+              </li>
             </ul>
+          </div>
+          <img src="./img/img_banner_plusrental.png" class="pc-img" alt="" />
+          <div class="txt_center" style="margin: 0 -20px">
+            <img
+              src="./img/m_img_banner_plusrental.png"
+              class="mobile-img"
+              alt=""
+            />
+          </div>
 
+          <div class="tab-style-2">
+            <ul class="tab-list">
+              <li><a href="#" class="on">냉장고</a></li>
+              <li><a href="#">김치냉장고</a></li>
+              <li><a href="#">TV</a></li>
+              <li><a href="#">안마의자</a></li>
+              <li><a href="#">세탁기</a></li>
+              <li><a href="#">건조기</a></li>
+            </ul>
+          </div>
+
+          <ul class="prod-list-box">
+            <li class="prod-list">
+              <a href="#">
+                <div class="img-box">
+                  <img src="./img/img_rf_lg_S631S32.png" alt="" />
+                  <span class="best">베스트</span>
+                </div>
+                <div class="txt-box">
+                  <span class="subject">LG 세미빌트인 냉장고 636L</span>
+                  <span class="prod-code">S631S32</span>
+                  <dl class="price">
+                    <dt>5년약정기준</dt>
+                    <dd>월 89,000원</dd>
+                  </dl>
+                  <dl class="benefit">
+                    <dt>추가혜택</dt>
+                    <dd>사은품 100만원</dd>
+                  </dl>
+                </div>
+              </a>
+            </li>
+            <li class="prod-list">
+              <a href="#">
+                <div class="img-box"></div>
+                <div class="txt-box">
+                  <span class="subject">LG 세미빌트인 냉장고 636L</span>
+                  <span class="prod-code">S631S32</span>
+                  <dl class="price">
+                    <dt>5년약정기준</dt>
+                    <dd>월 89,000원</dd>
+                  </dl>
+                  <dl class="benefit">
+                    <dt>추가혜택</dt>
+                    <dd>사은품 100만원</dd>
+                  </dl>
+                </div>
+              </a>
+            </li>
+            <li class="prod-list">
+              <a href="#">
+                <div class="img-box"></div>
+                <div class="txt-box">
+                  <span class="subject">LG 세미빌트인 냉장고 636L</span>
+                  <span class="prod-code">S631S32</span>
+                  <dl class="price">
+                    <dt>5년약정기준</dt>
+                    <dd>월 89,000원</dd>
+                  </dl>
+                  <dl class="benefit">
+                    <dt>추가혜택</dt>
+                    <dd>사은품 100만원</dd>
+                  </dl>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
-
-        
       </div>
       <!-- //컨텐츠 영역 -->
       <!-- 하단 영역 -->

@@ -214,6 +214,25 @@ p.line-30 {
   background-color: #ed174d;
   color: #fff; }
 
+.btn-basic.prev-arrow {
+  padding: 14px 20px; }
+
+.btn-basic.prev-arrow span {
+  display: inline-block;
+  padding-left: 38px;
+  background: url(../img/arrow_btn_back.svg) left center no-repeat;
+  background-size: 9px 17px; }
+
+.btn-basic.ic-link {
+  padding-left: 39px;
+  background: url(../img/icon_link.svg) 10px center no-repeat;
+  background-size: 19px auto; }
+
+.btn-basic.ic-share {
+  padding-left: 39px;
+  background: url(../img/icon_share.svg) 10px center no-repeat;
+  background-size: 19px auto; }
+
 /* 기본 테이블 */
 .th-left tbody th {
   text-align: left; }
@@ -478,6 +497,25 @@ input[type="checkbox"]:checked + label {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-top: 8px solid #333; }
+
+.custom-radio {
+  position: absolute;
+  width: 0;
+  height: 0; }
+
+.custom-radio + label {
+  padding: 0 20px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  font-size: 16px; }
+
+.custom-radio:checked + label {
+  border: 3px solid #ed174d;
+  color: #ed174d;
+  font-weight: bold; }
 
 textarea {
   width: 100%;
