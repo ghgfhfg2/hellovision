@@ -30,7 +30,7 @@ body,
   width: 1000px;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 100px;  
 }
 
 /* 상단영역 */
@@ -229,9 +229,13 @@ body,
   #header {
     height: auto;
   }
-  .content-box,.sub-content-box {
+  .content-box{
     width: 100%;
     padding: 0 20px;
+  }
+  .sub-content-box {
+    width: 100%;
+    padding: 0 20px 60px 20px;
   }
   .gnb-wrap {
     position: relative;

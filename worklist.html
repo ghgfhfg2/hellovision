@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>헬로비전 Work list</title>
     <link rel="stylesheet" href="./css/basic.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/common.css" />
@@ -12,10 +12,23 @@
     <script src="./js/jquery-2.1.4.min.js"></script>
     <script src="./js/jquery.easing.1.3.js"></script>
     <script src="./js/common.js"></script>
+    <style>
+        body{color: #444;}
+        .yet{            
+            background-color: #f1f1f1 !important;  
+        }
+        .cate{
+            display: inline-block;
+            padding: 5px 10px;color: #333;
+        }
+    </style>
   </head>
   <body>
       <div class="content-box">
-        <h1 class="txt_center mb20 fon_20 mt30">work list</h1>  
+        <h1 class="txt_center mb20 fon_20 mt30">work list</h1>
+        <div class="txt_right mb10">
+            <span class="yet cate">미완료</span>
+        </div>  
         <table class="tbl-basic">
             <caption></caption>
             <colgroup>
@@ -37,10 +50,56 @@
                     <td><a href="./index.html" target="_blank">바로가기</a></td>
                 </tr>
                 <tr>
-                    <td>TV</td>
+                    <td rowspan="2">TV</td>
                     <td>TV상품</td>
+                    <td><a href="sub_1_1_tv_prod.html" target="_blank">바로가기</a></td>
+                </tr>
+                <tr>
+                    <td>채널편성표</td>
+                    <td><a href="./sub_1_1_tv_schedule.html" target="_blank">바로가기</a></td>
+                </tr>  
+                <tr>
+                    <td>인터넷</td>
                     <td></td>
-                </tr>        
+                    <td><a href="./sub_2_internet.html" target="_blank">바로가기</a></td>
+                </tr>  
+                <tr>
+                    <td rowspan="2">결합상품</td>
+                    <td>TV+인터넷</td>
+                    <td><a href="sub_3_1_tv_internet.html" target="_blank">바로가기</a></td>
+                </tr>   
+                <tr>
+                    <td>TV+인터넷+렌탈</td>
+                    <td><a href="sub_3_2_tv_internet_rental.html" target="_blank">바로가기</a></td>
+                </tr>   
+                <tr>
+                    <td rowspan="3">모바일결합</td>
+                    <td>TV+인터넷+모바일(lg)</td>
+                    <td class="yet"><a href="#" target="_blank">바로가기</a></td>
+                </tr>
+                <tr>
+                    <td>TV+인터넷+모바일(sk)</td>
+                    <td class="yet"><a href="#" target="_blank">바로가기</a></td>
+                </tr>
+                <tr>
+                    <td>TV+인터넷+모바일(kt)</td>
+                    <td class="yet"><a href="#" target="_blank">바로가기</a></td>
+                </tr>  
+                <tr>
+                    <td>제휴할인</td>
+                    <td></td>
+                    <td class="yet"><a href="#" target="_blank">바로가기</a></td>
+                </tr>
+                <tr>
+                    <td>자주하는질문</td>
+                    <td></td>
+                    <td class="yet"><a href="#" target="_blank">바로가기</a></td>
+                </tr> 
+                <tr>
+                    <td>설치후기</td>
+                    <td></td>
+                    <td class="yet"><a href="#" target="_blank">바로가기</a></td>
+                </tr>    
             </tbody>
         </table>
       </div>

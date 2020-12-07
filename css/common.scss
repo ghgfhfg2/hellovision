@@ -74,6 +74,16 @@ h3.big-h3 {
       background-color: #d5d5d5;
     }
   }
+  &.fon16{
+    font-size: 16px;
+    color: #999;
+    li::before{
+      top: 11px;
+    }
+    @include mobile(){
+      font-size: 14px;
+    }
+  }
 }
 
 p.line-30 {
@@ -152,6 +162,25 @@ p.line-30 {
     }
   }
 }
+.tab-style-3{
+  .tab-list {
+    @include flex();
+    li{
+      flex: 1;
+      button{
+        width:100%;padding-bottom: 20px;border-bottom: 4px solid #d5d5d5;
+        @include font($s:18px,$w:bold,$c:#d5d5d5);text-align:center;
+        &.on{
+          color: #333;
+          border-bottom-color: #333;
+        }
+      }
+    }
+  }
+  @include mobile(){
+    padding-bottom: 15px;    
+  }
+}
 
 /* 버튼 */
 .btn-basic {
@@ -180,11 +209,11 @@ p.line-30 {
     @include font($s: 18px, $w: bold, $c: #999);
     border-radius: 5px;
     border: 1px solid #999;
-    &.p-color {
-      border-color: $p-color;
-      background-color: $p-color;
-      color: #fff;
-    }
+  }
+  &.p-color {
+    border-color: $p-color;
+    background-color: $p-color;
+    color: #fff;
   }
   &.prev-arrow {
     padding: 14px 20px;
@@ -234,26 +263,30 @@ p.line-30 {
 }
 .tbl-basic th,
 .tbl-basic td {
-  border: 0;
+  border: 0;padding: 18px 10px;
+  @include font($s:16px,$w:normal,$c:#666);
+  @include mobile(){
+    font-size: 14px;
+  }
+}
+.tbl-basic td{
+  color: #333;
 }
 .tbl-basic {
   width: 100%;
   border-spacing: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 1px solid #d5d5d5;
   border-collapse: collapse;
+  border-top:1px solid #666;  
 }
 .tbl-basic tr {
   text-align: center;
 }
 .tbl-basic thead th {
-  padding: 10px 0;
-  color: #333;
-  line-height: 18px;
-  background: #d5d5d5;
-  border-bottom: 1px solid #a5a5a5;
-  border-left: 1px solid #a5a5a5;
+  background: #f8f9fb;
+  border-bottom: 1px solid #d5d5d5;
+  border-left: 1px solid #d5d5d5;
 }
 .tbl-basic thead th:first-child {
   border-left: 0;
@@ -262,20 +295,18 @@ p.line-30 {
   border-left: 0 !important;
 }
 .tbl-basic thead th[colspan] {
-  border-bottom: 1px solid #a5a5a5;
+  border-bottom: 1px solid #d5d5d5;
 } /* th가 두줄이상으로 합쳐질때 border-bottom 값 */
 .tbl-basic thead th[rowspan] {
-  border-right: 1px solid #a5a5a5;
+  border-right: 1px solid #d5d5d5;
 } /* th가 두줄이상으로 합쳐질때 border-right 값 */
 .tbl-basic thead th[rowspan]:last-child {
   border-right: 0;
 }
 .tbl-basic thead th.none {
-  border-bottom: 1px solid #a5a5a5;
+  border-bottom: 1px solid #d5d5d5;
 } /* th가 한줄일때 class추가 */
 .tbl-basic tbody th {
-  padding: 10px;
-  font-weight: bold;
   background: #fafafa;
   border-left: 1px solid #d5d5d5;
   border-bottom: 1px solid #d5d5d5;
@@ -291,7 +322,6 @@ p.line-30 {
   border-top: 1px solid #d5d5d5;
 }
 .tbl-basic tbody td {
-  padding: 10px;
   background: #fff;
   border-left: 1px solid #d5d5d5;
   border-bottom: 1px solid #d5d5d5;
@@ -309,12 +339,10 @@ p.line-30 {
   border-left: 1px solid #d5d5d5;
 }
 .tbl-basic tfoot th {
-  padding: 10px 5px;
   background: #fafafa;
   border-right: 1px solid #d5d5d5;
 }
 .tbl-basic tfoot td {
-  padding: 10px 5px;
   border-left: 1px solid #d5d5d5;
 }
 .tbl-basic tfoot td[colspan] {

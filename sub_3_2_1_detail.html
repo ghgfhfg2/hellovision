@@ -134,8 +134,14 @@
           <span>결합상품</span>
         </div>
         <div class="sub-content-box">
-          <div>
+          <div class="pc-el">
             <a href="#" class="btn-basic prev-arrow"><span>전체리스트</span></a>
+          </div>
+          <div class="mo-el">
+            <ul class="detaile-location">
+              <li><a href="#">TV+인터넷+렌탈</a></li>
+              <li><a href="#">냉장고</a></li>
+            </ul>
           </div>
           <div class="detaile-top-info">
             <div class="img-box">
@@ -188,7 +194,6 @@
               <div class="bg-txt">
                 렌탈약정 기간이 종료되면 제품은 고객님께 소유권이 이전됩니다.
               </div>
-              <div>
               <dl class="col-dl">
                 <dt>렌탈약정기간</dt>
                 <dd>
@@ -196,7 +201,7 @@
                   <label for="year3">3년</label>
                   <input class="custom-radio" type="radio" name="rentalYear" id="year4" value="4년" />
                   <label for="year4">4년</label>
-                  <input class="custom-radio" type="radio" name="rentalYear" id="year5" value="5년" />
+                  <input class="custom-radio" type="radio" name="rentalYear" id="year5" value="5년" checked />
                   <label for="year5">5년</label>
                 </dd>
               </dl>
@@ -208,18 +213,99 @@
                   </dt>
                   <dd>
                     3년약정
-                    <span class="price"><span>월</span> 33,000원</span>
+                    <span class="price">월<span> 33,000원</span></span>
                   </dd>
                 </dl>
                 <dl>
                   <dt>LG 세미빌트인 냉장고 636L</dt>
                   <dd>
                     5년약정
-                    <span class="price"><span>월</span> 39,000원</span>
+                    <span class="price">월<span> 39,000원</span></span>
                   </dd>
                 </dl>
               </div>
+              <button type="button" class="btn-basic big p-color">바로상담신청</button>
             </div>
+          </div>
+          <div class="detail-content">
+            <div class="com-tab-box tab-style-3 detail-tab">
+                <ul class="tab-list">
+                  <li>
+                    <button type="button" class="on" data-tab="#tab1">제품특징</button>
+                  </li>
+                  <li>
+                    <button type="button" data-tab="#tab2">유의사항</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="tab1" style="display: block">
+                  <div class="txt_center">
+                    <img src="./img/S631S32_01.png" alt="" class="pc-img">
+                    <img src="./img/S631S32_01.png" alt="" class="mobile-img">
+                  </div>
+                </div>
+                <div class="tab-content" id="tab2">
+                  <div class="txt_center">
+                    <img src="./img/img_banner_plusrental.png" alt="" class="pc-img">
+                    <img src="./img/m_img_banner_plusrental.png" alt="" class="mobile-img">
+                  </div>
+                  <h3 class="big-h3 txt_center">렌탈 신청절차</h3>
+                  <div class="detail-rental-step">
+                    <div class="step-box">
+                      <span class="num">1</span>
+                      <img class="step1" src="./img/icon_step_select.svg" alt="">
+                      <span class="tit">상품선택하기</span>
+                    </div>
+                    <div class="step-box">
+                      <span class="num">2</span>
+                      <img class="step2" src="./img/icon step apply.svg" alt="">
+                      <span class="tit">렌탈문의 / 신청</span>
+                    </div>
+                    <div class="step-box">
+                      <span class="num">3</span>
+                      <img class="step3" src="./img/icon_step_call.svg" alt="">
+                      <span class="tit">해피콜통화</span>
+                    </div>
+                    <div class="step-box">
+                      <span class="num">4</span>
+                      <img class="step4" src="./img/icon_step_delivery.svg" alt="">
+                      <span class="tit">배송 및 설치완료</span>
+                    </div>
+                    <div class="step-box">
+                      <span class="num">5</span>
+                      <img class="step5" src="./img/icon step gift.svg" alt="">
+                      <span class="tit">사은품증정</span>
+                    </div>
+                  </div>
+                  <ul class="li-style1 col_999">                
+                    <li>
+                      렌탈은 홈쇼핑처럼 해피콜을 통해 계약을 체결하고 새 가전제품을 받아서 렌탈요금을 월 납부하며<br>
+                      사용 후 약정기간이 종료되면 본인소유가 되는 구매방식입니다.
+                    </li>
+                    <li>
+                      단기렌탈 또는 중간에 제품반납은 불가합니다. 단, 잔여금을 일시납부시 제품은 본인소유가 됩니다.
+                    </li>
+                    <li>
+                      자동이체 및 신용카드 납부만 가능하며, 신용등급에 따라 신용카드 납부만 가능 할 수도 있습니다.
+                    </li>
+                    <li>
+                      당사 가입 규정에 따라 가입이 제한 될 수 있으며, 브랜드 사정에 의해 동일한 사양의 제품의 모델명 이 변경 될 수 있습니다.
+                    </li>
+                    <li>
+                      렌탈상품은 고객 주소지로 제조사 물류 직원이 직접 방문하여 설치 또는 택배로 배송됩니다.
+                    </li>
+                    <li>
+                      렌탈상품의 공급 및 설치를 위하여 포장박스를 개봉한 후는 당사의 렌탈서비스가 개시된 것이며, 이후 어떠한 경우에도 품목변경은 불가능합니다.
+                    </li>
+                    <li>
+                      렌탈상품은 각 제조사의 AS정책을 따릅니다. 무상 AS기간 동안 제조사를 통하여 AS를 받으실 수 있습니다.<br>
+                      단, 고객 과실시 유상수리로 처리 될 수 있습니다.
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <script>
+                comTab(".detail-tab");
+            </script>
           </div>
         </div>
       </div>

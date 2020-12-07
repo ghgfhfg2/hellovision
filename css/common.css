@@ -79,6 +79,17 @@ h3.big-h3 {
   top: 9px;
   background-color: #d5d5d5; }
 
+.li-style1.fon16 {
+  font-size: 16px;
+  color: #999; }
+
+.li-style1.fon16 li::before {
+  top: 11px; }
+
+@media (max-width: 640px) {
+  .li-style1.fon16 {
+    font-size: 14px; } }
+
 p.line-30 {
   margin: 7px 0; }
 
@@ -176,6 +187,32 @@ p.line-30 {
   color: #fff;
   font-weight: bold; }
 
+.tab-style-3 .tab-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row; }
+
+.tab-style-3 .tab-list li {
+  flex: 1; }
+
+.tab-style-3 .tab-list li button {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 4px solid #d5d5d5;
+  font-size: 18px;
+  font-weight: bold;
+  color: #d5d5d5;
+  text-align: center; }
+
+.tab-style-3 .tab-list li button.on {
+  color: #333;
+  border-bottom-color: #333; }
+
+@media (max-width: 640px) {
+  .tab-style-3 {
+    padding-bottom: 15px; } }
+
 /* 버튼 */
 .btn-basic {
   border: 1px solid #d5d5d5;
@@ -209,7 +246,7 @@ p.line-30 {
   border-radius: 5px;
   border: 1px solid #999; }
 
-.btn-basic.big2.p-color {
+.btn-basic.p-color {
   border-color: #ed174d;
   background-color: #ed174d;
   color: #fff; }
@@ -261,26 +298,35 @@ p.line-30 {
 
 .tbl-basic th,
 .tbl-basic td {
-  border: 0; }
+  border: 0;
+  padding: 18px 10px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #666; }
+
+@media (max-width: 640px) {
+  .tbl-basic th,
+  .tbl-basic td {
+    font-size: 14px; } }
+
+.tbl-basic td {
+  color: #333; }
 
 .tbl-basic {
   width: 100%;
   border-spacing: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 1px solid #d5d5d5;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  border-top: 1px solid #666; }
 
 .tbl-basic tr {
   text-align: center; }
 
 .tbl-basic thead th {
-  padding: 10px 0;
-  color: #333;
-  line-height: 18px;
-  background: #d5d5d5;
-  border-bottom: 1px solid #a5a5a5;
-  border-left: 1px solid #a5a5a5; }
+  background: #f8f9fb;
+  border-bottom: 1px solid #d5d5d5;
+  border-left: 1px solid #d5d5d5; }
 
 .tbl-basic thead th:first-child {
   border-left: 0; }
@@ -289,23 +335,21 @@ p.line-30 {
   border-left: 0 !important; }
 
 .tbl-basic thead th[colspan] {
-  border-bottom: 1px solid #a5a5a5; }
+  border-bottom: 1px solid #d5d5d5; }
 
 /* th가 두줄이상으로 합쳐질때 border-bottom 값 */
 .tbl-basic thead th[rowspan] {
-  border-right: 1px solid #a5a5a5; }
+  border-right: 1px solid #d5d5d5; }
 
 /* th가 두줄이상으로 합쳐질때 border-right 값 */
 .tbl-basic thead th[rowspan]:last-child {
   border-right: 0; }
 
 .tbl-basic thead th.none {
-  border-bottom: 1px solid #a5a5a5; }
+  border-bottom: 1px solid #d5d5d5; }
 
 /* th가 한줄일때 class추가 */
 .tbl-basic tbody th {
-  padding: 10px;
-  font-weight: bold;
   background: #fafafa;
   border-left: 1px solid #d5d5d5;
   border-bottom: 1px solid #d5d5d5; }
@@ -321,7 +365,6 @@ p.line-30 {
   border-top: 1px solid #d5d5d5; }
 
 .tbl-basic tbody td {
-  padding: 10px;
   background: #fff;
   border-left: 1px solid #d5d5d5;
   border-bottom: 1px solid #d5d5d5; }
@@ -339,12 +382,10 @@ p.line-30 {
   border-left: 1px solid #d5d5d5; }
 
 .tbl-basic tfoot th {
-  padding: 10px 5px;
   background: #fafafa;
   border-right: 1px solid #d5d5d5; }
 
 .tbl-basic tfoot td {
-  padding: 10px 5px;
   border-left: 1px solid #d5d5d5; }
 
 .tbl-basic tfoot td[colspan] {

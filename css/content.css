@@ -405,15 +405,38 @@
 .main-join-step .step-box img {
   width: 75px; }
 
-.main-join-step .step-box img.step4 {
-  width: 76px; }
-
-.main-join-step .step-box img.step5 {
-  width: 74px; }
-
 .main-join-step .step-box .tit {
   font-size: 16px;
   font-weight: 600; }
+
+@media (max-width: 640px) {
+  .main-join-step {
+    justify-content: center;
+    flex-wrap: wrap; }
+  .main-join-step .step-box {
+    width: calc(50% - 10px);
+    height: 185px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px 0; }
+  .main-join-step .step-box:nth-child(2n + 2) {
+    margin-right: 0; }
+  .main-join-step .step-box:last-child {
+    margin-bottom: 0; }
+  .main-join-step .step-box .num {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px; }
+  .main-join-step .step-box img {
+    width: 56px;
+    margin-top: 10px; } }
+
+.main-join-step .step4 {
+  width: 76px; }
+
+.main-join-step .step5 {
+  width: 74px; }
 
 /* 제휴카드 혜택 */
 .card-benefit-section {
@@ -646,6 +669,8 @@
     width: 100%;
     height: 168px;
     margin-right: 0;
+    padding: 0 20px;
+    justify-content: center;
     margin-bottom: 20px; }
   .best-prod-tab .best-prod-wrap .best-prod-box:last-child {
     margin-bottom: 0; }
@@ -674,27 +699,6 @@
     margin-bottom: 0; }
   .max-benefit-rental .rental-list .rental-box img {
     margin: 15px 0; }
-  .main-join-step {
-    justify-content: center;
-    flex-wrap: wrap; }
-  .main-join-step .step-box {
-    width: calc(50% - 10px);
-    height: 185px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding: 20px 0; }
-  .main-join-step .step-box:nth-child(2n + 2) {
-    margin-right: 0; }
-  .main-join-step .step-box:last-child {
-    margin-bottom: 0; }
-  .main-join-step .step-box .num {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 14px; }
-  .main-join-step .step-box img {
-    width: 56px !important;
-    margin-top: 10px; }
   .card-benefit-section .card-benefit-wrap .card-box {
     width: 100%;
     height: auto;
@@ -707,10 +711,7 @@
   .card-benefit-section .card-benefit-wrap .card-box .txt-box p {
     text-align: center; }
   .card-benefit-section .page-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    display: none;
     margin-bottom: 20px; }
   .card-benefit-section .page-box .swiper-pagination-bullet {
     display: inline-block;
@@ -723,6 +724,13 @@
     margin-right: 0; }
   .card-benefit-section .page-box .swiper-pagination-bullet-active {
     background-color: #ed174d; } }
+
+@media all and (max-width: 640px) and (max-width: 640px) {
+  .card-benefit-section .page-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; } }
 
 /*
 ====================================
@@ -962,6 +970,9 @@
 
 .sub-visual-box.s-3-1 {
   background-image: url(../img/bg_sub_03plus.png); }
+
+.sub-visual-box.s-4-1 {
+  background-image: url(../img/bg_sub_04mobile.png); }
 
 /* tv 상품 */
 .s1-1-box {
@@ -1414,12 +1425,47 @@
   color: #ed174d; }
 
 /* 상세페이지 */
+@media (max-width: 640px) {
+  .detail-content {
+    margin: 0 -20px; } }
+
+.detaile-location {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row; }
+
+.detaile-location li {
+  position: relative;
+  margin-right: 27px; }
+
+.detaile-location li:last-child {
+  margin-right: 0; }
+
+.detaile-location li::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background: url(../img/m_arrow_navi.svg) center no-repeat;
+  right: -18px;
+  top: 50%;
+  margin-top: -6px; }
+
+.detaile-location li:last-child::after {
+  display: none; }
+
 .detaile-top-info {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row; }
+
+@media (max-width: 640px) {
+  .detaile-top-info {
+    flex-direction: column; } }
 
 .detaile-top-info .img-box {
   display: flex;
@@ -1428,6 +1474,10 @@
   flex-direction: column;
   margin-bottom: 12px; }
 
+@media (max-width: 640px) {
+  .detaile-top-info .img-box {
+    width: 100%; } }
+
 .detaile-top-info .img-box .view-img {
   width: 420px;
   height: 420px;
@@ -1435,6 +1485,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: row; }
+
+@media (max-width: 640px) {
+  .detaile-top-info .img-box .view-img {
+    width: 100%;
+    height: auto;
+    padding: 20px 0; } }
 
 .detaile-top-info .img-box .thumb-img {
   display: flex;
@@ -1474,6 +1530,10 @@
 
 .detaile-top-info .txt-info-box {
   width: 500px; }
+
+@media (max-width: 640px) {
+  .detaile-top-info .txt-info-box {
+    width: 100%; } }
 
 .detaile-top-info .txt-info-box .tit-box {
   width: 100%;
@@ -1541,6 +1601,213 @@
   width: 100%;
   text-align: center;
   background: #f2f2f2; }
+
+@media (max-width: 640px) {
+  .detaile-top-info .txt-info-box .bg-txt {
+    padding: 17px 30px; } }
+
+.detaile-top-info .txt-info-box .prod-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row; }
+
+.detaile-top-info .txt-info-box .prod-info dl {
+  position: relative;
+  flex: 1;
+  height: 146px;
+  border: solid 2px #e5ecf9;
+  border-radius: 10px;
+  color: #333;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 40px; }
+
+.detaile-top-info .txt-info-box .prod-info dl:last-child {
+  margin-right: 0; }
+
+.detaile-top-info .txt-info-box .prod-info dl:nth-child(1)::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  right: -30px;
+  top: 50%;
+  margin-top: -10px;
+  background: url(../img/icon_plus.svg) center no-repeat; }
+
+.detaile-top-info .txt-info-box .prod-info dl dt {
+  width: 100%;
+  height: 70px;
+  background-color: #e5ecf9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-weight: bold; }
+
+.detaile-top-info .txt-info-box .prod-info dl dd {
+  width: 100%;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.detaile-top-info .txt-info-box .prod-info dl dd .price {
+  color: #ed174d; }
+
+.detaile-top-info .txt-info-box .prod-info dl dd .price span {
+  font-size: 24px;
+  font-weight: bold; }
+
+@media (max-width: 640px) {
+  .detaile-top-info .txt-info-box .prod-info {
+    flex-direction: column; }
+  .detaile-top-info .txt-info-box .prod-info dl {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px; }
+  .detaile-top-info .txt-info-box .prod-info dl:last-child {
+    margin-bottom: 0; }
+  .detaile-top-info .txt-info-box .prod-info dl:nth-child(1)::after {
+    left: 50%;
+    margin-left: -10px;
+    top: 100%;
+    margin-top: 11px; } }
+
+.detaile-top-info .txt-info-box .btn-basic {
+  padding: 18px 20px;
+  width: 100%;
+  margin-top: 30px; }
+
+.detail-tab {
+  margin-top: 80px; }
+
+.detail-tab .tab-list {
+  margin-bottom: 60px; }
+
+.detail-tab .li-style1 {
+  padding: 70px 0 100px 0; }
+
+@media (max-width: 640px) {
+  .detail-tab {
+    margin: 50px 20px 0 20px; }
+  .detail-tab .tab-list {
+    margin-bottom: 0px; }
+  .detail-tab .li-style1 {
+    padding: 20px 0 40px 0; } }
+
+.detail-rental-step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; }
+
+.detail-rental-step .step-box {
+  height: 250px;
+  width: 20%;
+  background-color: #f8f9fb;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 30px; }
+
+.detail-rental-step .step-box:last-child {
+  margin-right: 0; }
+
+.detail-rental-step .step-box .num {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ed174d;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+  color: #fff; }
+
+.detail-rental-step .step-box img {
+  width: 75px; }
+
+.detail-rental-step .step-box .tit {
+  font-size: 16px;
+  font-weight: 600; }
+
+@media (max-width: 640px) {
+  .detail-rental-step {
+    justify-content: center;
+    flex-wrap: wrap; }
+  .detail-rental-step .step-box {
+    width: calc(50% - 10px);
+    height: 185px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px 0; }
+  .detail-rental-step .step-box:nth-child(2n + 2) {
+    margin-right: 0; }
+  .detail-rental-step .step-box:last-child {
+    margin-bottom: 0; }
+  .detail-rental-step .step-box .num {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px; }
+  .detail-rental-step .step-box img {
+    width: 56px;
+    margin-top: 10px; } }
+
+.detail-rental-step .step-box {
+  box-shadow: none;
+  margin-right: 12px; }
+
+.detail-rental-step .step1 {
+  width: 79px; }
+
+.detail-rental-step .step2 {
+  width: 75px; }
+
+.detail-rental-step .step3 {
+  width: 72px; }
+
+.detail-rental-step .step4 {
+  width: 79px; }
+
+.detail-rental-step .step5 {
+  width: 75px; }
+
+@media (max-width: 640px) {
+  .detail-rental-step .step-box {
+    width: calc(50% - 10px);
+    height: 185px;
+    margin-bottom: 20px;
+    margin-right: 20px; }
+  .detail-rental-step .step-box .step1 {
+    width: 58px; }
+  .detail-rental-step .step-box .step2 {
+    width: 56px; }
+  .detail-rental-step .step-box .step3 {
+    width: 56px; }
+  .detail-rental-step .step-box .step4 {
+    width: 56px; }
+  .detail-rental-step .step-box .step5 {
+    width: 56px; } }
+
+.s4-1-box .li-style1 {
+  margin-top: 30px; }
+
+.s4-1-box table .sale {
+  font-size: 20px;
+  font-weight: normal;
+  color: #ed174d; }
 
 @media all and (max-width: 640px) {
   /* 서브공통 */

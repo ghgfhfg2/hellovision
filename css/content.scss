@@ -19,6 +19,64 @@
   padding: 60px 0;
 }
 
+@mixin stepBox {
+  @include flex($j: space-between);
+  .step-box {
+    height: 250px;
+    width: 20%;
+    background-color: #f8f9fb;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+    padding: 25px 0;
+    @include flex($j: space-between, $d: column);
+    @include lastMr0(30px);
+    .num {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ed174d;
+      color: #fff;
+      line-height: 40px;
+      text-align: center;
+      @include font($s: 19px, $w: bold, $c: #fff);
+    }
+    img {
+      width: 75px;
+    }
+    .tit {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  @include mobile(){
+    justify-content: center;
+    flex-wrap: wrap;
+    .step-box {
+      width: calc(50% - 10px);
+      height: 185px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      padding: 20px 0;
+      &:nth-child(2n + 2) {
+        margin-right: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .num {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+      }
+      img {
+        width: 56px;
+        margin-top: 10px;
+      }
+    }    
+  }
+}
+
 /* 오른쪽 고정배너 */
 .right-fix-banner {
   position: fixed;
@@ -307,39 +365,12 @@
 
 /* 가입절차 */
 .main-join-step {
-  @include flex($j: space-between);
-  .step-box {
-    height: 250px;
-    width: 20%;
-    background-color: #f8f9fb;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.07);
-    padding: 25px 0;
-    @include flex($j: space-between, $d: column);
-    @include lastMr0(30px);
-    .num {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #ed174d;
-      color: #fff;
-      line-height: 40px;
-      text-align: center;
-      @include font($s: 19px, $w: bold, $c: #fff);
-    }
-    img {
-      width: 75px;
-    }
-    img.step4 {
-      width: 76px;
-    }
-    img.step5 {
-      width: 74px;
-    }
-    .tit {
-      font-size: 16px;
-      font-weight: 600;
-    }
+  @include stepBox();
+  .step4 {
+    width: 76px;
+  }
+  .step5 {
+    width: 74px;
   }
 }
 
@@ -564,6 +595,7 @@
         width: 100%;
         height: 168px;
         margin-right: 0;
+        padding: 0 20px;justify-content: center;
         @include lastMb0(20px);
         img {
           width: 96px;
@@ -606,33 +638,6 @@
     }
   }
 
-  .main-join-step {
-    justify-content: center;
-    flex-wrap: wrap;
-    .step-box {
-      width: calc(50% - 10px);
-      height: 185px;
-      margin-right: 20px;
-      margin-bottom: 20px;
-      padding: 20px 0;
-      &:nth-child(2n + 2) {
-        margin-right: 0;
-      }
-      &:last-child {
-        margin-bottom: 0;
-      }
-      .num {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 14px;
-      }
-      img {
-        width: 56px !important;
-        margin-top: 10px;
-      }
-    }
-  }
 
   .card-benefit-section {
     .card-benefit-wrap {
@@ -654,7 +659,7 @@
       }
     }
     .page-box {
-      @include flex($j: center);
+      display: none;
       margin-bottom: 20px;
       .swiper-pagination-bullet {
         display: inline-block;
@@ -666,6 +671,9 @@
       }
       .swiper-pagination-bullet-active {
         background-color: $p-color;
+      }
+      @include mobile(){
+        @include flex($j: center);
       }
     }
   }
@@ -860,6 +868,9 @@
   }
   &.s-3-1 {
     background-image: url(../img/bg_sub_03plus.png);
+  }
+  &.s-4-1 {
+    background-image: url(../img/bg_sub_04mobile.png);
   }
 }
 
@@ -1178,7 +1189,7 @@
       width: 100%;
       margin-right: 0;
       @include lastMb0(40px);
-    }
+    };
     .img-box {
       @include mobile() {
         height: auto;
@@ -1190,7 +1201,8 @@
       background-color: #f2f2f2;
       border-radius: 15px;
       margin-bottom: 18px;
-      @include flex($j: center, $a: center) .best {
+      @include flex($j: center, $a: center);
+      .best {
         display: inline-block;
         text-align: center;
         position: absolute;
@@ -1233,15 +1245,44 @@
 }
 
 /* 상세페이지 */
+.detail-content{
+  @include mobile(){
+    margin: 0 -20px;
+  }
+}
+.detaile-location{
+  @include flex();
+  li{
+    position: relative;
+    @include lastMr0(27px);
+    &::after{
+      @include after(10px,15px);
+      background: url(../img/m_arrow_navi.svg) center no-repeat;
+      right: -18px;top:50%;margin-top: -6px;
+    }
+    &:last-child::after{
+      display: none;
+    }
+  }
+}
 .detaile-top-info {
   margin-top: 20px;
   @include flex($j: space-between, $a: flex-start);
+  @include mobile(){
+    flex-direction: column;
+  }
   .img-box {
     @include flex($d: column);
+    @include mobile(){
+      width: 100%;
+    }
     .view-img {
       width: 420px;
       height: 420px;
       @include flex($j: center);
+      @include mobile(){
+        width: 100%;height: auto;padding: 20px 0;
+      }
     }
     margin-bottom: 12px;
     .thumb-img {
@@ -1268,6 +1309,9 @@
   }
   .txt-info-box {
     width: 500px;
+    @include mobile(){
+      width:100%;
+    }
     .tit-box {
       width: 100%;
       padding: 27px 0;
@@ -1317,7 +1361,97 @@
       width: 100%;
       text-align: center;
       background: #f2f2f2;
+      @include mobile(){
+        padding: 17px 30px;
+      }
     }
+    .prod-info{
+      @include flex();      
+      dl{
+        position: relative;
+        flex:1;height:146px;border: solid 2px #e5ecf9;border-radius: 10px;
+        color: #333;
+        @include flex($d:column);
+        @include lastMr0(40px);
+        
+        &:nth-child(1)::after{
+          @include after(19px,19px);
+          right: -30px;top:50%;margin-top:-10px;
+          background: url(../img/icon_plus.svg) center no-repeat;          
+        }
+        dt{
+          width:100%;height: 70px;background-color: #e5ecf9;
+          @include flex($j:center);font-weight: bold;
+        }
+        dd{
+          width:100%;height: 76px;
+          @include flex($j:center,$d:column);
+          .price{
+            color: $p-color;
+            span{
+              font-size: 24px;font-weight: bold;
+            }
+          }
+        }
+      }
+      @include mobile(){
+        flex-direction: column;
+        dl{
+          width: 100%;margin-right: 0;
+          @include lastMb0(40px);
+          &:nth-child(1)::after{
+            left: 50%;margin-left: -10px;top:100%;margin-top: 11px;
+          }
+        }
+      }
+    }
+    .btn-basic{padding: 18px 20px;width: 100%;margin-top: 30px;}
+  }
+}
+.detail-tab{
+  .tab-list{
+    margin-bottom: 60px;
+  }
+  margin-top: 80px;
+  .li-style1{
+    padding:70px 0 100px 0
+  }
+  @include mobile(){
+    margin: 50px 20px 0 20px;
+    .tab-list{
+      margin-bottom: 0px;
+    }
+    .li-style1{
+      padding:20px 0 40px 0
+    }
+  }
+}
+.detail-rental-step{
+  @include stepBox();
+  .step-box{box-shadow: none;margin-right: 12px;}
+  .step1{width: 79px;}
+  .step2{width: 75px;}
+  .step3{width: 72px;}
+  .step4{width: 79px;}
+  .step5{width: 75px;}
+  @include mobile(){
+    .step-box{
+      width: calc(50% - 10px);height: 185px;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      .step1{width: 58px;}
+      .step2{width: 56px;}
+      .step3{width: 56px;}
+      .step4{width: 56px;}
+      .step5{width: 56px;}
+    }
+  }
+}
+
+.s4-1-box{
+  .li-style1{margin-top: 30px;}
+  table .sale{
+    @include font($s:20px,$c:$p-color)
   }
 }
 

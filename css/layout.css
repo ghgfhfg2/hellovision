@@ -325,9 +325,12 @@ body,
     overflow: hidden; }
   #header {
     height: auto; }
-  .content-box, .sub-content-box {
+  .content-box {
     width: 100%;
     padding: 0 20px; }
+  .sub-content-box {
+    width: 100%;
+    padding: 0 20px 60px 20px; }
   .gnb-wrap {
     position: relative;
     flex-direction: column; }
