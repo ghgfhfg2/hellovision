@@ -32,8 +32,12 @@
               />
               <img src="./img/logo_LGhellovision2x.png" class="mobile-img" />
             </a>
-            <button type="button" class="btn-total-menu mo-el" onclick="addOn('.total-menu-box')">
-                <span class="line"></span>
+            <button
+              type="button"
+              class="btn-total-menu mo-el"
+              onclick="addOn('.total-menu-box')"
+            >
+              <span class="line"></span>
             </button>
           </div>
           <div id="gnb-box">
@@ -49,45 +53,51 @@
           </div>
         </div>
         <div class="total-menu-box">
-            <div class="top-box">
-                <a href="#" class="ic-home">HOME</a>
-                <button type="button" class="btn-close" onclick="removeOn('.total-menu-box')"></button>
-            </div>
-            <div class="mo-lnb">
-                <ul class="depth-1">
-                    <li>
-                        <a href="#" class="has-sub">TV</a>
-                        <ul class="depth-2">
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="has-sub">TV</a>
-                        <ul class="depth-2">
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                        </ul>
-                    </li>
+          <div class="top-box">
+            <a href="#" class="ic-home">HOME</a>
+            <button
+              type="button"
+              class="btn-close"
+              onclick="removeOn('.total-menu-box')"
+            ></button>
+          </div>
+          <div class="mo-lnb">
+            <ul class="depth-1">
+              <li>
+                <a href="#" class="has-sub">TV</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
                 </ul>
-            </div>
+              </li>
+              <li>
+                <a href="#" class="has-sub">TV</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
       <script>
-          var lnbDepth1 = document.querySelectorAll('.total-menu-box .depth-1 .has-sub');
-          for(var i=0; i<lnbDepth1.length; i++){
-              lnbDepth1[i].addEventListener('click', function(){
-                this.classList.toggle('on');
-              })
-          }
+        var lnbDepth1 = document.querySelectorAll(
+          ".total-menu-box .depth-1 .has-sub"
+        );
+        for (var i = 0; i < lnbDepth1.length; i++) {
+          lnbDepth1[i].addEventListener("click", function () {
+            this.classList.toggle("on");
+          });
+        }
       </script>
       <!--//상단영역 -->
       <!-- 오른쪽 고정배너 -->
@@ -123,63 +133,97 @@
       <div id="container">
         <h2 class="sub-h2">설치후기</h2>
         <div class="sub-content-box">
-            <div class="event-banner">
-                <img src="./img/m_img_banner_event.png" alt="">
+          <div class="event-banner">
+            <img src="./img/m_img_banner_event.png" alt="" />
+          </div>
+          <div class="review-bbs-box">
+            <div class="btn-box">
+              <button type="button" class="btn-basic p-color">후기작성</button>
             </div>
-            <div class="review-bbs-box">
-                <div class="btn-box">
-                    <button type="button" class="btn-basic p-color">후기작성</button>
+            <ul class="acd-bbs-box">
+              <li class="head">
+                <span class="colbox box-1">NO.</span>
+                <span class="colbox box-2">제목</span>
+                <span class="colbox box-3">작성자</span>
+                <span class="colbox box-4">등록일</span>
+                <span class="colbox box-5"></span>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  id="reply_1"
+                  onclick="toggleOn('#reply_1','on')"
+                >
+                  <span class="num colbox box-1">15</span>
+                  <span class="subject colbox box-2">
+                    <img src="./img/img_list_review_thum.png" alt="" />
+                    상담하려면 어떻게 하면 되나요?
+                  </span>
+                  <span class="name colbox box-3">김은*</span>
+                  <span class="date colbox box-4">2020-10-10</span>
+                  <span class="colbox box-5"></span>
+                </button>
+                <div class="reply-box">
+                  <div class="con-box">
+                    <a href="#"
+                      ><img src="./img/img_list_review_thum.png" alt=""
+                    /></a>
+                    <a href="#"
+                      ><img src="./img/img_list_review_thum.png" alt=""
+                    /></a>
+                    <a href="#"
+                      ><img src="./img/img_list_review_thum.png" alt=""
+                    /></a>
+                    <div class="btn-box">
+                      <button type="button" class="btn-basic">수정</button>
+                      <button type="button" class="btn-basic">삭제</button>
+                    </div>
+                  </div>
                 </div>
-                <ul class="acd-bbs-box">
-                    <li class="head">
-                        <span class="colbox box-1">NO.</span>
-                        <span class="colbox box-2">제목</span>
-                        <span class="colbox box-3">작성자</span>
-                        <span class="colbox box-4">등록일</span>
-                        <span class="colbox box-5"></span>
-                    </li>
-                    <li>
-                        <button type="button" id="reply_1" onclick="toggleOn('#reply_1','on')">
-                            <span class="num colbox box-1">15</span>
-                            <span class="subject colbox box-2">
-                                <img src="./img/img_list_review_thum.png" alt="">
-                                상담하려면 어떻게 하면 되나요?
-                            </span>
-                            <span class="name colbox box-3">김은*</span>
-                            <span class="date colbox box-4">2020-10-10</span>
-                            <span class="colbox box-5"></span>
-                        </button>
-                        <div class="reply-box">
-                            <div class="con-box">
-                                <a href="#"><img src="./img/img_list_review_thum.png" alt=""></a>
-                                <a href="#"><img src="./img/img_list_review_thum.png" alt=""></a>
-                                <a href="#"><img src="./img/img_list_review_thum.png" alt=""></a>
-                                <div class="btn-box">
-                                    <button type="button" class="btn-basic">수정</button>
-                                    <button type="button" class="btn-basic">삭제</button>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="review-photo-layer">
+            <button
+              type="button"
+              class="btn-close"
+              onclick="layerClose('.review-photo-layer')"
+            ></button>
+            <div class="swiper-container reivew-photo-box">
+              <ul class="swiper-wrapper reivew-photo-slide">
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/W16WT_01.png" alt="" />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/img_sub_youtube.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+              <div class="page-box"></div>
             </div>
-            <div class="review-photo-layer">
-                <button type="button" class="btn-close"></button>
-                <div class="swiper-container reivew-photo-box">
-                    <ul class="swiper-wrapper reivew-photo-slide">
-                        <li class="swiper-slide">
-                            <a href="#">
-                                <img src="./img/W16WT_01.png" alt="">
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                                <img src="./img/W16WT_01.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="control">
+              <button type="button" class="prev"></button>
+              <button type="button" class="next"></button>
             </div>
+          </div>
+          <script>
+            new Swiper(".reivew-photo-box", {
+              loop: true,
+              spaceBetween: 20,
+              navigation: {
+                prevEl: ".review-photo-layer .prev",
+                nextEl: ".review-photo-layer .next",
+              },
+              pagination: {
+                el: ".reivew-photo-box .page-box",
+                clickable: true,
+              },
+              a11y: false,
+            });
+          </script>
         </div>
       </div>
       <!-- //컨텐츠 영역 -->
