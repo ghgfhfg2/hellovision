@@ -39,6 +39,14 @@ h2.sub-h2 {
   margin-bottom: 80px;
   text-align: center;
 }
+h3.sub-h3 {
+  @include font($s: 24px, $w: bold, $c: #000);
+  margin-top: 60px;
+  margin-bottom: 20px;
+  @include mobile(){
+    margin-top: 40px;text-align: center;
+  }
+}
 h3.big-h3 {
   @include font($s: 30px, $w: bold, $c: #000);
   margin-bottom: 25px;
@@ -188,6 +196,7 @@ p.line-30 {
   border-radius: 5px;
   padding: 7px 20px;
   color: $fon-color;
+  background-color: #fff;
   &.big {
     display: inline-block;
     @include font($s: 18px, $w: bold, $c: #000);
@@ -507,7 +516,7 @@ textarea {
 }
 @media all and (max-width: 640px) {
   h2.sub-h2 {
-    margin: 35px 0;
+    margin: 35px 0;font-size: 30px;margin-bottom: 20px;
   }
   h3.big-h3 {
     font-size: 24px;

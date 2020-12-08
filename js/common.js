@@ -26,6 +26,15 @@ function removeOn(el) {
   var target = document.querySelector(el);
   target.classList.remove("on");
 }
+function toggleOn(el, cls) {
+  var target = document.querySelector(el);
+  if (target.classList.contains(cls)) {
+    target.classList.remove(cls);
+  } else {
+    target.classList.add(cls);
+  }
+}
+
 
 /* tab */
 function comTab(el, dp) {

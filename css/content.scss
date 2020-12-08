@@ -1451,7 +1451,51 @@
 .s4-1-box{
   .li-style1{margin-top: 30px;}
   table .sale{
-    @include font($s:20px,$c:$p-color)
+    @include font($s:20px,$c:$p-color);
+  }
+}
+
+.s5-box{
+  padding-top: 20px;border-top: 5px solid #ffe4e4;
+  .card-box{
+    @include flex($a:flex-start);
+    background-color: #f8f9fb;
+    border-radius: 15px;padding: 50px 60px;
+    .img-box{
+      margin-right: 50px;flex-shrink: 0;
+      @include flex($d:column);
+      img{
+        margin-bottom: 25px;
+      }
+      .btn-view{
+        display: inline-block;width: 160px;height: 36px;line-height: 36px;
+        color: #fff;background-color: #333;border-radius: 18px;text-align: center;
+      }
+    }
+    .txt-box{
+      dl{
+        @include lastMb0(25px);
+        font-size:16px;
+        dt{
+          @include font($s:16px,$c:#333,$w:bold);
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  @include mobile(){
+    padding-top: 0;
+    .card-box{
+      padding: 30px 20px;
+      flex-direction: column;
+      .img-box{
+        text-align: center;margin-right: 0;width: 100%;
+        margin-bottom: 30px;
+        img{
+          margin-bottom: 15px;
+        }
+      }
+    }
   }
 }
 

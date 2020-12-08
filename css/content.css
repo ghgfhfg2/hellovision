@@ -1809,6 +1809,67 @@
   font-weight: normal;
   color: #ed174d; }
 
+.s5-box {
+  padding-top: 20px;
+  border-top: 5px solid #ffe4e4; }
+
+.s5-box .card-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  background-color: #f8f9fb;
+  border-radius: 15px;
+  padding: 50px 60px; }
+
+.s5-box .card-box .img-box {
+  margin-right: 50px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column; }
+
+.s5-box .card-box .img-box img {
+  margin-bottom: 25px; }
+
+.s5-box .card-box .img-box .btn-view {
+  display: inline-block;
+  width: 160px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 18px;
+  text-align: center; }
+
+.s5-box .card-box .txt-box dl {
+  margin-bottom: 25px;
+  font-size: 16px; }
+
+.s5-box .card-box .txt-box dl:last-child {
+  margin-bottom: 0; }
+
+.s5-box .card-box .txt-box dl dt {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px; }
+
+@media (max-width: 640px) {
+  .s5-box {
+    padding-top: 0; }
+  .s5-box .card-box {
+    padding: 30px 20px;
+    flex-direction: column; }
+  .s5-box .card-box .img-box {
+    text-align: center;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 30px; }
+  .s5-box .card-box .img-box img {
+    margin-bottom: 15px; } }
+
 @media all and (max-width: 640px) {
   /* 서브공통 */
   .sub-box-ul {

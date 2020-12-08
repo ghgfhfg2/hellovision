@@ -37,6 +37,18 @@ h2.sub-h2 {
   margin-bottom: 80px;
   text-align: center; }
 
+h3.sub-h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 60px;
+  margin-bottom: 20px; }
+
+@media (max-width: 640px) {
+  h3.sub-h3 {
+    margin-top: 40px;
+    text-align: center; } }
+
 h3.big-h3 {
   font-size: 30px;
   font-weight: bold;
@@ -218,7 +230,8 @@ p.line-30 {
   border: 1px solid #d5d5d5;
   border-radius: 5px;
   padding: 7px 20px;
-  color: #666; }
+  color: #666;
+  background-color: #fff; }
 
 .btn-basic.big {
   display: inline-block;
@@ -572,7 +585,9 @@ textarea::placeholder {
 
 @media all and (max-width: 640px) {
   h2.sub-h2 {
-    margin: 35px 0; }
+    margin: 35px 0;
+    font-size: 30px;
+    margin-bottom: 20px; }
   h3.big-h3 {
     font-size: 24px;
     margin-bottom: 30px; }
