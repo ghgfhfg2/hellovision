@@ -32,8 +32,12 @@
               />
               <img src="./img/logo_LGhellovision2x.png" class="mobile-img" />
             </a>
-            <button type="button" class="btn-total-menu mo-el" onclick="addOn('.total-menu-box')">
-                <span class="line"></span>
+            <button
+              type="button"
+              class="btn-total-menu mo-el"
+              onclick="addOn('.total-menu-box')"
+            >
+              <span class="line"></span>
             </button>
           </div>
           <div id="gnb-box">
@@ -49,45 +53,51 @@
           </div>
         </div>
         <div class="total-menu-box">
-            <div class="top-box">
-                <a href="#" class="ic-home">HOME</a>
-                <button type="button" class="btn-close" onclick="removeOn('.total-menu-box')"></button>
-            </div>
-            <div class="mo-lnb">
-                <ul class="depth-1">
-                    <li>
-                        <a href="#" class="has-sub">TV</a>
-                        <ul class="depth-2">
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="has-sub">TV</a>
-                        <ul class="depth-2">
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                            <li>
-                                <a href="#">TV상품</a>
-                            </li>
-                        </ul>
-                    </li>
+          <div class="top-box">
+            <a href="#" class="ic-home">HOME</a>
+            <button
+              type="button"
+              class="btn-close"
+              onclick="removeOn('.total-menu-box')"
+            ></button>
+          </div>
+          <div class="mo-lnb">
+            <ul class="depth-1">
+              <li>
+                <a href="#" class="has-sub">TV</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
                 </ul>
-            </div>
+              </li>
+              <li>
+                <a href="#" class="has-sub">TV</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                  <li>
+                    <a href="#">TV상품</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
       <script>
-          var lnbDepth1 = document.querySelectorAll('.total-menu-box .depth-1 .has-sub');
-          for(var i=0; i<lnbDepth1.length; i++){
-              lnbDepth1[i].addEventListener('click', function(){
-                this.classList.toggle('on');
-              })
-          }
+        var lnbDepth1 = document.querySelectorAll(
+          ".total-menu-box .depth-1 .has-sub"
+        );
+        for (var i = 0; i < lnbDepth1.length; i++) {
+          lnbDepth1[i].addEventListener("click", function () {
+            this.classList.toggle("on");
+          });
+        }
       </script>
       <!--//상단영역 -->
       <!-- 오른쪽 고정배너 -->
@@ -123,106 +133,162 @@
       <div id="container">
         <h2 class="sub-h2">설치후기</h2>
         <div class="sub-content-box">
-            <div class="event-banner">
-              <img src="./img/m_img_banner_event.png" alt="" />
-            </div>
-            <div class="review-write com-write-box">
-                <dl>
-                    <dt>작성자 이름</dt>
-                    <dd>
-                        <input type="text" class="name">
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>휴대폰 번호</dt>
-                    <dd>
-                        <input type="number" class="phone">
-                        <input type="number" class="phone">
-                        <input type="number" class="phone">
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>제목</dt>
-                    <dd>
-                        <input type="text" class="subject">
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>내용</dt>
-                    <dd>
-                        <textarea onkeyup="textCounter(this,'.counter')" name="" id="" cols="30" rows="10" placeholder="최소 30자 이상으로 작성"></textarea>
-                    </dd>
-                </dl>
-                <p class="counter-box">
-                    <span class="counter">0</span>자
-                </p>
-                <dl class="upload">
-                    <dt>사진첨부</dt>
-                    <dd>
-                        <input type="file" class="hidden-file" id="upload_1">
-                        <input type="file" class="hidden-file" id="upload_2">
-                        <input type="file" class="hidden-file" id="upload_3">
-                        <input type="file" class="hidden-file" id="upload_4">
-                        <input type="file" class="hidden-file" id="upload_5">
-                        <button type="button" class="custom-file-btn" onclick="uploadFile()">사진파일첨부</button>
-                    </dd>
-                </dl>
-                <div class="upload_preview">                    
+          <div class="event-banner">
+            <img src="./img/m_img_banner_event.png" alt="" />
+          </div>
+          <div class="review-write com-input-box com-write-box">
+            <dl>
+              <dt>작성자 이름</dt>
+              <dd>
+                <input type="text" class="name" />
+              </dd>
+            </dl>
+            <dl>
+              <dt>휴대폰 번호</dt>
+              <dd>
+                <input type="number" class="phone" />
+                <input type="number" class="phone" />
+                <input type="number" class="phone" />
+              </dd>
+            </dl>
+            <dl>
+              <dt>제목</dt>
+              <dd>
+                <input type="text" class="subject" />
+              </dd>
+            </dl>
+            <dl>
+              <dt>내용</dt>
+              <dd>
+                <textarea
+                  onkeyup="textCounter(this,'.counter')"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="최소 30자 이상으로 작성"
+                ></textarea>
+              </dd>
+            </dl>
+            <p class="counter-box"><span class="counter">0</span>자</p>
+            <dl class="upload">
+              <dt>사진첨부</dt>
+              <dd>
+                <input type="file" class="hidden-file" id="upload_1" />
+                <input type="file" class="hidden-file" id="upload_2" />
+                <input type="file" class="hidden-file" id="upload_3" />
+                <input type="file" class="hidden-file" id="upload_4" />
+                <input type="file" class="hidden-file" id="upload_5" />
+                <button
+                  type="button"
+                  class="custom-file-btn"
+                  onclick="uploadFile()"
+                >
+                  사진파일첨부
+                </button>
+                <span class="info-txt"
+                  >설치셋톱박스, 렌탈상품 사진 등
+                  <span class="col_black">사진 1장 이상 필수로 등록</span></span
+                >
+              </dd>
+            </dl>
+            <div class="upload_preview"></div>
+            <script>
+              /* 첨부파일 */
+              var count = 0;
+              function uploadFile() {
+                var file = document.querySelectorAll(".hidden-file");
+                if (count == file.length) {
+                  alert("첨부파일은 " + file.length + "개 까지 가능합니다.");
+                  return;
+                }
+                for (var i = 0; i < file.length; i++) {
+                  if (!file[i].value) {
+                    file[i].click();
+                    count++;
+                    return;
+                  }
+                }
+              }
+              (function () {
+                var file = document.querySelectorAll(".hidden-file");
+                var preview = document.querySelector(".upload_preview");
+                for (var i = 0; i < file.length; i++) {
+                  file[i].addEventListener("change", function (e) {
+                    var num = e.target.id.split("_")[1];
+                    var box = "";
+                    box += '<div class="preview-box">';
+                    box += '<div class="img-box">';
+                    box += '<img src="" id="upImg_' + num + '">';
+                    box += "</div>";
+                    box +=
+                      '<button type="button" onclick="delPreview(this)">삭제</button></div>';
+                    preview.innerHTML += box;
+                    var get_file = e.target.files;
+                    var pImg = preview.querySelector("#upImg_" + num);
+                    var reader = new FileReader();
+                    reader.onload = (function (aImg) {
+                      return function (e) {
+                        aImg.src = e.target.result;
+                      };
+                    })(pImg);
+                    if (get_file) {
+                      reader.readAsDataURL(get_file[0]);
+                    }
+                  });
+                }
+              })();
+              function delPreview(e) {
+                var file = document.querySelectorAll(".hidden-file");
+                var prev = e.previousSibling
+                  .querySelector("img")
+                  .getAttribute("id")
+                  .split("_");
+                var el = e;
+                file[prev[1] - 1].value = "";
+                el.parentElement.remove();
+                count--;
+              }
+            </script>
+            <dl>
+              <dt>자동등록방지</dt>
+              <dd>
+                <input type="text" />
+                <span class="info-txt"
+                  >왼쪽 보이는 글자를 입력해주세요.(대소문자 구분)</span
+                >
+              </dd>
+            </dl>
+            <dl>
+              <dt>비밀번호</dt>
+              <dd>
+                <input type="text" placeholder="4자리 숫자입력" />
+                <span class="info-txt">글 수정 및 삭제시 필요</span>
+              </dd>
+            </dl>
+            <div class="agree-box">
+              <div class="agree-tit">
+                <h3>개인정보 활용동의 안내</h3>
+                <div class="check-box">
+                  <input type="checkbox" id="agree" />
+                  <label for="agree"></label>
+                  <span>개인정보수집 이용에 동의합니다.</span>
                 </div>
-                <script>
-                /* 첨부파일 */
-                var count = 0;
-                function uploadFile(){
-                    var file = document.querySelectorAll('.hidden-file');                    
-                    if(count == file.length){
-                        alert('첨부파일은 '+file.length+'개 까지 가능합니다.');
-                        return;
-                    }
-                    for(var i=0; i<file.length; i++){
-                        if(!file[i].value){
-                            file[i].click();         
-                            count++;
-                            return;
-                        }
-                    }
-                }
-                (function(){
-                    var file = document.querySelectorAll('.hidden-file');
-                    var preview = document.querySelector('.upload_preview');
-                    for(var i=0; i<file.length; i++){
-                        file[i].addEventListener('change',function(e){
-                            var num = e.target.id.split('_')[1]
-                            var box = '';
-                            box += '<div class="preview-box">';
-                            box += '<div class="img-box">';
-                            box += '<img src="" id="upImg_'+num+'">';
-                            box += '</div>';
-                            box += '<button type="button" onclick="delPreview(this)">삭제</button></div>'
-                            preview.innerHTML += box;
-                            var get_file = e.target.files;
-                            var pImg = preview.querySelector('#upImg_'+num);
-                            var reader = new FileReader();
-                            reader.onload = (function (aImg){
-                                return function(e){
-                                    aImg.src = e.target.result
-                                }
-                            })(pImg)
-                            if(get_file){
-                                reader.readAsDataURL(get_file[0]);
-                            }
-                        });
-                    }
-                })();
-                function delPreview(e){
-                    var file = document.querySelectorAll('.hidden-file');
-                    var prev = e.previousSibling.querySelector('img').getAttribute('id').split('_');
-                    var el = e;
-                    file[prev[1]-1].value = '';
-                    el.parentElement.remove();
-                    count--;
-                }
-                </script>
+              </div>
+              <div class="txt-box">
+                - 개인정보의 수집 및 이용목적 : 렌탈 온라인 신청, 접수<br />
+                - 수집하는 개인정보 항목 : 성명, 연락처(휴대폰번호)<br />
+                - 개인정보 보유 및 이용기간 : 개인정보 수집 및 이용목적이 달성된
+                후에는 예외없이 해당 정보를 파기합니다.
+              </div>
             </div>
+          </div>
+          <div class="com-btn-box">
+            <button type="button" class="btn-basic big2">취소</button>
+            <button type="button" class="btn-basic big2 p-color">
+              등록하기
+            </button>
+          </div>
         </div>
       </div>
       <!-- //컨텐츠 영역 -->
