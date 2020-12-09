@@ -61,7 +61,11 @@ function comTab(el, dp) {
 function textCounter(e, t, l) {
   var length = e.value.length;
   var el = document.querySelector(t);
-  var limit = document.querySelector(l).innerText;
+  if(l){
+    var limit = document.querySelector(l).innerText;
+  }else{
+    var limit = 1000;
+  }
   el.innerHTML = length;
   if (length > limit) {
     e.value = e.value.substring(0, limit);
@@ -91,3 +95,4 @@ function thumbImg(e, target) {
   var src = e.getAttribute("src");
   el.setAttribute("src", src);
 }
+

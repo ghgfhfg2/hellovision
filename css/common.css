@@ -515,6 +515,11 @@ input[type="checkbox"]:checked + label {
   input {
     width: 100%; } }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
 .custom-select {
   width: 320px;
   position: relative; }
@@ -582,6 +587,37 @@ textarea {
 textarea::placeholder {
   font-size: 16px;
   color: #999; }
+
+.custom-file {
+  position: absolute;
+  width: 0;
+  height: 0; }
+
+.custom-file + label {
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #e2e2e2; }
+
+.custom-file-btn {
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #e2e2e2;
+  font-size: 16px;
+  font-weight: normal;
+  color: #666; }
+
+.hidden-file {
+  position: absolute;
+  width: 0;
+  height: 0; }
 
 @media all and (max-width: 640px) {
   h2.sub-h2 {

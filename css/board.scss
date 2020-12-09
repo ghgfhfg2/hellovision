@@ -117,7 +117,7 @@
     }
   }
   .subject {
-    padding-left: 20px;
+    text-align: left;padding-left: 20px;
     img {
       margin-right: 50px;
     }
@@ -137,6 +137,27 @@
         margin: 0 5px;
       }
     }
+  }
+  .mo-cate{display: none;}
+  @include mobile(){
+      .acd-bbs-box li > button{
+          flex-wrap: wrap;font-size: 14px;padding:15px;
+      }
+      .colbox.box-1{display: none;}
+      .acd-bbs-box li > button .subject{padding-left: 0;}
+      .subject img{margin-right: 10px;max-width:80px;}
+      .mo-cate{
+          width:100%;
+          @include flex($j:space-between);
+          color: #999;margin-bottom: 10px;
+      }
+      .acd-bbs-box li > button::after{
+          width:16px;right:20px;margin-top: 10px;
+      }
+      .reply-box .con-box{padding: 15px 10px;}
+      .reply-box .con-box .btn-box{
+          margin:20px 0 0 0;
+      }
   }
 }
 /* 리뷰(포토) 레이어팝업 */
@@ -180,7 +201,7 @@
         width: 16px;
         height: 16px;
         background: #d5d5d5;
-        cursor: pointer;
+        cursor: pointer;flex-shrink: 0;
       }
       .swiper-pagination-bullet-active {
         background-color: #ff9595;
@@ -205,6 +226,64 @@
       }
     }
   }
+  @include mobile(){
+      width:90%;height: auto;margin-left: -45%;margin-top: 0;
+      transform: translateY(-50%);
+      padding: 40px 20px 20px 20px; 
+      .btn-close{
+          width:20px;height: 20px;top:15px;right: 20px;
+      }
+      .reivew-photo-box .reivew-photo-slide li{
+          height: auto;
+      }
+      .reivew-photo-box .page-box{
+          margin-top: 15px;
+        .swiper-pagination-bullet{
+            width:12px;height: 12px;margin:0 5px;
+        }
+      } 
+  }
+}
+
+/* 글쓰기 */
+.com-write-box{
+    dl{
+        font-size: 16px;margin-bottom: 20px;
+        @include flex($a:flex-start);
+        dt{width: 144px;flex-shrink: 0;line-height: 50px;}
+        dd{
+            @include flex();flex:1;
+        }
+    }
+}
+.review-write{
+    margin-top: 40px;
+    .phone{
+        width: 100px;
+        @include lastMr0(10px);
+    }
+    .subject{width:100%}
+    .counter-box{
+        text-align: right;margin-bottom: 20px;
+        @include font($s:16px,$c:#333);
+    }
+    dl.upload{
+        dt{line-height: 40px;}
+    }
+    .upload_preview{
+        @include flex();
+        .preview-box{
+            @include lastMr0(10px);
+            @include flex($a:center,$d:column)
+            .img-box{
+                width: 100px;height: 100px;border-radius:5px;overflow: hidden;
+                img{width: 100%;height: 100%;}
+            }
+            button{
+                @include font($s:16px,$c:#999);margin-top: 5px;
+            }
+        }
+    }
 }
 
 /* 페이지 */
