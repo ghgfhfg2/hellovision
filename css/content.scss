@@ -1557,6 +1557,10 @@
     }
   }
 }
+.s8_tbl{
+  th,td{color: #666;}
+  tbody td:nth-child(2){text-align: left;}
+}
 
 @media all and (max-width: 640px) {
   /* 서브공통 */

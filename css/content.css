@@ -1870,6 +1870,12 @@
   .s5-box .card-box .img-box img {
     margin-bottom: 15px; } }
 
+.s8_tbl th, .s8_tbl td {
+  color: #666; }
+
+.s8_tbl tbody td:nth-child(2) {
+  text-align: left; }
+
 @media all and (max-width: 640px) {
   /* 서브공통 */
   .sub-box-ul {
