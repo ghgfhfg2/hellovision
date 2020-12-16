@@ -30,9 +30,10 @@
         margin-top: -7px;
         background: url(../img/arrow_list_close.svg) center no-repeat;
         background-size: contain;
+        transform: rotate(180deg);
       }
       &.on::after {
-        transform: rotate(180deg);
+        transform: rotate(0deg);
       }
       .ic-q {
         @include font($s: 20px, $w: bold, $c: $p-color);

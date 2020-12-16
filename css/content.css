@@ -36,6 +36,7 @@
   text-align: center;
   width: 100%;
   background-color: #fff;
+  border: 1px solid #d5d5d5;
   border-radius: 19px;
   display: flex;
   justify-content: flex-start;
@@ -168,7 +169,8 @@
 .quick-link-box {
   width: 100%;
   height: 130px;
-  border-bottom: 1px solid #e2e2e2; }
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2; }
 
 .quick-link-box .content-box {
   height: 100%;
@@ -986,10 +988,16 @@
   align-items: center;
   flex-direction: row; }
 
+.s1-1-box .tit {
+  width: 170px; }
+
 .s1-1-box .tit dt {
   font-size: 26px;
   font-weight: bold;
   color: #ed174d; }
+
+.s1-1-box .tit dt .small {
+  font-size: 16px; }
 
 .s1-1-box .tit dd {
   font-size: 16px;

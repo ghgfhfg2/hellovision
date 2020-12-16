@@ -92,6 +92,9 @@ body,
   font-size: 18px;
   font-weight: bold; }
 
+.gnb li a:hover, .gnb li a.on {
+  color: #ed174d; }
+
 /* 모바일 전체메뉴 */
 .total-menu-box {
   position: fixed;
@@ -317,6 +320,33 @@ body,
   position: absolute;
   left: 0;
   bottom: 0; }
+
+#footer .foot-fix-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row; }
+
+#footer .foot-fix-btn button {
+  width: 50%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff; }
+
+#footer .foot-fix-btn .btn-red {
+  background-color: #ed174d; }
+
+#footer .foot-fix-btn .btn-blue {
+  background-color: #97b7ff; }
 
 @media all and (max-width: 640px) {
   #wrapper {

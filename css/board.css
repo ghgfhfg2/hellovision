@@ -47,10 +47,11 @@
   top: 50%;
   margin-top: -7px;
   background: url(../img/arrow_list_close.svg) center no-repeat;
-  background-size: contain; }
+  background-size: contain;
+  transform: rotate(180deg); }
 
 .acd-bbs-box li > button.on::after {
-  transform: rotate(180deg); }
+  transform: rotate(0deg); }
 
 .acd-bbs-box li > button .ic-q {
   font-size: 20px;

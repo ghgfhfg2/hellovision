@@ -89,6 +89,17 @@ function layerClose(e) {
   document.body.classList.remove("fix");
 }
 
+$(function(){
+  var layer = $('.com-layer-style1');  
+  $('body').not('td').on('click',function(e){
+    if(e.target.className != 'btn-price-view' && e.target.className != 'com-layer-style1 price-view-layer' && e.target.nodeName != 'TD' && e.target.nodeName != 'TH'){    
+      if(layer.css('display') == 'block'){
+        layer.hide();
+      }
+    }
+  })  
+})
+
 /* 상세 썸네일 */
 function thumbImg(e, target) {
   var el = document.querySelector(target);
