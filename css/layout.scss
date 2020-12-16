@@ -223,7 +223,7 @@ body,
   }
   .foot-fix-btn{
     position: fixed;bottom: 0;left:0;
-    width:100%;
+    width:100%;z-index: 100;
     @include flex();
     button{
       width:50%;height: 60px;

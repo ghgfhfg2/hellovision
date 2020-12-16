@@ -14,7 +14,8 @@ body.fix {
 }
 
 .mobile-img,
-.mo-el {
+.mo-el,
+.mo-flex {
   display: none !important;
 }
 
@@ -28,6 +29,9 @@ body.fix {
   }
   .mo-el {
     display: block !important;
+  }
+  .mo-flex{
+    display: flex !important;
   }
 }
 .fon-p-color {
