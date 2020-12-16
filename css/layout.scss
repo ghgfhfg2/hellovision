@@ -35,11 +35,25 @@ body,
 
 /* 상단영역 */
 #header {
-  height: 100px;
+  height: auto;
   border-bottom: 1px solid #e2e2e2;
+  .top-box{
+    border-bottom: 1px solid #e2e2e2;
+    .content-box{
+      height: 36px;
+      @include flex($j:flex-end);
+      .biz{color: #333;font-weight: bold;margin-right: 40px;position: relative;
+        &::after{
+          @include after(1px,14px);
+          background-color: #d5d5d5;
+          right: -21px;top:5px;
+        }
+      }      
+    }
+  }
 }
 .gnb-wrap {
-  height: 100%;
+  height: 100PX;
   @include flex(space-between, center, row);
   .btn-total-menu{
     display: inline-block;width: 24px;height: 22px;position: relative;   
@@ -76,7 +90,7 @@ body,
 .total-menu-box{
   position: fixed;width: calc(100% - 80px);height: 100vh;
   right: -100%;top: 0;
-  background-color: #fff;z-index: 100;
+  background-color: #fff;z-index: 200;
   transition: all 0.2s;
   &.on{
     right: 0;
@@ -142,6 +156,21 @@ body,
             right: 39px;top:50%;margin-top: -7px;
             background: url(../img/icon_m_arrow_menu02.svg) center no-repeat;
           }
+        }
+      }
+    }
+    .bot-box{
+      position: absolute;bottom: 0;left: 0;height: 60px;width:100%;
+      background-color: #f8f9fb;
+      @include flex();
+      a{
+        width:50%;text-align: center;position: relative;font-size: 16px;
+      }
+      .biz{font-weight: bold;color: #333;position: relative;
+        &::after{
+          @include after(1px,14px);
+          background-color: #d5d5d5;
+          right: -1px;top:6px;
         }
       }
     }

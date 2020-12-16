@@ -37,6 +37,9 @@ body.fix {
 .fon-p-color {
   color: $p-color !important;
 }
+.font-w-mid{
+  font-weight: 600;
+}
 h2.sub-h2 {
   @include font($s: 40px, $w: bold, $c: #000);
   margin-top: 90px;

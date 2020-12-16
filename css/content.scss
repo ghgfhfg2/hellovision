@@ -751,6 +751,11 @@
     background-color: #f8f9fb;
     padding: 20px 15px;
   }
+  @include mobile(){
+    dl.mo-col{
+      flex-direction: column;
+    }
+  }
 }
 .com-btn-box {
   margin-top: 30px;

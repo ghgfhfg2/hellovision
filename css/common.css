@@ -32,6 +32,9 @@ body.fix {
 .fon-p-color {
   color: #ed174d !important; }
 
+.font-w-mid {
+  font-weight: 600; }
+
 h2.sub-h2 {
   font-size: 40px;
   font-weight: bold;
