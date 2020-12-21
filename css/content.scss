@@ -1709,7 +1709,7 @@
       background-color: #fff;
       background-position-x: center;
       background-repeat: no-repeat;
-      @include flex($d:column)
+      @include flex($d:column);
       &:nth-child(3n+3){
         margin-right: 0;
       }
