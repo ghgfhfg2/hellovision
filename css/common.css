@@ -265,6 +265,17 @@ p.line-30 {
   border-radius: 5px;
   border: 1px solid #999; }
 
+.btn-basic.big3 {
+  display: inline-block;
+  min-width: 200px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ed174d;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 6px 8px 0 rgba(0, 0, 0, 0.08); }
+
 .btn-basic.p-color {
   border-color: #ed174d;
   background-color: #ed174d;
